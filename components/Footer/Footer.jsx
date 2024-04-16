@@ -7,7 +7,7 @@ import { useState, useEffect } from 'react';
 const Footer = () => {
 	const Footerdata = [
 		{
-			heading: 'Explore',
+			heading: 'Explore.',
 			links: [
 				{
 					classlink: 'Home',
