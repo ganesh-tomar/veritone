@@ -1,0 +1,244 @@
+header .mainHeader{
+  max-width: 1960px;
+  width: 100%;
+  margin: 0 auto;
+}
+header .mainHeader nav .dropDownArrow{
+    position: relative;
+}
+header .container {
+    width: 100%;
+    /* max-width: 1380px; */
+    max-width: 1252px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+header .mainHeader nav .dropDownArrow::before {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 30px;
+    width: 0;
+    border-bottom: solid 2px #fff;
+    transition: all 0.3s ease-in-out;
+}
+header .mainHeader nav .dropDownArrow::after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -3px;
+    width: 12px;
+    height: 8px;
+    transform: rotate(0);
+    transition: all 0.3s ease-in-out;
+    background: url('../../public/images/icons/drop-down-arrow.svg') no-repeat;
+    background-size: cover;
+}
+header .mainHeader nav .dropDownArrow:hover::before {
+    width: calc(100% - 30px);
+}
+header .mainHeader nav .dropDownArrow.show::before {
+  width: calc(100% - 30px);
+}
+header .mainHeader nav .dropDownArrow.show::after {
+    transform: rotate(180deg);
+}
+@media (max-width: 1280px) and (min-width: 1025px) {
+  header .mainHeader nav .dropDownArrow::before  {
+    left: 20px;
+  }
+  header .mainHeader nav .dropDownArrow:hover::before {
+    width: calc(100% - 20px);
+  }
+}
+@media (max-width: 1024px) {
+  header .mainHeader nav .dropDownArrow::after {
+    top: 40%;
+    width: 18px;
+    height: 12px;
+    background: url('../../public/images/icons/right-arrow-white.svg') no-repeat;
+    background-size: cover;
+  }
+  header .mainHeader nav .dropDownArrow.show::after {
+    transform: rotate(0deg);
+  }
+  header .mainHeader nav .dropDownArrow::before {
+    left: 0;
+  }
+  header .mainHeader nav .dropDownArrow:hover::before {
+    width: 0;
+  }
+  header .mainHeader nav .dropDownArrow.show::before {
+    width: 0;
+  }
+}
+@media (max-width:320px) {
+  header .mainHeader nav .resBtnWrap {
+    margin-top: 100px;
+  }
+}
+@media (min-width: 800px) and (max-height: 420px) {
+  header .mainHeader nav .subMenuLinks {
+    height: calc(100vh + 200px) !important;
+  }
+  header .mainHeader nav .tabs .innerWrap {
+    height: auto !important;
+  }
+  header .mainHeader nav .tabs .subMenuWrap {
+    height: calc(100vh + 200px);
+  }
+}
+  header .mainHeader nav .tabs .subMenuWrap {
+    position: relative;
+  }
+  header .mainHeader nav .tabs .subMenuWrap.bgRiptide::before,
+  header .mainHeader nav .tabs .subMenuWrap.bgLightning::before,
+  header .mainHeader nav .tabs .subMenuWrap.bgultraviolet::before,
+  header .mainHeader nav .tabs .subMenuWrap.bgember::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #FA524D;
+  }
+  header .mainHeader nav .tabs .subMenuWrap.bgultraviolet::before {
+    background-color: #875EF0;
+  }
+  header .mainHeader nav .tabs .subMenuWrap.bgLightning::before {
+    background-color: #E3F730;
+  }
+  header .mainHeader nav .tabs .subMenuWrap.bgRiptide::before {
+    background-color: #42CFC9;
+  }
+
+  /* @media (max-width: 595px) {
+    header .mainHeader nav .tabs .subMenuWrap.bgRiptide::before,
+  header .mainHeader nav .tabs .subMenuWrap.bgLightning::before,
+  header .mainHeader nav .tabs .subMenuWrap.bgultraviolet::before,
+  header .mainHeader nav .tabs .subMenuWrap.bgember::before {
+    height: calc(100% + 100px);
+  }
+  }
+  @media (min-width: 596px) and (max-width: 767px) {
+    header .mainHeader nav .tabs .subMenuWrap.bgRiptide::before,
+    header .mainHeader nav .tabs .subMenuWrap.bgLightning::before,
+    header .mainHeader nav .tabs .subMenuWrap.bgultraviolet::before,
+    header .mainHeader nav .tabs .subMenuWrap.bgember::before {
+      height: calc(100% + 100px);
+    }
+  } */
+
+header .mainHeader nav .rightArrow::after{
+    content: '';
+    position: absolute;
+    /* top: 65%; */
+    right: 0;
+    bottom: 5px;
+    width: 18px;
+    height: 12px;
+    background: url('../../public/images/icons/right-arrow-white.svg') no-repeat;
+    background-size: cover;
+    transition: all 0.3s ease-in-out;
+    /* transform: translateY(-65%); */
+}
+header .mainHeader nav .blackRightArrow::after{
+  content: '';
+  position: absolute;
+  /* top: 65%; */
+  right: 0;
+  bottom: 5px;
+  width: 18px;
+  height: 12px;
+  background: url('../../public/images/icons/right-black-arrow.svg') no-repeat;
+  background-size: cover;
+  transition: all 0.3s ease-in-out;
+  /* transform: translateY(-65%); */
+}
+
+header .mainHeader nav .blackRightArrow:hover::after{
+  right: -0.5rem;
+  /* background: url('../../public/images/icons/right-black-arrow-small.svg') no-repeat; */
+}
+
+header .mainHeader nav .rightArrow.arrowActive::after,
+header .mainHeader nav .rightArrow:hover::after {
+  right: -0.5rem;
+  /* background: url('../../public/images/icons/right-arrow-small.svg') no-repeat; */
+}
+
+
+header .mainHeader nav .subMenu::-webkit-scrollbar {
+    width: 8px;
+    border-radius: 50px;
+  }
+  header .mainHeader nav .subMenu::-webkit-scrollbar-track {
+    background: transparent; 
+  }
+   
+  /* Handle */
+  header .mainHeader nav .subMenu::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.5); 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  header .mainHeader nav .subMenu::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+  header .mainHeader nav .subMenu .backBlackBtn::before,
+  header .mainHeader nav .subMenu .backBtntwo::before,
+  header .mainHeader nav .subMenu .subMenuLinks .backBtn::before {
+    content: '';
+    position: absolute;
+    top: 65%;
+    left: 0;
+    width: 16px;
+    height: 10px;
+    background: url('../../public/images/icons/right-arrow-white.svg') no-repeat;
+    background-size: cover;
+    transform: translateY(-65%) rotate(180deg);
+  }
+  header .mainHeader nav .subMenu .backBlackBtn::before {
+    background: url('../../public/images/icons/right-black-arrow.svg') no-repeat;
+  }
+  @media (max-width: 1024px) {
+    header .mainHeader nav .subMenu .backBlackBtn::before,
+    header .mainHeader nav .subMenu .backBtntwo::before,
+    header .mainHeader nav .subMenu .subMenuLinks .backBtn::before {
+      width: 24px;
+      height: 16px;
+    }
+ 
+  }
+header .mainHeader .searchForm .searchCross::before {
+  content: '';
+  position: absolute;
+  top: -28px;
+  right: 7px;
+  width: 20px;
+  height: 20px;
+  background: url('../../public/images/icons/black-cross.svg') no-repeat;
+  background-size: cover;
+}
+@media (max-width: 1024px) {
+  header .mainHeader .searchForm .searchCross::before {
+    right: 7px;
+  }
+}
+@media (min-width: 596px) and (max-height: 500px) {
+  header .mainHeader nav .subMenu .innerSubMenu {
+    height: auto !important;
+  }
+}
+  /* header .mainHeader nav .subMenu .subMenuLinks .innerWrap::before{
+    content: '';
+    position: absolute;
+    top: 82px;
+    right: 0;
+    width: 22px;
+    height: 421px;
+    background: url('../../public/images/icons/mediaent.svg') no-repeat;
+    background-size: cover;
+  } */

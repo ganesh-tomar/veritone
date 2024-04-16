@@ -1,0 +1,66 @@
+.heroBanner {
+	min-height: 1020px;
+}
+.blackOverlay::after {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	background-color: #000;
+	opacity: 0.5;
+	z-index: 0;
+}
+@media (min-width: 1025px) and (max-width: 1366px) {
+	.heroBanner {
+		min-height: 750px;
+	}
+}
+@media (min-width: 992px) and (max-width: 1024px) {
+	.heroBanner {
+		min-height: 600px;
+		padding-top: 110px;
+	}
+}
+@media (min-width: 768px) and (max-width: 991px) {
+	.heroBanner {
+		min-height: 450px;
+		padding-top: 110px;
+	}
+}
+@media (max-width: 767px) {
+	.heroBanner {
+		padding-top: 80px;
+	}
+}
+@media (min-width: 596px) and (max-width: 767px) {
+	.heroBanner {
+		min-height: 400px;
+	}
+}
+@media (max-width: 595px) {
+	.heroBanner {
+		min-height: 300px;
+	}
+	.heroBanner .btn_wrap a {
+		display: block;
+	}
+	.heroBanner .btn_wrap a:first-child {
+		margin: 0;
+	}
+	.heroBanner .btn_wrap a:not(:first-child) {
+		margin-top: 20px;
+	}
+}
+
+/* Small height */
+@media (min-width: 1200px) and (max-height: 950px) {
+	.heroBanner {
+		min-height: 670px;
+		padding-top: 70px;
+	}
+	.heroBanner p {
+		padding-top: 50px;
+	}
+}

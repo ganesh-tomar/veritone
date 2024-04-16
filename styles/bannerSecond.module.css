@@ -1,0 +1,31 @@
+.imageWrap {
+	position: relative;
+}
+.imageWrap::after {
+	content: '';
+	position: absolute;
+	width: 275px;
+	height: 185px;
+	top: -77px;
+	right: -140px;
+	background-image: url(/images/plus_pattern.svg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: inherit;
+}
+@media only screen and (max-width: 1280px) and (min-width: 768px) {
+	.imageWrap::after {
+		width: 190px;
+		height: 140px;
+		top: -57px;
+		right: -90px;
+	}
+}
+@media (max-width: 767px) {
+	.imageWrap::after {
+		width: 140px;
+		height: 95px;
+		top: 40px;
+		right: -100px;
+	}
+}
