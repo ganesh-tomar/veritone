@@ -4,6 +4,7 @@ import Link from 'next/link'
 import style from '../styles/StickyNav.module.css'
 const StickyNav = (props) => {
   let bladeData = props.data;
+  console.log('sticky');
   const [activeSection, setActiveSection] = useState('');
   const [winWidth, isWinWidth] = useState(0);
   const [sectionLeft, setsectionLeft] = useState(6)
