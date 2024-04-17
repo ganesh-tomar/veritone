@@ -51,16 +51,16 @@ const Tabs = ({ tab, tab_content, bg, tabBg, pt }) => {
                   </div>
                   <div className={`col-hree ${styles.col_three} w-[486px] md:w-[320px] tablet:w-[300px] pt-[43px] relative laptopmid:pt-[30px] laptop:pt-[30px] tablet:pt-[30px] md:pt-[0]`}>
                     <div className={`image-wrap ${styles.image_wrap} absolute top-[114px] md:top-[50px] sm:left-[20px] flex justify-end h-[240px] md:h-[175px]`}>
-                      <Image className={`w-full h-full object-cover max-w-[360px] max-h-[248px] md:max-w-[253px] md:max-h-[175px] tablet:max-w-[240px] tablet:max-h-[170px]`} src={item.imgpath} alt={item.alt} width={120} height={120} />
+                      <Image className={`w-full h-full object-cover max-w-[360px] max-h-[248px] md:max-w-[253px] md:max-h-[175px] tablet:max-w-[240px] tablet:max-h-[170px]`} src={item.imgpath} alt={item.alt} width={1000} height={1000} />
                     </div>
                     <div className={`image-wrap ${styles.image_wrap} flex justify-end w-full h-full sm:pr-[20px]`}>
-                      <Image className={`w-full h-full object-cover max-w-[360px] max-h-[248px] md:max-w-[253px] md:max-h-[175px] tablet:max-w-[240px] tablet:max-h-[170px]`} src={item.imgpath2} alt={item.alt2} width={120} height={120} />
+                      <Image className={`w-full h-full object-cover max-w-[360px] max-h-[248px] md:max-w-[253px] md:max-h-[175px] tablet:max-w-[240px] tablet:max-h-[170px]`} src={item.imgpath2} alt={item.alt2} width={1000} height={1000} />
                     </div>
                   </div>
                   <div className={`content-outer ${styles.content_outer} pt-[30px] lg:pt-[60px] w-full flex flex-wrap`}>
                     <div className={`img-outer ${styles.imgOuter} relative top-[0] bottm-[0] m-[auto] w-[487px] h-[256px] sm:h-[auto] laptop:w-[350px] sm:w-[100%]`}>
-                      <Image className={`w-[100%] h-full object-cover`} src={item.imgpath3} alt={item.alt3} width={120} height={120} />
-                      <Image className={`logo absolute left-[0] top-[0] right-[0] bottom-[0] h-100px] w-[200px] m-auto z-10`} src={item.logo} alt={item.logo_alt} width={500} height={500} />
+                      <Image className={`w-[100%] h-full object-cover`} src={item.imgpath3} alt={item.alt3} width={1000} height={1000} />
+                      <Image className={`logo absolute left-[0] top-[0] right-[0] bottom-[0] h-100px] w-[200px] m-auto z-10`} src={item.logo} alt={item.logo_alt} width={1000} height={1000} />
                     </div>
                     <div className={`content ${styles.content}`}>
                       <div className={`inner-content ${styles.innerContent} ${item.bg} pt-[47px] lg:pt-[70px] pb-[67px] lg:pb-[45px] pl-[255px] pr-[60px] h-full laptopmid:pl-[225px] laptop:pl-[150px] lg:pl-[20px]`}>

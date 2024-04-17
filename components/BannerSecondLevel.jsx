@@ -26,7 +26,7 @@ export default function BannerSecondLevel({ title, blurb, buttonText, buttonClas
                         </div>
                     </div>
                     <div className={`${style.imageWrap} relative w-full h-full max-w-[385px] max-h-[475px] xl:max-w-[285px] xl:max-h-[375px] md:max-w-[160px] md:max-h-[195px] md:mb-[25px]`}>
-                        <Image className={`object-cover w-full h-full`} src={imagePath} alt={imageName} width={1000} height={1000} />
+                        <Image className={`object-cover w-full h-full`} src={imagePath} alt={imageName} width={2000} height={2000} />
                     </div>
                 </div>
             </div>

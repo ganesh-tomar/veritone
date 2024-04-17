@@ -95,10 +95,10 @@ export default function IntroWithAccordion({ data, reverse, pb, pt }) {
                         <div className={`col_two w-1/2 lg:w-full`}>
                             <div className={`w-full relative min-h-[543px] laptop-landscape:min-h-[500px] lg:min-h-[300px] lg:max-w-[400px] lg:mb-[40px] ${reverse == "true" ? " ml-auto" : ""}`}>
                                 <div className={`image-wrap ${style.image_wrap} flex justify-end absolute w-full max-w-[487px] h-[393px] left-0 top-[20px] laptopsmall:max-w-[380px] laptopsmall:h-[300px] tabletlarge:max-w-[340px] tabletlarge:h-[240px] lg:max-w-[270px] lg:h-[220px] lg:relative lg:top-auto lg:left-auto ${reverse == "true" ? "left-auto right-0 lg:max-w-full lg:flex" : ""}`}>
-                                    <Image className={`w-full h-full object-cover  ${reverse == "true" ? "lg:max-w-[270px]" : ""}`} src={data.backwardImage} alt={"item.alt"} width={120} height={120} />
+                                    <Image className={`w-full h-full object-cover  ${reverse == "true" ? "lg:max-w-[270px]" : ""}`} src={data.backwardImage} alt={"item.alt"} width={1000} height={1000} />
                                 </div>
                                 <div className={`image-wrap ${style.image_wrap} flex justify-end absolute w-full max-w-[487px] h-[393px] left-[127px] top-[150px] z-[2] laptopsmall:max-w-[380px] laptopsmall:h-[300px] tabletlarge:max-w-[340px] tabletlarge:h-[240px] lg:h-[220px] lg:top-auto lg:mt-[-150px] lg:relative ${reverse == "true" ? "left-auto right-[127px] lg:right-auto lg:justify-start" : "lg:max-w-full lg:left-auto lg:flex"}`}>
-                                    <Image className={`w-full h-full object-cover lg:max-w-[270px]`} src={data.forewardImage} alt={"item.alt2"} width={120} height={120} />
+                                    <Image className={`w-full h-full object-cover lg:max-w-[270px]`} src={data.forewardImage} alt={"item.alt2"} width={1000} height={1000} />
                                 </div>
                             </div>
                         </div>
