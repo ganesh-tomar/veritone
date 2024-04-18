@@ -1,56 +1,72 @@
 .navItem {
-	position: relative;
+  position: relative;
 }
 .navItem h4::before {
-	content: '';
-	position: absolute;
-	width: 0;
-	height: 5px;
-	top: -17px;
-	left: 0;
-	border-radius: 10px;
-	background-color: #fa524d;
-	transition: width 0.3s ease-in-out;
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 5px;
+  top: -17px;
+  left: 0;
+  border-radius: 10px;
+  background-color: #fa524d;
+  transform-origin: top right;
+  transition: transform 0.3s ease-in-out;
 }
 .navItem.active h4::before {
-	width: 100%;
+  transform: scaleX(1);
+  transform-origin: top left;
+}
+.navItem:hover h4::before {
+  transform: scaleX(1);
+  transform-origin: top left;
+}
+.navItem:hover .arrow {
+	padding-top: 35px;
 }
 .navLink {
-	width: 0;
-	overflow: hidden;
-	transition: width 0.3s ease-in-out;
+  width: 0;
+  overflow: hidden;
+  transition: width 0.3s ease-in-out;
 }
 .navItem:hover {
-	background-color: transparent;
+  background-color: transparent;
 }
 .navItem:hover .navLink {
-	width: 150px;
+  width: 150px;
+}
+.navItem .arrow {
+  position: relative;
+  padding-top: 27px;
+  height: 65px;
+  transition: padding 0.3s ease-in-out;
 }
 @media (max-width: 767px) {
-	.navItem.active {
-		background-color: #eee3e3;
-		border: none;
-	}
-	.navItem h4::before {
-		display: none;
-	}
+  .navItem.active {
+    background-color: #eee3e3;
+    border: none;
+  }
+  .navItem h4::before {
+    display: none;
+  }
 }
 @media (min-width: 1200px) and (max-height: 950px) {
-	.stickyNav {
-		padding-top: 80px;
-	}
+  .stickyNav {
+    padding-top: 80px;
+  }
 }
 .fixedList {
-	opacity: 0;
-	visibility: hidden;
-	position: fixed;
-	top: 50%;
-	left: 6px;
-	transform: translateY(-50%);
-	z-index: 9;
-	transition: opacity 0.3s ease-in-out;
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  top: 50%;
+  left: 6px;
+  transform: translateY(-50%);
+  z-index: 9;
+  transition: opacity 0.3s ease-in-out;
 }
 .fixedList.show {
-	opacity: 1;
-	visibility: visible;
+  opacity: 1;
+  visibility: visible;
 }

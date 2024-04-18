@@ -178,7 +178,7 @@ const StickyNav = (props) => {
                           <p className='xl-up:text-[30px] pt-[5px] leading-[1.11]'>
                             {data.blurb}
                           </p>
-                          <div className="mt-[27px]">
+                          <div className={`${style.arrow}`}>
                             <Image className='w-full h-full max-h-[30px] max-w-[20px]' src="/images/icons/arrow.svg" width={100} height={100} alt="Arrow" />
                           </div>
                         </div>
