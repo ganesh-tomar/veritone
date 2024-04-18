@@ -8,10 +8,16 @@ var t = 0
 const Tabs = ({ tab, tab_content, bg, tabBg, pt }) => {
   // console.log(tabBg);
   // Code For tab
+  const [open, setopen] = useState(false)
   const [i, setI] = useState(0)
-
+  const [selectedIndex, setSelectedIndex] = useState(0);
   const handler = (index, text) => {
     setI(index)
+    setSelectedIndex(index);
+    setopen(!open);
+  }
+  const dropdownHandler = () => {
+    setopen(!open);
   }
   const liWidth = 100 / tab.length
   // console.log(liWidth);
@@ -20,22 +26,37 @@ const Tabs = ({ tab, tab_content, bg, tabBg, pt }) => {
     <section className={`tabs padding-medium ${styles.tabs} ${styles.tabWithoutSlider} overflow-x-clip`}>
       <div className={`container ${styles.container} `} >
         <div className={`wrapp `}>
-          <ul className={`relative w-full flex flex-wrap justify-center items-center z-[4] py-[28px] xl:py-[20px] before:content-[''] before:w-[calc(100%+162px)] before:absolute before:h-full before:top-0 before:left-[-81px] before:bg-softEmber`}>
-            {tab?.map((item, index) => {
-              // console.log(item.tab_icon);
-              return (
-                <li onClick={() => handler(index)} key={index} className={`cursor-pointer inline-block w-fit sm:w-full`}>
-                  <div className={`${styles.tablist} ${i === index ? ` ${styles.active} ` : ''} relative w-fit mx-[32px] flex items-center justify-center sm:justify-start sm:mx-[20px] xl:my-[10px]`}>
+          <div className={`${styles.tabValBox} bg-softEmber ${open ? styles.expand : ''}`} onClick={dropdownHandler}>
+            <ul className={`relative w-full flex flex-wrap justify-center items-center z-[4] sm:px-[20px] before:content-[''] before:w-[calc(100%+162px)] before:absolute before:h-full before:top-0 before:left-[-81px] before:bg-softEmber`}>
+              {selectedIndex !== null && (
+                <li key={selectedIndex} className={`cursor-pointer inline-block w-fit sm:w-full`}>
+                  <div className={`${styles.tablist} ${selectedIndex === selectedIndex ? ` ${styles.active} ` : ''} relative w-fit mx-[32px] flex items-center justify-center sm:justify-start sm:mx-0 xl:my-[10px]`}>
                     <div className={``}>
-                      <Image className={`w-full h-full max-h-[32px] max-w-[32px] object-contain mr-[20px]`} src={item.tab_icon} alt={item.tab_icon_name} width={120} height={120} />
+                      {/* Render the icon and heading of the selected tab */}
+                      <Image className={`w-full h-full max-h-[32px] max-w-[32px] object-contain mr-[20px]`} src={tab[selectedIndex].tab_icon} alt={tab[selectedIndex].tab_icon_name} width={120} height={120} />
                     </div>
-                    <h4 className={`relative text-30 text-center pb-[10px]`}>{item.tab_heading}</h4>
+                    <h4 className={`relative text-30 text-center pb-[10px]`}>{tab[selectedIndex].tab_heading}</h4>
                   </div>
                 </li>
-
-              );
-            })}
-          </ul>
+              )}
+            </ul>
+          </div>
+          <div className={`${styles.listBox} ${open ? styles.expand : ''}`}>
+            <ul className={`relative w-full flex flex-wrap justify-center items-center z-[4] py-[28px] sm:px-[20px] xl:py-[20px] before:content-[''] before:w-[calc(100%+162px)] before:absolute before:h-full before:top-0 before:left-[-81px] before:bg-softEmber`}>
+              {tab?.map((item, index) => {
+                return (
+                  <li onClick={() => handler(index)} key={index} className={`cursor-pointer inline-block w-fit sm:w-full`}>
+                    <div className={`${styles.tablist} ${i === index ? ` ${styles.active} ` : ''} relative w-fit mx-[32px] flex items-center justify-center sm:justify-start sm:mx-0 xl:my-[10px]`}>
+                      <div className={``}>
+                        <Image className={`w-full h-full max-h-[32px] max-w-[32px] object-contain mr-[20px]`} src={item.tab_icon} alt={item.tab_icon_name} width={120} height={120} />
+                      </div>
+                      <h4 className={`relative text-30 text-center pb-[10px]`}>{item.tab_heading}</h4>
+                    </div>
+                  </li>
+                );
+              })}
+            </ul>
+          </div>
           <div className={`tab-outer relative ${styles.tab_outer} pt-[59px]`}>
 
             {tab_content?.map((item, index) => {
