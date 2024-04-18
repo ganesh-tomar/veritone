@@ -599,6 +599,7 @@ export const resourceCards = {
   cards: [
     {
       imagePath: "/images/speaker_setups.png",
+      url:'#',
       imageName: "speaker_setups",
       heading: "Bonneville Seattle earns key business with Attribute",
       blurb:
@@ -607,6 +608,7 @@ export const resourceCards = {
     },
     {
       imagePath: "/images/board_keys.png",
+      url:'#',
       imageName: "board_keys",
       heading: "Veritone Uplift Study tracking 250+ campaigns",
       blurb:
@@ -615,6 +617,7 @@ export const resourceCards = {
     },
     {
       imagePath: "/images/person_mices.png",
+      url:'#',
       imageName: "person_mices",
       heading: "The truth about deep fakes, synthetic voice, and more",
       blurb:

@@ -18,18 +18,19 @@ export default function ResourceCards({ data }) {
                 <div className="row flex flex-wrap w-[calc(100%+22px)] ml-[-11px]">
                     {data?.cards?.map((item, index) => (
                         <div key={index} className="colThree w-[calc(33.33%-22px)] lg:w-[calc(50%-22px)] md:w-full lg:mb-[30px] mx-[11px]">
-                            <div className="card">
+                            <div className={`card relative group`}>
+                                <Link className='emptyLink' href={item.url}>.</Link>
                                 <div className="imageWrap mb-[32px] max-h-[230px] w-full h-full overflow-hidden">
                                     <Image
                                         src={item.imagePath}
                                         width={2000}
                                         height={2000}
                                         alt={item.imageName}
-                                        className={`w-full h-full`}
+                                        className={`w-full h-full scale-[1] group-hover:scale-[1.1] transition-all duration-300`}
                                     />
                                 </div>
                                 <div className="content pr-[32px]">
-                                    <h4>{item.heading}</h4>
+                                    <h4 className={`group-hover:text-ember transition-color duration-300`}>{item.heading}</h4>
                                     <span className='text-[20px] font-bold pt-[10px] inline-block uppercase'>{item.type}</span>
                                     <p className='pt-[10px]'>{item.blurb}</p>
                                 </div>
