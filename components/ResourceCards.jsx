@@ -1,9 +1,20 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import Image from 'next/image';
 import Link from "next/link";
 import Button from "./button/Button";
 
 export default function ResourceCards({ data }) {
+    const [winWidth, isWinWidth] = useState(0);
+    useEffect(() => {
+        const handleResize = () => {
+            isWinWidth(window.innerWidth);
+        };
+        window.addEventListener("resize", handleResize);
+        handleResize();
+        return () => {
+            window.removeEventListener("resize", handleResize);
+        };
+    });
     return (
         <section className="resource-cards padding-large-top no-padding-bottom">
             <div className={` px-[20px] mx-auto`}>
@@ -11,9 +22,10 @@ export default function ResourceCards({ data }) {
                     <div className="titleWrap w-[60%] ipad:w-full">
                         <h2 className="h1 pb-[25px] sm:pb-[12px]">{data.intro.title}</h2>
                     </div>
-                    <div className="btnWrap w-[15%] ipad:w-auto text-right lg:pt-[25px] sm:w-full">
+                    {winWidth > 595 ? <div className="btnWrap w-[15%] ipad:w-auto text-right lg:pt-[25px] sm:w-full">
                         <Button buttonText={data.intro.btnText} url={data.intro.btnUrl} buttonClass={data.intro.btnClass} />
-                    </div>
+                    </div> : ''}
+
                 </div>
                 <div className="row flex flex-wrap w-[calc(100%+22px)] ml-[-11px]">
                     {data?.cards?.map((item, index) => (
@@ -39,6 +51,9 @@ export default function ResourceCards({ data }) {
                     ))}
 
                 </div>
+                {winWidth < 596 ? <div className="btnWrap w-[15%] ipad:w-auto text-right lg:pt-[25px] sm:w-full">
+                        <Button buttonText={data.intro.btnText} url={data.intro.btnUrl} buttonClass={data.intro.btnClass} />
+                    </div> : ''}
             </div>
         </section>
     )
