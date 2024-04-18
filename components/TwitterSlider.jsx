@@ -61,24 +61,27 @@ export default function TwitterSlider({ data, onlyInternalPosts }) {
             breakpoint: 1200,
             settings: {
                 slidesToShow: 3.29,
-                autoplay: false,
+                centerPadding: '50px 0 0',
+            },
+        },
+        {
+            breakpoint: 1024,
+            settings: {
+                slidesToShow: 3,
                 centerPadding: '50px 0 0',
             },
         },
         {
             breakpoint: 991,
             settings: {
-                slidesToShow: 2.70,
-                // slidesToShow: 3.16,
-                centerPadding: '80px 0 0',
+                slidesToShow: 2.03,
+                centerPadding: '50px 0 0',
             },
         },
         {
             breakpoint: 767,
             settings: {
                 slidesToShow: 1.7,
-                // centerPadding: '50px 0 0',
-                // adaptiveHeight: true
             },
         },
         {
@@ -86,8 +89,6 @@ export default function TwitterSlider({ data, onlyInternalPosts }) {
             settings: {
                 slidesToShow: 1.05,
                 centerPadding: '80px 0 0',
-                // centerPadding: '50px 0 0',
-                // adaptiveHeight: true
             },
         },
         {
@@ -95,7 +96,6 @@ export default function TwitterSlider({ data, onlyInternalPosts }) {
             settings: {
                 slidesToShow: 1.05,
                 centerPadding: '50px 0 0',
-                // adaptiveHeight: true
             },
         },
         {
@@ -103,7 +103,6 @@ export default function TwitterSlider({ data, onlyInternalPosts }) {
             settings: {
                 slidesToShow: 1,
                 centerPadding: '50px 0 0',
-                // adaptiveHeight: true
             },
         },
         {
@@ -111,7 +110,6 @@ export default function TwitterSlider({ data, onlyInternalPosts }) {
             settings: {
                 slidesToShow: 1,
                 centerPadding: '20px 0 0',
-                // adaptiveHeight: true
             },
         },
     ];
@@ -166,9 +164,9 @@ export default function TwitterSlider({ data, onlyInternalPosts }) {
                     <Slider  {...settings} autoplaySpeed={autoplaySpeed}>
                         {slidesData?.map((slide, index) => (
                             <div key={index}>
-                                <div className={`relative sliderCard max-w-[360px] tabletlarge:max-w-[237px] tabletlarge:max-h-[223px]  tablet:max-w-[237px] tablet:max-h-[223px] mx-[15px] xxs:max-w-[calc(100%-40px)] `}>
+                                <div className={`relative sliderCard max-w-[360px] tabletlarge:max-w-[237px] tabletlarge:max-h-[223px] tablet:max-h-[223px] mx-[15px] xxs:max-w-[calc(100%-40px)] `}>
                                     <Link className='emptyLink' href={slide.url} target='_blank' onTouchStart={touchHandler} onTouchEnd={touchRemover}>.</Link>
-                                    <div className="imageWrap max-w-[360px] max-h-[340px] tabletlarge:max-w-[237px] tabletlarge:max-h-[223px]  tablet:max-w-[237px] tablet:max-h-[223px] sm:max-h-[240px] w-full h-full overflow-hidden">
+                                    <div className="imageWrap max-w-[360px] max-h-[340px] tabletlarge:max-w-[237px] tabletlarge:max-h-[223px] tablet:max-h-[223px] sm:max-h-[240px] w-full h-full overflow-hidden">
                                         <Image
                                             src={slide.imageSrc}
                                             width={500}
@@ -195,7 +193,7 @@ export default function TwitterSlider({ data, onlyInternalPosts }) {
                                         </div>
                                         <p className='content text-cosmos small'> {slide.desc}</p>
                                     </div>
-            
+
                                     <style jsx>{`
                                                     .content{
                                                         overflow:hidden;
