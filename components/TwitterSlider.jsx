@@ -213,7 +213,7 @@ export default function TwitterSlider({ data, onlyInternalPosts }) {
                     </Slider>
 
                 </div>
-                <div className="btnWrap mt-[38px] sm:mt-[30px] sm-up:hidden w-full max-w-[343px] mx-auto sm:px-[20px]">
+                <div className="btnWrap mt-[38px] sm:mt-[30px] sm-up:hidden w-full max-w-[343px] mx-auto sm:max-w-[calc(100%-40px)] sm:mx-[20px]">
                     <Button buttonText={data.intro.btnText} url={data.intro.btnUrl} buttonClass={data.intro.btnClass} />
                 </div>
             </div>

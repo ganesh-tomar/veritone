@@ -11,7 +11,7 @@ export default function ResourceCards({ data }) {
                     <div className="titleWrap w-[60%] ipad:w-full">
                         <h2 className="h1 pb-[25px] sm:pb-[12px]">{data.intro.title}</h2>
                     </div>
-                    <div className="btnWrap w-[15%] ipad:w-auto text-right lg:pt-[25px]">
+                    <div className="btnWrap w-[15%] ipad:w-auto text-right lg:pt-[25px] sm:w-full">
                         <Button buttonText={data.intro.btnText} url={data.intro.btnUrl} buttonClass={data.intro.btnClass} />
                     </div>
                 </div>
