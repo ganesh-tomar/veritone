@@ -2,8 +2,8 @@ export const banner = {
   title: "Content is king. We help you rule.",
   bg: "bg-cosmos",
   blurb:
-    "The demand for content is higher than it’s ever been. Now you can keep the pace with enterprise AI that empowers your teams to manage, monetize and create content more efficiently.",
-  buttonText: "Connect with us",
+    "The demand for content is higher than it’s ever been. Now you can keep pace with enterprise AI that empowers your teams to manage, monetize, and create content more efficiently.",
+  buttonText: "Get started",
   buttonClass: "default",
   buttonUrl: "/",
   bgimage: "/images/banner_second_bg.webp",
@@ -48,7 +48,7 @@ export const tabs = {
       blurb:
         "Discover a turnkey broadcast attribution solution that enables you to track near real-time data, deliver customer ROI metrics, and keep advertisers coming back.",
       btntext: "Read more",
-      btnlink: "/",
+      btnlink: "https://www.veritone.com/industries/tv/",
       imgpath: "/images/cameraman.jpeg",
       alt: "cameraman",
       imgpath2: "/images/camera.jpeg",
@@ -58,23 +58,22 @@ export const tabs = {
       logo: "/images/gray_logo.svg",
       logo_alt: "gray_logo",
       inner_title: "Gray Television",
-      inner_blurb:
-        "Learn how Gray Television used Attribution Metrics to retain ad spend and audiences.",
+      inner_blurb: "Learn how Gray Television used Veritone Attribution Metrics to retain ad spend and audiences.",
       tag1: "REAL-TIME DATA",
       tag2: "OPTIMIZATION",
       bg: "bg-ember",
       btnClass: "btn-black",
       bottom_btn_text: "View case study",
-      bottom_btn_url: "/",
+      bottom_btn_url: "https://www.veritone.com/industries/tv/#case-studies",
       bottom_link_text: "",
       bottom_link_url: "",
     },
     {
       tab_title: "Supercharge your analytics with our tools.",
       blurb:
-        "Track brand mentions, demonstrate advertising lift, and generate new revenue with our suite of AI-powered applications and services designed for radio networks and stations.",
+        "Track brand mentions, demonstrate advertising lift, and generate new revenue with our suite of AI-infused applications and services designed for radio networks and stations.",
       btntext: "Read more",
-      btnlink: "/",
+      btnlink: "https://www.veritone.com/industries/tv/",
       imgpath: "/images/woman_with_mic.png",
       alt: "woman_with_mic",
       imgpath2: "/images/aplifier_keys.png",
@@ -85,22 +84,22 @@ export const tabs = {
       logo_alt: "westwood_one",
       inner_title: "Westwood One",
       inner_blurb:
-        "Learn how our AI-powered content tracking helped Westwood One, America’s largest radio network.",
+        "Learn how AI-powered content tracking helped Westwood One, America’s largest radio network.",
       tag1: "EFFICIENCY",
       tag2: "ENGAGEMENT",
       bg: "bg-ember",
       btnClass: "btn-black",
       bottom_btn_text: "View case study",
-      bottom_btn_url: "/",
+      bottom_btn_url: "https://www.veritone.com/document/westwood-one-makes-4-hour-aircheck-searches-take-minutes/",
       bottom_link_text: "",
       bottom_link_url: "",
     },
     {
       tab_title: "Manage your archives and monetize hidden gems.",
       blurb:
-        "Get your digital archives under control and unlock innovative content – and profits – with our automation, Digital Media Hub, and licensing solutions.",
-      btntext: "Read more",
-      btnlink: "/",
+        "Get your digital archives under control and unlock innovative content – and profits – with Veritone Digital Media Hub and licensing solutions.",
+      btntext: "View case study",
+      btnlink: "https://www.veritone.com/industries/studios-production/",
       imgpath: "/images/filming.png",
       alt: "filming",
       imgpath2: "/images/screens.png",
@@ -111,22 +110,22 @@ export const tabs = {
       logo_alt: "progress",
       inner_title: "Progress",
       inner_blurb:
-        "Learn how Progress uses Digital Media Hub to monetize over 20,000 historic films.",
+        "Learn how Progress used Veritone Digital Media Hub to monetize over 20,000 historic films.",
       tag1: "METADATA",
       tag2: "LICENSING",
       bg: "bg-ember",
       btnClass: "btn-black",
       bottom_btn_text: "View case study",
-      bottom_btn_url: "/",
+      bottom_btn_url: "https://go.veritone.com/case-study-progress-monetizes-thousands-of-films-with-digital-media-hub",
       bottom_link_text: "",
       bottom_link_url: "",
     },
     {
-      tab_title: "Capture fans’ attention with innovative tools.",
+      tab_title: "Capture fan’s attention with innovative tools.",
       blurb:
         "Manage large digital libraries like never before with our AI solutions and turn what was just a memory into a modern classic.",
       btntext: "Read more",
-      btnlink: "/",
+      btnlink: "https://www.veritone.com/industries/sport/",
       imgpath: "/images/rucby.png",
       alt: "rucby",
       imgpath2: "/images/crowd.png",
@@ -137,13 +136,13 @@ export const tabs = {
       logo_alt: "sf_logo",
       inner_title: "San Francisco Giants",
       inner_blurb:
-        "Learn how San Francisco Giants used Veritone’s Digital Media Hub to bring 60 years of historical content to life.",
+        "Learn how San Francisco Giants used Veritone Digital Media Hub to bring 60 years of historical content to life.",
       tag1: "SEARCHABILITY",
       tag2: "PRESERVATION",
       bg: "bg-ember",
       btnClass: "btn-black",
       bottom_btn_text: "View case study",
-      bottom_btn_url: "/",
+      bottom_btn_url: "https://go.veritone.com/sf-giants-case-study/?_gl=1*1e0rski*_gcl_au*MTA2Mjk2MjU0OS4xNzA1MTA0OTc2",
       bottom_link_text: "",
       bottom_link_url: "",
     },
@@ -152,7 +151,7 @@ export const tabs = {
       blurb:
         "Go beyond traditional distribution channels to deliver enhanced fan and brand engagement and make every live event more valuable.",
       btntext: "Read more",
-      btnlink: "/",
+      btnlink: "https://www.veritone.com/services/live-event-services/",
       imgpath: "/images/man_filming.png",
       alt: "man_filming",
       imgpath2: "/images/man_with_camera.png",
@@ -163,13 +162,13 @@ export const tabs = {
       logo_alt: "24_logo",
       inner_title: "ADAC 24h Nürburgring",
       inner_blurb:
-        "Explore how Veritone’s Digital Media Hub, integrated with the aiWARE Enterprise AI platform, acted as a central hub for media and content from the race.",
-      tag1: "ASSET MANAGEMENT",
-      tag2: "COST REDUCTION",
+        "Explore how Veritone Digital Media Hub acted as a central hub for media and content from the race.",
+      tag1: "DATA ACCESSIBILITY",
+      tag2: "IN-DEPTH INSIGHTS",
       bg: "bg-ember",
       btnClass: "btn-black",
       bottom_btn_text: "View case study",
-      bottom_btn_url: "/",
+      bottom_btn_url: "https://go.veritone.com/veritone-and-partners-activate-24-hours-of-action-packed-live-racing/p/1?_gl=1*c2yken*_gcl_au*MTA2Mjk2MjU0OS4xNzA1MTA0OTc2",
       bottom_link_text: "",
       bottom_link_url: "",
     },
@@ -376,31 +375,31 @@ export const introWithAccordionData1 = {
   forewardImage: "/images/IntroWithAccordion/shutterstock.png",
   borderBottom: true,
   intro: {
-    title: "Redefine media management and unlock deeper content intelligence",
+    title: "Redefine media management and unlock deeper content intelligence.",
     blurb:
       "Veritone helps you streamline your workflows so you can find, create, and utilize content more efficiently and unlock valuable insights — everything from enriching metadata to pinpointing quality content in a matter of minutes.",
     btnText: "Learn more",
     btnClass: "btn-black",
-    btnLink: "/",
+    btnLink: "https://www.veritone.com/solutions/media-management-monetization/",
   },
   accordionData: [
     {
       id: 1,
-      heading: "Go from scattered to simplified.",
+      heading: "Go from scattered to simplified",
       paragraph:
-        "Automatically locate, sort, and organize your digital audio, and media files from wherever they are with enhanced, AI-powered metadata tagging and digital asset management",
+        "Automatically locate, sort, and organize your digital audio and media files from wherever they are with enhanced, AI-powered metadata tagging and digital asset management.",
     },
     {
       id: 2,
       heading: "Plug in powerful efficiencies",
       paragraph:
-        "2 Automatically locate, sort, and organize your digital audio, and media files from wherever they are with enhanced, AI-powered metadata tagging and digital asset management, AI-powered metadata tagging and digital asset management",
+        "Seamlessly integrate powerful AI workflows into your existing business apps and processes with Veritone’s intuitive drag-and-drop platform.",
     },
     {
       id: 3,
-      heading: "You do less, your content does more.",
+      heading: "You do less, your content does more",
       paragraph:
-        "3 Automatically locate, sort, and organize your digital audio, and media files from wherever they are with enhanced, AI-powered metadata tagging and digital asset management",
+        "With Veritone AI on your side, you can spend less time sorting and searching and more time creating and sharing, which audiences and stakeholders will love.",
     },
   ],
 };
@@ -411,8 +410,7 @@ export const introWithAccordionData2 = {
   borderBottom: true,
   intro: {
     title: "Reimagine content creation and innovation.",
-    blurb:
-      "It’s a new world — with new, generative AI solutions, you can take content and audiences places they’ve never been.",
+    blurb: "It’s a new world — with new, generative AI solutions, you can take content and audiences places they’ve never been.",
     btnText: "Learn more",
     btnClass: "btn-black",
     btnLink: "/",
@@ -428,13 +426,13 @@ export const introWithAccordionData2 = {
       id: 2,
       heading: "The (content) world is your oyster",
       paragraph:
-        "2 Automatically locate, sort, and organize your digital audio, and media files from wherever they are with enhanced, AI-powered metadata tagging and digital asset management",
+        "With innovative AI solutions, there are no more limits to what you can make — or your creativity.",
     },
     {
       id: 3,
       heading: "Share assets easier than ever",
       paragraph:
-        "3 Automatically locate, sort, and organize your digital audio, and media files from wherever they are with enhanced, AI-powered metadata tagging and digital asset management",
+        "Streamline delivery, publish faster, and distribute everywhere with AI-powered tools that get the right content to the right people, ASAP.",
     },
   ],
 };
@@ -449,7 +447,7 @@ export const introWithAccordionData3 = {
       "Connect with people on a new level with seamless content creation that counts.",
     btnText: "Learn more",
     btnClass: "btn-black",
-    btnLink: "/",
+    btnLink: "https://www.veritone.com/solutions/media-management-monetization/",
   },
   accordionData: [
     {
@@ -462,13 +460,13 @@ export const introWithAccordionData3 = {
       id: 2,
       heading: "Turn fans into fanatics",
       paragraph:
-        "2 Automatically locate, sort, and organize your digital audio, and media files from wherever they are with enhanced, AI-powered metadata tagging and digital asset management",
+        "With Veritone’s AI solutions, you can create quality content faster, upload quicker, and deliver bonus-level content at just the right time, giving true fans something to cheer about.",
     },
     {
       id: 3,
       heading: "Give your supply chain a redo",
       paragraph:
-        "3 Automatically locate, sort, and organize your digital audio, and media files from wherever they are with enhanced, AI-powered metadata tagging and digital asset management",
+        "By modernizing your process with AI, you can create, manage, distribute, and monetize — making the most of your assets every time.",
     },
   ],
 };
@@ -478,12 +476,12 @@ export const introWithAccordionData4 = {
   forewardImage: "/images/IntroWithAccordion/screens.png",
   borderBottom: false,
   intro: {
-    title: "Rediscover new ways to extend reach and revenue",
+    title: "Rediscover new ways to extend reach and revenue.",
     blurb:
       "Broaden the reach and impact of live-event broadcasts, curate personalized and localized viewer or listener experiences, and reimagine the potential of your digital archives across all channels.",
     btnText: "Learn more",
     btnClass: "btn-black",
-    btnLink: "/",
+    btnLink: "https://www.veritone.com/solutions/media-management-monetization/",
   },
   accordionData: [
     {
@@ -496,63 +494,67 @@ export const introWithAccordionData4 = {
       id: 2,
       heading: "Turn your content into a monetization machine",
       paragraph:
-        "2 Automatically locate, sort, and organize your digital audio, and media files from wherever they are with enhanced, AI-powered metadata tagging and digital asset management",
+        "Leverage a dedicated media marketplace to offer premiere licensing opportunities spanning film, media, sports, television, and more.",
     },
     {
       id: 3,
       heading: "Deepen your listening and engagement with audiences",
-      paragraph:
-        "3 Automatically locate, sort, and organize your digital audio, and media files from wherever they are with enhanced, AI-powered metadata tagging and digital asset management",
+      paragraph: "Generate more robust content insights and data around who’s watching, listening, and engaging with your content.",
     },
   ],
 };
 
 export const accordionData = {
-  title: "Make it happen with AI’s most innovative solutions.",
+  intro: {
+    title: "Make it happen with AI’s most innovative solutions.",
+    btnText: "Show more",
+    btnClass: "btn-black",
+    btnLink: "/",
+  },
   items: [
     {
       id: 1,
       heading: "AI Digital Asset Management",
       icon: "/images/icons/cog.svg",
       paragraph:
-        "Generate more revenue from your content with Veritone Digital Media Hub, an AI-powered asset management and monetization solution. Digital Media Hub helps you easily tag and manage your assets as well as create new revenue streams with robust e-commerce capabilities.",
+        "Generate more revenue from your content with Veritone Digital Media Hub, an AI-powered asset management and monetization solution. Digital Media Hub helps you easily tag and manage your assets as well as create new revenue streams with robust e-commerce capabilities.        ",
       tag1: "Media Management",
       tag2: "Digital Media Hub",
       btnText: "Read more",
-      btnLink: "/",
+      btnLink: "https://www.veritone.com/applications/digital-media-hub/",
     },
     {
       id: 2,
       heading: "Near-real-time broadcast advertising attribution",
       icon: "/images/icons/increament_sign.svg",
       paragraph:
-        "Generate more revenue from your content with Veritone Digital Media Hub, an AI-powered asset management and monetization solution. Digital Media Hub helps you easily tag and manage your assets as well as create new revenue streams with robust e-commerce capabilities.",
+        "Veritone Attribute is a turnkey broadcast attribution solution that enables you to optimize your linear TV and radio campaigns by correlating an ad with web lift in near-real-time. With Attribute, you can track and visualize campaign data, tying it to the response advertisers receive through increased web traffic and unique website visitors.",
       tag1: "Advertising Content Intelligence",
       tag2: "Attribute",
       btnText: "Read more",
-      btnLink: "/",
+      btnLink: "https://www.veritone.com/applications/attribute/",
     },
     {
       id: 3,
       heading: "Content licensing for rights holders and buyers",
       icon: "/images/icons/badge.svg",
       paragraph:
-        "Lorem ipsum dolor sit amet consectetur. Pharetra dictum faucibus proin turpis sit. Tortor amet sit nunc libero non nec suscipit volutpat in. Viverra adipiscing dolor amet vitae. Malesuada vitae consectetur.",
+        "Veritone licensing services enable content rights holders to manage, monetize, and amplify image, video, and audio assets by leveraging Veritone’s Enterprise AI technology. We also empower content creators to license content with hands-on project management, and rights and clearance expertise.",
       tag1: "Media Monetization",
       tag2: "License",
       btnText: "Read more",
-      btnLink: "/",
+      btnLink: "https://www.veritone.com/services/content-licensing-monetization/",
     },
     {
       id: 4,
       heading: "A powerful Advertising Content Intelligence tool",
       icon: "/images/icons/bulb.svg",
       paragraph:
-        "Lorem ipsum dolor sit amet consectetur. Pharetra dictum faucibus proin turpis sit. Tortor amet sit nunc libero non nec suscipit volutpat in. Viverra adipiscing dolor amet vitae. Malesuada vitae consectetur.",
-      tag1: "Broadcast Content Tools",
-      tag2: "Discovery",
+        "Veritone offers natural language processing, transcription, and recognition technology to identify logos, on-screen text, faces, and other identifiable assets. Powered by aiWARE™, Veritone Discovery lets you easily search live broadcasts, pre-recorded programs, and other large media libraries in near real-time.",
+      tag1: "BROADCAST INSIGHTS",
+      tag2: "DISCOVERY",
       btnText: "Read more",
-      btnLink: "/",
+      btnLink: "https://www.veritone.com/applications/discovery/",
     },
   ],
 };
@@ -576,14 +578,14 @@ export const colTwoCards = {
       icon: "star_white.svg",
       title: "Media expertise at the ready",
       buttonText: "Discover Veritone One",
-      buttonUrl: "/",
+      buttonUrl: "https://www.veritoneone.com/",
       cardBg: "bg-ember",
     },
     {
       icon: "contact.svg",
       title: "Production talent-hiring made easy",
       buttonText: "Veritone Talent Acquisition",
-      buttonUrl: "/",
+      buttonUrl: "https://www.veritone.com/solutions/recruitment/",
       cardBg: "bg-riptideWeb",
     },
   ],
@@ -593,7 +595,7 @@ export const resourceCards = {
   intro: {
     title: "Media-savvy resources.",
     btnText: "View all",
-    btnUrl: "/",
+    btnUrl: "https://www.veritone.com/industries/media-entertainment/#resources",
     btnClass: "black-border-btn",
   },
   cards: [
@@ -601,7 +603,7 @@ export const resourceCards = {
       imagePath: "/images/speaker_setups.png",
       url:'#',
       imageName: "speaker_setups",
-      heading: "Bonneville Seattle earns key business with Attribute",
+      heading: "Bonneville Seattle earns key business with Attribute.",
       blurb:
         "Listeners in Seattle rely on radio, and Veritone helped them prove value and reach to their advertisers.",
       type: "Case Study",
@@ -612,7 +614,7 @@ export const resourceCards = {
       imageName: "board_keys",
       heading: "Veritone Uplift Study tracking 250+ campaigns",
       blurb:
-        "Learn how attribution with AI can lift broadcast TV and radio advertising.",
+        "Learn how attribution with AI can boost broadcast TV and radio advertising.",
       type: "Report",
     },
     {
@@ -630,10 +632,10 @@ export const resourceCards = {
 export const footerCta = {
   title: "Transform your content with innovative solutions.",
   description:
-    "Ready for proven, trusted enterprise AI solutions that turn possibilities into profits, deliver better results, and make your people better than ever before? Let’s talk.",
+    "Ready to join other leaders across media, sports, and broadcast in turning possibilities into profits, automating processes, and helping your team excel like never before?",
   btnText1: "Schedule a free demo",
   btnClass1: "default",
-  btnUrl1: "/",
+  btnUrl1: "https://www.veritone.com/careers/contact-us/",
   btnText2: "",
   btnClass2: "",
   btnUrl2: "",

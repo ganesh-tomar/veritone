@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import style from '../styles/accordion.module.css'
 import Button from "./button/Button";
-
+import Intro from "./Intro";
 const AccordionItem = ({ id, heading, paragraph, icon, tag1, tag2, btnText, btnLink, toggleAccordion }) => {
     // console.log(tag1);
     return (
@@ -104,6 +104,7 @@ const Accordion = ({ data }) => {
                     <div className="w-full">
                         <div className="accordion_wrap relative w-full">
                             <h2 className="mb-[48px]">{data.title}</h2>
+                            <Intro data={data.intro} />
                             <div className={`relative w-full`}>
                                 {data?.items?.map((accordionItem) => (
                                     <AccordionItem
