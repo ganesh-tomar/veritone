@@ -629,6 +629,7 @@ export const resourceCards = {
   ],
 };
 
+
 export const footerCta = {
   title: "Transform your content with innovative solutions.",
   description:
