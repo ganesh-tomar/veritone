@@ -88,10 +88,11 @@ const Tabs = ({ tab, tab_content, bg, tabBg, pt }) => {
                         <div className={`inner-content-wrap`}>
                           <h3>{item.inner_title} </h3>
                           <p className={`max-w-[485px] laptop-landscape:max-w-[700px] pt-[14px]`}>{item.inner_blurb} </p>
-                          <ul className={`flex pt-[5px] sm:flex-wrap`}>
+                          {(item.tag1 && item.tag2) && <ul className={`flex pt-[5px] sm:flex-wrap`}>
                             <li className={`relative`}><h6>{item.tag1}</h6></li>
                             <li className={`relative`}><h6>{item.tag2}</h6></li>
-                          </ul>
+                          </ul>}
+
                           <div className={`btn-wrap ${styles.btn_wrap} pt-[27px]`}>
                             <Button buttonClass={`${item.btnClass} mr-[23px] sm:mr-[0]`} buttonText={`${item.bottom_btn_text}`} url={`${item.bottom_btn_url}`} />
                             {item.bottom_link_url && (<Button buttonClass={`text-link-white sm:mt-[20px]`} buttonText={`${item.bottom_link_text}`} url={`${item.bottom_link_url}`} />)}

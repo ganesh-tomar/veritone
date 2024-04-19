@@ -19,8 +19,8 @@ export default function ColTwoCards({ data }) {
                 </div>
             </div>
             <div className="max-w-[1546px] relative mx-auto w-full mt-[38px] px-[20px]">
-                <div className="outer w-[calc(100%+22px)] left-0 top-0 ml-[-11px] flex flex-wrap lg:w-full lg:ml-0 lg:block">
-                    <div className="relative w-[calc(50%-22px)] lg-up:flex lg-up:flex-wrap lg-up:flex-col lg-up:justify-between mx-[11px] lg:w-full lg:mx-0">
+                <div className="outer w-[calc(100%+22px)] left-0 top-0 ml-[-11px] flex flex-wrap lg:w-full lg:ml-0 lg:block lg-up:h-[550px]">
+                    <div className="relative w-[calc(50%-22px)] lg:mb-[20px] lg-up:flex lg-up:flex-wrap lg-up:flex-col lg-up:justify-between mx-[11px] lg:w-full lg:mx-0">
                         <div className="imageWrap w-full max-h-[430px] h-full lg:max-h-[227px] lg:h-[227px]">
                             <Image className={`w-full h-full object-cover`} src={`/images/card_a.png`} alt={`card_a`} width={1000} height={1000} />
                         </div>
@@ -36,7 +36,25 @@ export default function ColTwoCards({ data }) {
                             </div>
                         </div>
                     </div>
-                    <div className="w-[calc(50%-22px)] mx-[11px] lg:w-full lg:mx-0">
+                    {
+                        data.imageCard2 && <div className="relative w-[calc(50%-22px)] lg-up:flex lg-up:flex-wrap lg-up:flex-col lg-up:justify-between mx-[11px] lg:w-full lg:mx-0">
+                            <div className="imageWrap w-full max-h-[430px] h-full lg:max-h-[227px] lg:h-[227px]">
+                                <Image className={`w-full h-full object-cover`} src={`/images/card_a.png`} alt={`card_a`} width={1000} height={1000} />
+                            </div>
+                            <div className="yellow_card absolute bottom-0 left-0 w-full pt-[54px] pl-[53px] pr-[120px] pb-[58px] flex bg-lightning desktopMid:pr-[30px] laptopmid:pr-[38px] laptop:pr-[38px] laptop:pl-[38px] tablet:px-[38px] tablet:py-[38px] md:px-[15px] md:py-[30px] lg:relative lg:bottom-auto lg:left-auto md:flex-wrap">
+                                <div className="imageWrap w-full max-w-[50px] max-h-[50px] h-full xl:max-w-[44px] xl:max-h-[44px] md:mb-[20px]">
+                                    <Image className={`w-full h-full object-cover`} src={data.imageCard.icon} alt={data.imageCard.iconName} width={1000} height={1000} />
+                                </div>
+                                <div className="content w-[calc(100%-50px)] pl-[23px] xl:w-[calc(100%-44px)] md:w-full md:pl-0">
+                                    <h3 className="text-ellipsis leading-[1.25] line-clamp-3">{data.imageCard.title}</h3>
+                                    <div className="btn-wrap mt-[30px] md:mt-[20px]">
+                                        <Button buttonClass={`text-link-black`} buttonText={data.imageCard.buttonText} url={data.imageCard.buttonUrl} />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                    {data.cards && <div className="w-[calc(50%-22px)] mx-[11px] lg:w-full lg:mx-0">
                         {data.cards.map((card, index) => (
                             <div key={index} className="w-full h-1/2">
                                 <div className={`card pt-[54px] pl-[53px] h-full pr-[120px] pb-[58px] flex desktopMid:pr-[30px] laptopmid:pr-[38px]  laptop:pr-[38px] laptop:pl-[38px]  tablet:px-[38px] tablet:py-[38px] md:px-[15px] md:py-[30px] md:flex-wrap ${card.cardBg}`}>
@@ -58,7 +76,8 @@ export default function ColTwoCards({ data }) {
                                 </div>
                             </div>
                         ))}
-                    </div>
+                    </div>}
+
 
                 </div>
             </div>
