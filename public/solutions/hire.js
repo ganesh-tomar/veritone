@@ -144,7 +144,7 @@ export const hireBanner = {
   
   export const hireTwitterSliderData = {
     intro: {
-      title: "What’s new in the Public Sector",
+      title: "What’s new in Hiring",
       btnText: "View all",
       btnUrl: "/",
       btnClass: "black-border-btn",
@@ -448,188 +448,187 @@ export const hireBanner = {
     ],
   };
   
-  export const hireAccordionData = {
-    intro: {
-      title: "Hiring solutions made for you.    ",
-      blurb: "Veritone’s team of experts is available to help your organization integrate and apply AI to solve your unique challenges in a bespoke way.      ",
-      // btnText: "Show more",
-      // btnClass: "btn-black",
-      // btnLink: "/",
-    },
-    items: [
-      {
-        id: 1,
-        heading: "A centralized intelligent digital evidence management suite.",
-        icon: "/images/icons/cog.svg",
-        paragraph:
-          "Discover an intelligent digital evidence management system that helps your team seamlessly access, search, manage, organize, and share digital evidence all within one powerful suite. Veritone iDEMS is made up of five Veritone applications to accelerate investigations, protect the integrity of cases, and improve overall legal processes.           ",
-        tag1: "INTELLIGENT DIGITAL EVIDENCE MANAGEMENT SYSTEM",
-        tag2: "iDEMS",
-        btnText: "Learn More",
-        btnLink: "/",
-      },
-      {
-        id: 2,
-        heading: "Organize and share evidence faster with an intelligent evidence hub        ",
-        icon: "/images/icons/increament_sign.svg",
-        paragraph:
-          "Leverage best-of-breed AI models that help expedite the analysis and investigation process with Veritone Investigate. Located at the heart of the Veritone IDEMS suite, this application acts as a central hub where your agency can store all of its digital evidence from disparate locations — making it easier to organize, share with internal and external organizations, and connect to other downstream workflows such redaction and tracking of persons of interests, just to name a few.          ",
-        tag1: "INTELLIGENT DIGITAL EVIDENCE HUB",
-        tag2: "INVESTIGATE",
-        btnText: "Learn More",
-        btnLink: "/",
-      },
-      {
-        id: 3,
-        heading: "Sensitive data redaction across audio and video files.        ",
-        icon: "/images/icons/badge.svg",
-        paragraph:
-          "Maximize efficiency and resource allocation with Veritone Redact, an AI-driven software solution that automates the redaction of sensitive data from audio, video, and image-based evidence, saving both time and costs. Veritone Redact and Redaction Managed Service allow law enforcement agencies and legal organizations to focus on what truly matters while safeguarding confidentiality and meeting legal and public records request deadlines.",
-        tag1: "AUTOMATED REDACTION",
-        tag2: "REDACT",
-        btnText: "Learn More",
-        btnLink: "/",
-      },
-      {
-        id: 4,
-        heading: "Secure, AI-driven video analysis.        ",
-        icon: "/images/icons/bulb.svg",
-        paragraph:
-          "Employ AI models that prioritize confidence-based similarity scores rather than biometric or facial recognition, ensuring proper oversight and protection in investigative processes. Veritone Tracker makes individual tracking across videos easier and more efficient, enabling teams to identify persons of interest without compromising personally identifiable information.          ",
-        tag1: "FIND PERSONS OF INTEREST",
-        tag2: "TRACKER",
-        btnText: "Learn more",
-        btnLink: "/",
-      },
-      {
-        id: 5,
-        heading: "Streamline case investigations and clearances with relevant data.         ",
-        icon: "/images/icons/bulb.svg",
-        paragraph:
-          "Rapidly and affordably search, analyze, and explore vast Electronically Stored Information (ESI) datasets, including audio, video, and text-based documents. Veritone Illuminate empowers public safety and justice agencies and eDiscovery teams to expedite early case assessment and disclosure workflows, allowing these teams to meet caseload demands without compromising compliance or security.          ",
-        tag1: "AI-DRIVEN EDISCOVERY",
-        tag2: "ILLUMINATE",
-        btnText: "Learn more",
-        btnLink: "/",
-      },
-      {
-        id: 6,
-        heading: "Automate the collection and reporting of RIPA-compliant stop data information.        ",
-        icon: "/images/icons/bulb.svg",
-        paragraph:
-          "Maximize officer efficiency, save time, and reduce expenses with Veritone Contact, an intelligent, in-the-field stop data collection and reporting application designed for California AB 953 Racial Identity and Profiling Act (RIPA) compliance.          ",
-        tag1: "STOP DATA COLLECTION",
-        tag2: "CONTACT",
-        btnText: "Learn more",
-        btnLink: "https://www.veritone.com/applications/contact/",
-      },
-      {
-        id: 7,
-        heading: "Find and identify persons of interest      ",
-        icon: "/images/icons/bulb.svg",
-        paragraph:
-          "Leverage your booking database's potential to accelerate suspect lead identification and raise case clearance rates while safeguarding personally identifiable information. With Veritone IDentify, your team can identify subjects with greater speed, accuracy, and efficiency, and take action on gathered intelligence in a fraction of the time.          ",
-        tag1: "SUSPECT IDENTIFICATION",
-        tag2: "IDENTIFY",
-        btnText: "Learn more",
-        btnLink: "https://www.veritone.com/applications/identify/",
-      },
-      {
-        id: 8,
-        heading: "Discover a better way to manage your media library.        ",
-        icon: "/images/icons/bulb.svg",
-        paragraph:
-          "Streamline asset tagging and management while optimizing data for faster discovery through powerful machine-learning features with Veritone Digital Media Hub — perfect for educational organizations and public agencies with large libraries of current and archived content.          ",
-        tag1: "MEDIA MANAGEMENT",
-        tag2: "DIGITAL MEDIA HUB",
-        btnText: "Learn more",
-        btnLink: " https://www.veritone.com/applications/digital-media-hub/",
-      },
-      {
-        id: 9,
-        heading: "Transform the way you hire with programmatic job advertising.        ",
-        icon: "/images/icons/bulb.svg",
-        paragraph:
-          "Putting together the best team to achieve your organization’s goals and objectives is no small task. Thankfully, Veritone Programmatic can optimize, automate, and source the best candidates so you can spend less time searching and more time connecting.          ",
-        tag1: "AI-POWERED CANDIDATE SOURCING",
-        tag2: "VERITONE HIRE",
-        btnText: "Learn more",
-        btnLink: "/",
-      },
-    ],
-  };
+  // export const hireAccordionData = {
+  //   intro: {
+  //     title: "Hiring solutions made for you.    ",
+  //     blurb: "Veritone’s team of experts is available to help your organization integrate and apply AI to solve your unique challenges in a bespoke way.      ",
+  //     btnText: "Show more",
+  //     btnClass: "btn-black",
+  //     btnLink: "/",
+  //   },
+  //   items: [
+  //     {
+  //       id: 1,
+  //       heading: "A centralized intelligent digital evidence management suite.",
+  //       icon: "/images/icons/cog.svg",
+  //       paragraph:
+  //         "Discover an intelligent digital evidence management system that helps your team seamlessly access, search, manage, organize, and share digital evidence all within one powerful suite. Veritone iDEMS is made up of five Veritone applications to accelerate investigations, protect the integrity of cases, and improve overall legal processes.           ",
+  //       tag1: "INTELLIGENT DIGITAL EVIDENCE MANAGEMENT SYSTEM",
+  //       tag2: "iDEMS",
+  //       btnText: "Learn More",
+  //       btnLink: "/",
+  //     },
+  //     {
+  //       id: 2,
+  //       heading: "Organize and share evidence faster with an intelligent evidence hub        ",
+  //       icon: "/images/icons/increament_sign.svg",
+  //       paragraph:
+  //         "Leverage best-of-breed AI models that help expedite the analysis and investigation process with Veritone Investigate. Located at the heart of the Veritone IDEMS suite, this application acts as a central hub where your agency can store all of its digital evidence from disparate locations — making it easier to organize, share with internal and external organizations, and connect to other downstream workflows such redaction and tracking of persons of interests, just to name a few.          ",
+  //       tag1: "INTELLIGENT DIGITAL EVIDENCE HUB",
+  //       tag2: "INVESTIGATE",
+  //       btnText: "Learn More",
+  //       btnLink: "/",
+  //     },
+  //     {
+  //       id: 3,
+  //       heading: "Sensitive data redaction across audio and video files.        ",
+  //       icon: "/images/icons/badge.svg",
+  //       paragraph:
+  //         "Maximize efficiency and resource allocation with Veritone Redact, an AI-driven software solution that automates the redaction of sensitive data from audio, video, and image-based evidence, saving both time and costs. Veritone Redact and Redaction Managed Service allow law enforcement agencies and legal organizations to focus on what truly matters while safeguarding confidentiality and meeting legal and public records request deadlines.",
+  //       tag1: "AUTOMATED REDACTION",
+  //       tag2: "REDACT",
+  //       btnText: "Learn More",
+  //       btnLink: "/",
+  //     },
+  //     {
+  //       id: 4,
+  //       heading: "Secure, AI-driven video analysis.        ",
+  //       icon: "/images/icons/bulb.svg",
+  //       paragraph:
+  //         "Employ AI models that prioritize confidence-based similarity scores rather than biometric or facial recognition, ensuring proper oversight and protection in investigative processes. Veritone Tracker makes individual tracking across videos easier and more efficient, enabling teams to identify persons of interest without compromising personally identifiable information.          ",
+  //       tag1: "FIND PERSONS OF INTEREST",
+  //       tag2: "TRACKER",
+  //       btnText: "Learn more",
+  //       btnLink: "/",
+  //     },
+  //     {
+  //       id: 5,
+  //       heading: "Streamline case investigations and clearances with relevant data.         ",
+  //       icon: "/images/icons/bulb.svg",
+  //       paragraph:
+  //         "Rapidly and affordably search, analyze, and explore vast Electronically Stored Information (ESI) datasets, including audio, video, and text-based documents. Veritone Illuminate empowers public safety and justice agencies and eDiscovery teams to expedite early case assessment and disclosure workflows, allowing these teams to meet caseload demands without compromising compliance or security.          ",
+  //       tag1: "AI-DRIVEN EDISCOVERY",
+  //       tag2: "ILLUMINATE",
+  //       btnText: "Learn more",
+  //       btnLink: "/",
+  //     },
+  //     {
+  //       id: 6,
+  //       heading: "Automate the collection and reporting of RIPA-compliant stop data information.        ",
+  //       icon: "/images/icons/bulb.svg",
+  //       paragraph:
+  //         "Maximize officer efficiency, save time, and reduce expenses with Veritone Contact, an intelligent, in-the-field stop data collection and reporting application designed for California AB 953 Racial Identity and Profiling Act (RIPA) compliance.          ",
+  //       tag1: "STOP DATA COLLECTION",
+  //       tag2: "CONTACT",
+  //       btnText: "Learn more",
+  //       btnLink: "https://www.veritone.com/applications/contact/",
+  //     },
+  //     {
+  //       id: 7,
+  //       heading: "Find and identify persons of interest      ",
+  //       icon: "/images/icons/bulb.svg",
+  //       paragraph:
+  //         "Leverage your booking database's potential to accelerate suspect lead identification and raise case clearance rates while safeguarding personally identifiable information. With Veritone IDentify, your team can identify subjects with greater speed, accuracy, and efficiency, and take action on gathered intelligence in a fraction of the time.          ",
+  //       tag1: "SUSPECT IDENTIFICATION",
+  //       tag2: "IDENTIFY",
+  //       btnText: "Learn more",
+  //       btnLink: "https://www.veritone.com/applications/identify/",
+  //     },
+  //     {
+  //       id: 8,
+  //       heading: "Discover a better way to manage your media library.        ",
+  //       icon: "/images/icons/bulb.svg",
+  //       paragraph:
+  //         "Streamline asset tagging and management while optimizing data for faster discovery through powerful machine-learning features with Veritone Digital Media Hub — perfect for educational organizations and public agencies with large libraries of current and archived content.          ",
+  //       tag1: "MEDIA MANAGEMENT",
+  //       tag2: "DIGITAL MEDIA HUB",
+  //       btnText: "Learn more",
+  //       btnLink: " https://www.veritone.com/applications/digital-media-hub/",
+  //     },
+  //     {
+  //       id: 9,
+  //       heading: "Transform the way you hire with programmatic job advertising.        ",
+  //       icon: "/images/icons/bulb.svg",
+  //       paragraph:
+  //         "Putting together the best team to achieve your organization’s goals and objectives is no small task. Thankfully, Veritone Programmatic can optimize, automate, and source the best candidates so you can spend less time searching and more time connecting.          ",
+  //       tag1: "AI-POWERED CANDIDATE SOURCING",
+  //       tag2: "VERITONE HIRE",
+  //       btnText: "Learn more",
+  //       btnLink: "/",
+  //     },
+  //   ],
+  // };
 
   export const hireColTwoCards = {
     intro: {
-      title: "AI-powered services to help your team keep up with high demands.      ",
+      title: "Hiring solutions made for you.",
       blurb:
-        "From developing custom AI workflows to keeping up with FOIA demands, there’s a Veritone solution for nearly every part of your organization’s workflow.        ",
+        "Veritone’s team of experts is available to help your organization integrate and apply AI to solve your unique challenges in a bespoke way.        ",
     },
     imageCard: {
-      image: "card_a.png",
+      image: "/images/hire/AI-solutions.jpg",
       icon: "/images/icons/pencil.svg",
       iconName: "pencil",
-      title: "Personalized AI services that meet your needs",
+      title: "AI solutions and services, personalized",
       buttonText: "Professional Services",
-      buttonUrl: "https://unlock.veritone.com/ps-pro-serv-contact-us      ",
+      buttonUrl: "https://unlock.veritone.com/ps-pro-serv-contact-us",
     },
     imageCard2: {
-        image: "card_a.png",
+        image: "/images/hire/connect.jpg",
         icon: "/images/icons/pencil.svg",
         iconName: "pencil",
-        title: "On-demand audio and video redaction",
-        buttonText: "Redact Managed Service",
-        buttonUrl: "https://www.veritone.com/services/redaction-managed-service/",
+        title: "Connect with us in person",
+        buttonText: "Veritone Hire Events",
+        buttonUrl: "/",
       },
-   
   };
   
   export const hireResourceCards = {
     intro: {
-      title: "Stay in the know.",
+      title: "Hiring-Savvy resources",
       btnText: "View all",
       btnUrl: "/",
       btnClass: "black-border-btn",
     },
     cards: [
       {
-        imagePath: "/images/speaker_setups.png",
-        url:'https://go.veritone.com/case-study-reduce-document-review/p/1         ',
+        imagePath: "/images/hire/resource_1.jpg",
+        url:'https://www.broadbean.com/uk/resources/whitepapers/stagnation-or-stimulation-fall-in-interest-rates-key-to-business-prosperity-in-2024/       ',
         imageName: "speaker_setups",
-        heading: "TransPerfect Legal Solutions reduces document review size by 65%.        ",
+        heading: "Stagnation or Stimulation?        ",
         blurb:
-          "Read how AI-based legal transcription software helped a global leader in legal technology quickly and efficiently analyze, translate, and transcribe ESI.",
-        type: "Case Study",
+          "Fall in interest rates key to business prosperity in 2024, Despite a cooling job market, vacancies remain close to a million, up from pre-pandemic levels but down 27% from 2022’s peak.          ",
+        type: "Whitepaper",
       },
       {
-        imagePath: "/images/board_keys.png",
-        url:'#',
+        imagePath: "/images/hire/resource_2.jpg",
+        url:'https://www.veritone.com/blog/job-application-tracking-in-a-cookie-less-world/         ',
         imageName: "board_keys",
-        heading: "Law Enforcement Transparency & Trust Report",
+        heading: "Job Application tracking in a cookie-less world",
         blurb:
-          "Learn about the American public’s trust in, attitudes toward, and expectations of police and how technology can bolster positive sentiments.",
-        type: "Report",
+          "Veritone addresses this challenge by developing a cookie-less approach for programmatic job advertising, utilizing browser fingerprinting for accurate tracking.          ",
+        type: "Blog",
       },
       {
-        imagePath: "/images/person_mices.png",
-        url:'#',
+        imagePath: "/images/hire/resource_3.png",
+        url:'https://www.broadbean.com/uk/resources/blog/latest-news/unlocking-the-power-of-programmatic-your-guide-to-future-proof-recruitment/         ',
         imageName: "person_mices",
-        heading: "Intelligent Digital Evidence Redaction",
+        heading: "Unlock the power of programmatic",
         blurb:
-          "Discover how your team can expedite redaction processes and protect PII with  AI-driven redaction for video and audio files.          ",
-        type: "whitepaper",
+          "In the ever-evolving landscape of recruitment advertising, staying ahead of the curve is not just an advantage but a necessity"          ,
+        type: "Blog",
       },
     ],
   };
   
   
   export const hireFooterCta = {
-    title: "Help your team get back to what truly matters with powerful AI solutions.",
+    title: "Ready for AI that helps you find more great people?     ",
     description:
-      "With Veritone’s AI solutions for government agencies and legal and education organizations, your team can spend fewer hours facing process pain points and focus on what matters most — helping others.      ",
-    btnText1: "Let’s join forces",
+      "No matter the job advertising method, the hiring challenge, or the company size, Veritone Hire has a solution for you.      ",
+    btnText1: "Get started",
     btnClass1: "default",
-    btnUrl1: "/",
+    btnUrl1: "https://unlock.veritone.com/hire-contact-us    ",
     btnText2: "",
     btnClass2: "",
     btnUrl2: "",

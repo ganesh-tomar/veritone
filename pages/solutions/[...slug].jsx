@@ -67,7 +67,7 @@ const Home = () => {
 				<IntroWithAccordion data={hireIntroWithAccordionData3} pt='padding-medium-top' pb='no-padding-bottom' />
 				<IntroWithAccordion data={hireIntroWithAccordionData4} reverse={"true"} pt='padding-medium-top' pb='padding-medium-bottom' />
 				<Tabs data={hireTabs} />
-				<Accordion data={hireAccordionData} />
+				{/* <Accordion data={hireAccordionData} /> */}
 				<ColTwoCards data={hireColTwoCards} />
 				<ResourceCards data={hireResourceCards} />
 				<TwitterSlider data={hireTwitterSliderData} onlyInternalPosts={true} />
