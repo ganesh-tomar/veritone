@@ -167,7 +167,7 @@ const StickyNav = (props) => {
                 return <div key={index}
 
                   className={`${activeIndex === index ? style.active : ''} ${style.navItem} navItem md:border-[2px] md:border-cosmos
-                  w-[calc(25%-20px)] mx-[5px] max-w-[233px] xxl-up:pr-[8px] desktopMid:pr-[8px] pr-[30px] laptopsmall:pr-[43px] lg:pr-0 md:w-[calc(50%-10px)] md:p-0 md:mb-[10px] md:flex md:items-center md:justify-center md:max-w-full md:text-center rounded-lg`}>
+                  w-[calc(25%-20px)] mx-[5px] max-w-[233px] lg:pr-0 md:w-[calc(50%-10px)] md:p-0 md:mb-[10px] md:flex md:items-center md:justify-center md:max-w-full md:text-center rounded-lg`}>
                   <Link className={`md:p-[26px]`} href={`#${data.link}`} onClick={(e) => handleStickyClick(e, data.link, index)}>
                     <h4 className='relative inline-block text-cosmos md:text-[18px]'>
                       {winWidth > 767 ? data.heading : data.phoneHeading}
@@ -175,7 +175,7 @@ const StickyNav = (props) => {
                     {
                       winWidth > 767 ? (
                         <div>
-                          <p className='xl-up:text-[30px] pt-[5px] leading-[1.11]'>
+                          <p className='xl-up:text-[30px] pt-[5px] leading-[1.11] truncate h-[108px] laptopsmall:h-[80px] tabletlarge:h-[85px] tablet:h-[85px] line-clamp-3 whitespace-normal'>
                             {data.blurb}
                           </p>
                           <div className={`${style.arrow}`}>
