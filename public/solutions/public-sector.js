@@ -362,8 +362,8 @@ export const publicBanner = {
   
   export const publicIntroWithAccordionData1 = {
     id: "aggregate",
-    backwardImage: "/images/IntroWithAccordion/person-image.png",
-    forewardImage: "/images/IntroWithAccordion/shutterstock.png",
+    backwardImage: "/images/public-sector/aggregate_b.jpg",
+    forewardImage: "/images/public-sector/aggregate_a.jpg",
     borderBottom: true,
     intro: {
       title: "Aggregate your audio, video, and image-based evidence files into one central hub.      ",
@@ -396,8 +396,8 @@ export const publicBanner = {
   };
   export const publicIntroWithAccordionData2 = {
     id: "analyze",
-    backwardImage: "/images/IntroWithAccordion/mic_.png",
-    forewardImage: "/images/IntroWithAccordion/girl.png",
+    backwardImage: "/images/public-sector/analyze_b.jpg",
+    forewardImage: "/images/public-sector/analyze_a.jpg",
     borderBottom: true,
     intro: {
       title: "Analyze structured and unstructured evidence files.",
@@ -429,8 +429,8 @@ export const publicBanner = {
   };
   export const publicIntroWithAccordionData3 = {
     id: "accelerate",
-    backwardImage: "/images/IntroWithAccordion/video_camera.png",
-    forewardImage: "/images/IntroWithAccordion/girl_2.png",
+    backwardImage: "/images/public-sector/accelerate_b.jpg",
+    forewardImage: "/images/public-sector/accelerate_a.jpg",
     borderBottom: true,
     intro: {
       title: "Accelerate case investigations using AI technology that improves transparency and trust.",
@@ -463,8 +463,8 @@ export const publicBanner = {
   };
   export const publicIntroWithAccordionData4 = {
     id: "automate",
-    backwardImage: "/images/IntroWithAccordion/writing_pad.png",
-    forewardImage: "/images/IntroWithAccordion/screens.png",
+    backwardImage: "/images/public-sector/automate_b.jpg",
+    forewardImage: "/images/public-sector/automate_a.png",
     borderBottom: false,
     intro: {
       title: "Automate redaction workflows and give your team the support they need to focus on more mission-critical tasks.      ",
@@ -612,7 +612,7 @@ export const publicBanner = {
         "From developing custom AI workflows to keeping up with FOIA demands, there’s a Veritone solution for nearly every part of your organization’s workflow.        ",
     },
     imageCard: {
-      image: "card_a.png",
+      image: "/images/hire/AI-solutions.jpg",
       icon: "/images/icons/pencil.svg",
       iconName: "pencil",
       title: "Personalized AI services that meet your needs",
@@ -620,7 +620,7 @@ export const publicBanner = {
       buttonUrl: "https://unlock.veritone.com/ps-pro-serv-contact-us      ",
     },
     imageCard2: {
-        image: "card_a.png",
+        image: "/images/hire/AI-solutions.jpg",
         icon: "/images/icons/pencil.svg",
         iconName: "pencil",
         title: "On-demand audio and video redaction",
