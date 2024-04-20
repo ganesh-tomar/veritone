@@ -566,7 +566,7 @@ export const colTwoCards = {
       "Veritone’s team of experts is available to help your organization integrate and apply AI to solve your unique challenges in a bespoke way.",
   },
   imageCard: {
-    image: "card_a.png",
+    image: "/images/card_a.png",
     icon: "/images/icons/pencil.svg",
     iconName: "pencil",
     title: "AI solutions and services, personalized",
