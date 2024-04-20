@@ -18,7 +18,7 @@ const Footercta = ({ title, description, btnText1, btnUrl1, btnClass1, btnText2,
               {/* <ContactUs setFormOverlay={setFormOverlay} buttonText={btnText1} url={'#'} buttonClass={'default mr-[30px]'} formUrl={'https://unlock.veritone.com/l/636301/2023-04-27/4cx8sc?source=https://www.veritone.com/'} /> */}
             </div>}
             {btnText2 && <div className="btn-wrap mr-[30px] sm:mt-[20px] sm:w-full sm:mr-0">
-              {console.log(btnText2)}
+              {/* {console.log(btnText2)} */}
               <Button
                 buttonText={btnText2}
                 url={btnUrl2}
