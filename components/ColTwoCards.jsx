@@ -19,8 +19,8 @@ export default function ColTwoCards({ data }) {
                 </div>
             </div>
             <div className="max-w-[1546px] relative mx-auto w-full mt-[38px] px-[20px]">
-                <div className="outer w-[calc(100%+22px)] left-0 top-0 ml-[-11px] flex flex-wrap lg:w-full lg:ml-0 lg:block lg-up:h-[550px]">
-                    <div className="relative w-[calc(50%-22px)] lg:mb-[20px] lg-up:flex lg-up:flex-wrap lg-up:flex-col lg-up:justify-between mx-[11px] lg:w-full lg:mx-0">
+                <div className={`outer w-[calc(100%+22px)] left-0 top-0 ml-[-11px] flex flex-wrap lg:w-full lg:ml-0 lg:block  ${data.imageCard2 && 'lg-up:h-[550px]'} `}>
+                    <div className="relative w-[calc(50%-22px)] lg-up:flex lg-up:flex-wrap lg-up:flex-col lg-up:justify-between mx-[11px] lg:w-full lg:mx-0">
                         <div className="imageWrap w-full max-h-[430px] h-full lg:max-h-[227px] lg:h-[227px]">
                             <Image className={`w-full h-full object-cover`} src={`/images/card_a.png`} alt={`card_a`} width={1000} height={1000} />
                         </div>
@@ -37,7 +37,7 @@ export default function ColTwoCards({ data }) {
                         </div>
                     </div>
                     {
-                        data.imageCard2 && <div className="relative w-[calc(50%-22px)] lg-up:flex lg-up:flex-wrap lg-up:flex-col lg-up:justify-between mx-[11px] lg:w-full lg:mx-0">
+                        data.imageCard2 && <div className="relative lg:mt-[20px] w-[calc(50%-22px)] lg-up:flex lg-up:flex-wrap lg-up:flex-col lg-up:justify-between mx-[11px] lg:w-full lg:mx-0">
                             <div className="imageWrap w-full max-h-[430px] h-full lg:max-h-[227px] lg:h-[227px]">
                                 <Image className={`w-full h-full object-cover`} src={`/images/card_a.png`} alt={`card_a`} width={1000} height={1000} />
                             </div>
@@ -77,8 +77,6 @@ export default function ColTwoCards({ data }) {
                             </div>
                         ))}
                     </div>}
-
-
                 </div>
             </div>
         </section>
