@@ -11,8 +11,12 @@ import { NextSeo } from 'next-seo';
 import { useRouter } from 'next/router';
 
 //importing sections data
+
+
 import { banner, stickyNavData, tabs, accordionData, colTwoCards, resourceCards, twitterSliderData, introWithAccordionData1, introWithAccordionData2, introWithAccordionData3, introWithAccordionData4, footerCta } from '../../public/mediaEntertainmentData/entertainment'
+
 import { publicBanner, publicStickyNavData, publicTabs, publicAccordionData, publicColTwoCards, publicResourceCards, publicTwitterSliderData, publicIntroWithAccordionData1, publicIntroWithAccordionData2, publicIntroWithAccordionData3, publicIntroWithAccordionData4, publicFooterCta } from '../../public/solutions/public-sector'
+import { hireBanner, hireStickyNavData, hireTabs, hireAccordionData, hireColTwoCards, hireResourceCards, hireTwitterSliderData, hireIntroWithAccordionData1, hireIntroWithAccordionData2, hireIntroWithAccordionData3, hireIntroWithAccordionData4, hireFooterCta } from '../../public/solutions/hirePageData'
 
 const Home = () => {
 	const router = useRouter();
@@ -50,6 +54,24 @@ const Home = () => {
 				<ResourceCards data={publicResourceCards} />
 				<TwitterSlider data={publicTwitterSliderData} onlyInternalPosts={true} />
 				<Footercta {...publicFooterCta} />
+			</>
+		);
+	} else if (router.asPath === '/solutions/hire') {
+		return (
+			<>
+				<NextSeo title="AI Solutions for Media, Entertainment & Broadcast | Veritone" description="Transform your media & entertainment business with Veritone's AI solutions. Drive growth and innovation. Click now." />
+				<BannerSecondLevel {...hireBanner} />
+				<StickyNav data={hireStickyNavData} />
+				<IntroWithAccordion data={hireIntroWithAccordionData1} pt="padding-top-120" pb='no-padding-bottom' />
+				<IntroWithAccordion data={hireIntroWithAccordionData2} reverse={"true"} pt='padding-medium-top' pb='no-padding-bottom' />
+				<IntroWithAccordion data={hireIntroWithAccordionData3} pt='padding-medium-top' pb='no-padding-bottom' />
+				<IntroWithAccordion data={hireIntroWithAccordionData4} reverse={"true"} pt='padding-medium-top' pb='padding-medium-bottom' />
+				<Tabs data={hireTabs} />
+				<Accordion data={hireAccordionData} />
+				<ColTwoCards data={hireColTwoCards} />
+				<ResourceCards data={hireResourceCards} />
+				<TwitterSlider data={hireTwitterSliderData} onlyInternalPosts={true} />
+				<Footercta {...hireFooterCta} />
 			</>
 		);
 	}
