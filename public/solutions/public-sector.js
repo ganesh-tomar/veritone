@@ -1,4 +1,4 @@
-export const banner = {
+export const publicBanner = {
     title: "AI for the greater good.",
     bg: "bg-cosmos",
     blurb:
@@ -12,7 +12,7 @@ export const banner = {
     imageName: "banner_second_image",
   };
   
-  export const tabs = {
+  export const publicTabs = {
     slider: false,
     tabBg: "bg-softEmber",
     tab: [
@@ -166,7 +166,7 @@ export const banner = {
     ],
   };
   
-  export const twitterSliderData = {
+  export const publicTwitterSliderData = {
     intro: {
       title: "What’s new in the Public Sector",
       btnText: "View all",
@@ -333,7 +333,7 @@ export const banner = {
     ],
   };
   
-  export const stickyNavData = [
+  export const publicStickyNavData = [
     {
       heading: "Aggregate",
       phoneHeading: "Aggregate evidence files",
@@ -360,7 +360,7 @@ export const banner = {
     },
   ];
   
-  export const introWithAccordionData1 = {
+  export const publicIntroWithAccordionData1 = {
     id: "aggregate",
     backwardImage: "/images/IntroWithAccordion/person-image.png",
     forewardImage: "/images/IntroWithAccordion/shutterstock.png",
@@ -394,7 +394,7 @@ export const banner = {
       },
     ],
   };
-  export const introWithAccordionData2 = {
+  export const publicIntroWithAccordionData2 = {
     id: "analyze",
     backwardImage: "/images/IntroWithAccordion/mic_.png",
     forewardImage: "/images/IntroWithAccordion/girl.png",
@@ -427,7 +427,7 @@ export const banner = {
       },
     ],
   };
-  export const introWithAccordionData3 = {
+  export const publicIntroWithAccordionData3 = {
     id: "accelerate",
     backwardImage: "/images/IntroWithAccordion/video_camera.png",
     forewardImage: "/images/IntroWithAccordion/girl_2.png",
@@ -461,7 +461,7 @@ export const banner = {
       },
     ],
   };
-  export const introWithAccordionData4 = {
+  export const publicIntroWithAccordionData4 = {
     id: "automate",
     backwardImage: "/images/IntroWithAccordion/writing_pad.png",
     forewardImage: "/images/IntroWithAccordion/screens.png",
@@ -495,7 +495,7 @@ export const banner = {
     ],
   };
   
-  export const accordionData = {
+  export const publicAccordionData = {
     intro: {
       title: "Innovative AI solutions for people who want to help other people.      ",
       btnText: "Show more",
@@ -605,7 +605,7 @@ export const banner = {
     ],
   };
   
-  export const colTwoCards = {
+  export const publicColTwoCards = {
     intro: {
       title: "AI-powered services to help your team keep up with high demands.      ",
       blurb:
@@ -630,7 +630,7 @@ export const banner = {
    
   };
   
-  export const resourceCards = {
+  export const publicResourceCards = {
     intro: {
       title: "Stay in the know.",
       btnText: "View all",
@@ -669,7 +669,7 @@ export const banner = {
   };
   
   
-  export const footerCta = {
+  export const publicFooterCta = {
     title: "Help your team get back to what truly matters with powerful AI solutions.",
     description:
       "With Veritone’s AI solutions for government agencies and legal and education organizations, your team can spend fewer hours facing process pain points and focus on what matters most — helping others.      ",
