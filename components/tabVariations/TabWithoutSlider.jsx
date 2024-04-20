@@ -94,7 +94,8 @@ const Tabs = ({ tab, tab_content, bg, tabBg, pt }) => {
                           </ul>}
 
                           <div className={`btn-wrap ${styles.btn_wrap} pt-[27px]`}>
-                            <Button buttonClass={`${item.btnClass} mr-[23px] sm:mr-[0]`} buttonText={`${item.bottom_btn_text}`} url={`${item.bottom_btn_url}`} />
+                            {item.bottom_btn_url != '' && (<Button buttonClass={`${item.btnClass} mr-[23px] sm:mr-[0]`} buttonText={`${item.bottom_btn_text}`} url={`${item.bottom_btn_url}`} />)}
+                            {item.videoUrl && (<Button buttonText={'Watch now'} url={'#'} buttonClass={'transparent'} videoUrl={item.videoUrl} />)}
                             {item.bottom_link_url && (<Button buttonClass={`text-link-white sm:mt-[20px]`} buttonText={`${item.bottom_link_text}`} url={`${item.bottom_link_url}`} />)}
 
                           </div>
