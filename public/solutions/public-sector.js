@@ -620,7 +620,7 @@ export const publicBanner = {
       buttonUrl: "https://unlock.veritone.com/ps-pro-serv-contact-us      ",
     },
     imageCard2: {
-        image: "/images/hire/AI-solutions.jpg",
+        image: "/images/public-sector/redact-on-demand.jpg",
         icon: "/images/icons/pencil.svg",
         iconName: "pencil",
         title: "On-demand audio and video redaction",
