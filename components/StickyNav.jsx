@@ -179,7 +179,7 @@ const StickyNav = (props) => {
                             {data.blurb}
                           </p>
                           <div className={`${style.arrow}`}>
-                            <Image className='w-full h-full max-h-[30px] max-w-[20px]' src="/images/icons/arrow.svg" width={100} height={100} alt="Arrow" />
+                            <Image className='w-full h-full max-h-[33px] max-w-[25px]' src="/images/icons/arrow.svg" width={100} height={100} alt="Arrow" />
                           </div>
                         </div>
                       ) : null

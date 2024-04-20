@@ -39,7 +39,7 @@
 .navItem .arrow {
   position: relative;
   padding-top: 27px;
-  height: 65px;
+  height: 68px;
   transition: padding 0.3s ease-in-out;
 }
 @media (max-width: 767px) {
