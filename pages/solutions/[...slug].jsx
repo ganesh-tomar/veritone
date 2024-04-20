@@ -11,7 +11,7 @@ import { NextSeo } from 'next-seo';
 import { useRouter } from 'next/router';
 
 //importing sections data
-import { banner, stickyNavData, tabs, accordionData, colTwoCards, resourceCards, twitterSliderData, introWithAccordionData1, introWithAccordionData2, introWithAccordionData3, introWithAccordionData4, footerCta } from '../../public/solutions/media-entertainment'
+import { banner, stickyNavData, tabs, accordionData, colTwoCards, resourceCards, twitterSliderData, introWithAccordionData1, introWithAccordionData2, introWithAccordionData3, introWithAccordionData4, footerCta } from '../../public/mediaEntertainmentData/entertainment'
 import { publicBanner, publicStickyNavData, publicTabs, publicAccordionData, publicColTwoCards, publicResourceCards, publicTwitterSliderData, publicIntroWithAccordionData1, publicIntroWithAccordionData2, publicIntroWithAccordionData3, publicIntroWithAccordionData4, publicFooterCta } from '../../public/solutions/public-sector'
 
 const Home = () => {
