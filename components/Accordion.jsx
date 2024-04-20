@@ -103,8 +103,9 @@ const Accordion = ({ data }) => {
                 <div className="accordion_wrapper relative w-full flex flex-wrap">
                     <div className="w-full">
                         <div className="accordion_wrap relative w-full">
-                            <h2 className="mb-[48px]">{data.title}</h2>
-                            <Intro data={data.intro} />
+                            {data?.title && <h2 className="mb-[48px]">{data.title}</h2>}
+                            {data?.intro && <Intro data={data.intro} />}
+
                             <div className={`relative w-full`}>
                                 {data?.items?.map((accordionItem) => (
                                     <AccordionItem

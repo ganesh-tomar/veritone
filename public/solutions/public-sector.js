@@ -680,4 +680,3 @@ export const publicBanner = {
     btnClass2: "",
     btnUrl2: "",
   };
-  

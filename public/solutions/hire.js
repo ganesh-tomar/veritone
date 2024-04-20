@@ -1,3 +1,9 @@
+
+
+
+
+
+
 export const hireBanner = {
     title: "Superhuman hiring is here.",
     bg: "bg-cosmos",
@@ -38,44 +44,34 @@ export const hireBanner = {
       link: "leverage",
     },
   ];
-  
+
   export const hireTabs = {
     slider: false,
     tabBg: "bg-softEmber",
     tab: [
       {
-        tab_heading: "State & Local Gov",
-        tab_icon: "/images/icons/play.svg",
+        tab_heading: "Direct Employers",
+        tab_icon: "/images/hire/direct_employer.svg",
         tab_icon_name: "play",
       },
       {
-        tab_heading: "Education",
-        tab_icon: "/images/icons/mic.svg",
+        tab_heading: "Staffing & RPO",
+        tab_icon: "/images/hire/staffing.svg",
         tab_icon_name: "mic",
       },
       {
-        tab_heading: "Federal Civilian",
-        tab_icon: "/images/icons/film.svg",
+        tab_heading: "Partners",
+        tab_icon: "/images/hire/parners.svg",
         tab_icon_name: "film",
-      },
-      {
-        tab_heading: "DoD/Intel",
-        tab_icon: "/images/icons/baseball.svg",
-        tab_icon_name: "baseball",
-      },
-      {
-        tab_heading: "Legal",
-        tab_icon: "/images/icons/comments.svg",
-        tab_icon_name: "comments",
       },
     ],
     tab_content: [
       {
-        tab_title: "Spend less time and money, provide more public trust and transparency.        ",
+        tab_title: "Maximize the impact of your campaigns.",
         blurb:
-          "Streamline workflows to help your agency save on resources and improve relations with the communities you serve. Veritone’s AI solutions empower your team to take action with greater speed and accuracy.          ",
-        btntext: "Learn more",
-        btnlink: "https://www.veritone.com/industries/government/        ",
+          "Discover a turnkey broadcast attribution solution that enables you to track near real-time data, deliver customer ROI metrics, and keep advertisers coming back.",
+        btntext: "Read more",
+        btnlink: "https://www.veritone.com/industries/tv/",
         imgpath: "/images/cameraman.jpeg",
         alt: "cameraman",
         imgpath2: "/images/camera.jpeg",
@@ -84,22 +80,23 @@ export const hireBanner = {
         alt3: "camera_lens",
         logo: "/images/gray_logo.svg",
         logo_alt: "gray_logo",
-        inner_title: "Police 1        ",
-        inner_blurb: "Learn about iDEMS, Veritone’s AI-powered digital evidence management system, and how it can accelerate investigations.        ",
-
+        inner_title: "Gray Television",
+        inner_blurb: "Learn how Gray Television used Veritone Attribution Metrics to retain ad spend and audiences.",
+        tag1: "REAL-TIME DATA",
+        tag2: "OPTIMIZATION",
         bg: "bg-ember",
         btnClass: "btn-black",
-        bottom_btn_text: "Read more        ",
-        bottom_btn_url: "https://www.police1.com/police-products/investigation/evidence-management/how-law-enforcement-can-surf-the-rising-tide-of-digital-evidence-without-drowning-in-details        ",
+        bottom_btn_text: "View case study",
+        bottom_btn_url: "https://www.veritone.com/industries/tv/#case-studies",
         bottom_link_text: "",
         bottom_link_url: "",
       },
       {
-        tab_title: "Experience AI that allows you to do more with less.        ",
+        tab_title: "Supercharge your analytics with our tools.",
         blurb:
-          "Employ AI-powered solutions and services that allow school districts to swiftly address public records requests and help universities and schools better manage libraries of audio and video content.          ",
-        btntext: "Learn more",
-        btnlink: "https://unlock.veritone.com/edu-contact-us        ",
+          "Track brand mentions, demonstrate advertising lift, and generate new revenue with our suite of AI-infused applications and services designed for radio networks and stations.",
+        btntext: "Read more",
+        btnlink: "https://www.veritone.com/industries/tv/",
         imgpath: "/images/woman_with_mic.png",
         alt: "woman_with_mic",
         imgpath2: "/images/aplifier_keys.png",
@@ -107,23 +104,25 @@ export const hireBanner = {
         imgpath3: "/images/mic.png",
         alt3: "mic",
         logo: "/images/westwood_one.svg",
-        logo_alt: "CHESA",
-        inner_title: "CHESA",
+        logo_alt: "westwood_one",
+        inner_title: "Westwood One",
         inner_blurb:
-          "Explore how a prominent media workflow solutions provider streamlined the US Federal Legislative Branch’s digital media management with Veritone Digital Media Hub.          ",
+          "Learn how AI-powered content tracking helped Westwood One, America’s largest radio network.",
+        tag1: "EFFICIENCY",
+        tag2: "ENGAGEMENT",
         bg: "bg-ember",
         btnClass: "btn-black",
-        bottom_btn_text: "Read the press release",
-        bottom_btn_url: "https://investors.veritone.com/news-events/press-releases/detail/295/veritone-partners-with-chesa-to-streamline-the-u-s-federal",
+        bottom_btn_text: "View case study",
+        bottom_btn_url: "https://www.veritone.com/document/westwood-one-makes-4-hour-aircheck-searches-take-minutes/",
         bottom_link_text: "",
         bottom_link_url: "",
       },
       {
-        tab_title: "Take the hassle out of time-consuming workflows and meet FOIA deadlines with ease.        ",
+        tab_title: "Manage your archives and monetize hidden gems.",
         blurb:
-          "By leveraging AI-powered solutions and services to optimize evidence processing and reporting, your agency can safeguard PII, maintain compliance, and resolve requests with greater efficiency.          ",
-        btntext: "Learn more",
-        btnlink: "https://unlock.veritone.com/fed-civ-contact-us",
+          "Get your digital archives under control and unlock innovative content – and profits – with Veritone Digital Media Hub and licensing solutions.",
+        btntext: "View case study",
+        btnlink: "https://www.veritone.com/industries/studios-production/",
         imgpath: "/images/filming.png",
         alt: "filming",
         imgpath2: "/images/screens.png",
@@ -132,61 +131,15 @@ export const hireBanner = {
         alt3: "reel",
         logo: "/images/progress.svg",
         logo_alt: "progress",
-        inner_title: "OPEXUS",
+        inner_title: "Progress",
         inner_blurb:
-          "Discover how OPEXUS built a modern FOIA solution by leveraging Veritone Redact.",
+          "Learn how Progress used Veritone Digital Media Hub to monetize over 20,000 historic films.",
+        tag1: "METADATA",
+        tag2: "LICENSING",
         bg: "bg-ember",
         btnClass: "btn-black",
-        bottom_btn_text: "Download the PDF        ",
-        bottom_btn_url: "https://www.opexustech.com/wp-content/uploads/2023/12/FOIAXPress-Veritone-.pdf",
-        bottom_link_text: "",
-        bottom_link_url: "",
-      },
-      {
-        tab_title: "Greater speed, scale, and operability in the field with AI.        ",
-        blurb:
-          "Operationalize data with various platforms — whether an LLM or custom platform — with speed and accuracy while scaling AI solutions and future-proofing your technological investments.          ",
-        btntext: "Learn more",
-        btnlink: "https://unlock.veritone.com/intel-contact-us        ",
-        imgpath: "/images/rucby.png",
-        alt: "rucby",
-        imgpath2: "/images/crowd.png",
-        alt2: "crowd",
-        imgpath3: "/images/baseballs.png",
-        alt3: "baseballs",
-        logo: "/images/sf_logo.svg",
-        logo_alt: "sf_logo",
-        inner_title: "Department of Defense Intelligence        ",
-        inner_blurb:
-          "Read how Veritone aiWARE™ enhances mission success with scalable AI and actionable insights.",
-        bg: "bg-ember",
-        btnClass: "btn-black",
-        bottom_btn_text: "Download one sheet",
-        bottom_btn_url: "https://unlock.veritone.com/aiWARE_for_Fed_DoD",
-        bottom_link_text: "",
-        bottom_link_url: "",
-      },
-      {
-        tab_title: "Rapid data analysis, important insights.        ",
-        blurb:
-          "Leverage AI to sift through large amounts of data, helping you quickly find key evidence and other actionable insights that help you process criminal or legal matter within a tight timeline.          ",
-        btntext: "Learn more",
-        btnlink: "https://www.veritone.com/industries/legal-compliance/        ",
-        imgpath: "/images/man_filming.png",
-        alt: "man_filming",
-        imgpath2: "/images/man_with_camera.png",
-        alt2: "man_with_camera",
-        imgpath3: "/images/car_wheel.png",
-        alt3: "car_wheel",
-        logo: "/images/24_logo.svg",
-        logo_alt: "24_logo",
-        inner_title: "Veritone Illuminate",
-        inner_blurb:
-          "See why so many firms and agencies trust Veritone Illuminate to optimize and accelerate their early case assessment.          ",
-        bg: "bg-ember",
-        btnClass: "btn-black",
-        bottom_btn_text: "Watch demo",
-        bottom_btn_url: "https://www.veritone.com/resource-library/?keyword=illuminate+demo",
+        bottom_btn_text: "View case study",
+        bottom_btn_url: "https://go.veritone.com/case-study-progress-monetizes-thousands-of-films-with-digital-media-hub",
         bottom_link_text: "",
         bottom_link_url: "",
       },
@@ -363,69 +316,69 @@ export const hireBanner = {
  
   
   export const hireIntroWithAccordionData1 = {
-    id: "aggregate",
+    id: "optimize",
     backwardImage: "/images/IntroWithAccordion/person-image.png",
     forewardImage: "/images/IntroWithAccordion/shutterstock.png",
     borderBottom: true,
     intro: {
-      title: "Aggregate your audio, video, and image-based evidence files into one central hub.      ",
+      title: "Optimize your recruitment strategy with data and insights",
       blurb:
-        "Organize your agency’s evidence collections with greater relevancy and precision. Veritone Investigate, an intelligent digital evidence hub, makes it easy to centralize evidence, enhance overall relevancy, and streamline reporting while maintaining compliance and chain of command.         ",
+        "Expand your talent pool and pinpoint which sources produce the best candidates with a flexible, multi-posting tool that works across thousands of job boards, social media channels, and search engines. ",
       btnText: "Learn more",
       btnClass: "btn-black",
-      btnLink: "https://www.veritone.com/applications/investigate/",
+      btnLink: "https://www.broadbean.com/product-suite/job-distribution/",
     },
     accordionData: [
       {
         id: 1,
-        heading: "Consolidate evidence in one convenient, secure location ",
+        heading: "The world’s largest distributor of jobs ",
         paragraph:
-          "Upload your data to secure, CJIS-compliant clouds and automatically manage, organize, share, and distribute various file formats, including PDF, image, video, and audio files.          ",
+          "Multi-post to more than 7,000 job boards in 100 countries, as well as search engines, social media, Indeed, and your own site to maximize your candidate pipeline and reduce unnecessary admin.          ",
       },
       {
         id: 2,
-        heading: "Organize evidence with relevancy and precision",
+        heading: "Fully integrated workflow",
         paragraph:
-          "Modernize your workflows with automated ingestion and tagging while using permission settings to improve evidence oversight and security. Veritone’s AI solutions can tag structured and unstructured data for faster search and discovery.",
+          "Access your job requisition details within Veritone Hire or via one of our 120 ATS/CRM integrations. The extent of our ATS partnerships is second to none.          ",
       },
       {
         id: 3,
-        heading: "Operate your entire workflow within one powerful suite",
+        heading: "A powerful analytics suite with real-time insights",
         paragraph:
-          "As part of the iDEMS suite, customize your interface and effortlessly integrate with other Veritone applications like Redact, Illuminate, Tracker, and IDentify.",
+          "Our performance analytics help you optimize budget allocation, focus on the highest-performing channels, and rank candidates from a range of sources.          ",
       },
     ],
   };
   export const hireIntroWithAccordionData2 = {
-    id: "analyze",
+    id: "source",
     backwardImage: "/images/IntroWithAccordion/mic_.png",
     forewardImage: "/images/IntroWithAccordion/girl.png",
     borderBottom: true,
     intro: {
-      title: "Analyze structured and unstructured evidence files.",
-      blurb: "Veritone empowers agencies to leverage best-of-breed AI models to analyze text-, video-, and audio-based evidence files with exceptional efficiency, extracting deeper insights to expedite case resolution.      ",
+      title: "Source top talent in the right place, at the right time .      ",
+      blurb: "Work with programmatic job advertising designed to amplify your recruitment reach and optimize your budget and job ads.      ",
       btnText: "Learn more",
       btnClass: "btn-black",
-      btnLink: "https://www.veritone.com/applications/illuminate/",
+      btnLink: "https://pandologic.com/solutions/programmatic-advertising-pandoiq/",
     },
     accordionData: [
       {
         id: 1,
-        heading: "Unlock insights that could break the case",
+        heading: "Streamline the recruitment process        ",
         paragraph:
-          "By automating the extraction and analysis process, Veritone equips agencies with the tools to uncover critical patterns, connections, and anomalies that may otherwise remain hidden.           ",
+          "Source quality applicants faster, smarter, and more efficiently with programmatic job advertising, a performance-based job advertising method that intelligently automates and optimizes job advertising spend through AI          ",
       },
       {
         id: 2,
-        heading: "Go from days of work to done in minutes",
+        heading: "Save on recruitment costs        ",
         paragraph:
-          "AI solutions create a streamlined approach that not only accelerates investigative processes but also enhances the accuracy and reliability of findings, ultimately leading to faster and more effective case resolutions for public sector organizations.          ",
+          "Increase candidate volume via AI-powered advertising technology allowing you the power to set your own budgets, giving you complete control over how much or how little you would like to spend.          ",
       },
       {
         id: 3,
-        heading: "Let AI do the heavy lifting",
+        heading: "Maximize hiring outcomes        ",
         paragraph:
-          "The scope of human possibilities should be spent on more crucial tasks than processing mountains of digital evidence. Leverage hundreds of AI engine models within the Veritone platform that can meet your team’s exact needs.          ",
+          "Optimize campaign performance and track the conversion of your advertising spend with key down-funnel metrics (including CPH and CPQA) to enhance candidate quality, reduce time-to-fill, and lower cost-per-hire.          ",
       },
     ],
   };
@@ -435,64 +388,66 @@ export const hireBanner = {
     forewardImage: "/images/IntroWithAccordion/girl_2.png",
     borderBottom: true,
     intro: {
-      title: "Accelerate case investigations using AI technology that improves transparency and trust.",
+      title: "Leverage Veritone Hire’s media planning and buying services.",
       blurb:
-        "By equipping teams with AI technology and services that streamline the end-to-end evidence management process, Veritone helps agencies catch perpetrators faster, close more cases, and maintain compliance and transparency.        ",
+        "Veritone Hire's media service team offers a wide range of services including media planning and buying support to create the ultimate omni-channel job advertising strategy based on your individual needs.",
       btnText: "Learn more",
       btnClass: "btn-black",
-      btnLink: "https://www.veritone.com/applications/illuminate/",
+      btnLink: "https://www.broadbean.com/product-suite/media-and-buying-services/",
     },
     accordionData: [
       {
         id: 1,
-        heading: "Identify and track persons of interest without breaching privacy laws        ",
+        heading: "Save time and money with expert media buyers",
         paragraph:
-          "With human-like object recognition and tracking capabilities, authorities can efficiently locate suspects across surveillance footage without relying on facial recognition or other personally identifiable information.           ",
+          "Veritone Hire’s media buying team negotiates competitive rates with job boards on your behalf so you can spend less time on administrative duties and more time on your bottom line.",
       },
       {
         id: 2,
-        heading: "Close more cases faster than ever before",
+        heading: "Utilize our bespoke approach",
         paragraph:
-          "Accelerating investigations with Veritone's AI-powered solutions for evidence management that can streamline data organization, management, and discovery — revealing important details that may have otherwise been a needle in a haystack.",
+          "Not sure what’s right for you? Opt for a customized approach using multiple products to target your specific audience and suit your overall budget and objective.",
       },
       {
         id: 3,
-        heading: "AI that prioritizes compliance, privacy, and integrity        ",
+        heading: "Lean on our years of expertise",
         paragraph:
-          "Veritone offers ethically designed, intuitive AI solutions and services that empower professionals to compile, analyze, and automate digital file and data workflows in a secure, CJIS-compliant location that facilitates sharing evidence with other crucial parties.          ",
+          "Gain insight into which job boards are the best for you to post to, allow us to arrange trials for new boards, and receive alerts for new offers and promotions.",
       },
     ],
   };
+
   export const hireIntroWithAccordionData4 = {
-    id: "automate",
-    backwardImage: "/images/IntroWithAccordion/writing_pad.png",
-    forewardImage: "/images/IntroWithAccordion/screens.png",
-    borderBottom: false,
+    id: "automated",
+    backwardImage: "/images/IntroWithAccordion/video_camera.png",
+    forewardImage: "/images/IntroWithAccordion/girl_2.png",
+    borderBottom: true,
     intro: {
-      title: "Automate redaction workflows and give your team the support they need to focus on more mission-critical tasks.      ",
+      title: "Automated solutions that help you recruit for diversity and comply with OFCCP.",
       blurb:
-        "Veritone’s AI solutions and services allow your team to get back to tasks that can only be done by humans, helping your organization become faster, more productive, and more cost-efficient.        ",
+        "Veritone Hire empowers you to recruit and reach a diverse talent pool through a network of diversity-specific job sites. Federal contractors can rest assured knowing their jobs are posted to state and local job sites, saving time and money and streamlining your diversity and compliance recruiting.",
       btnText: "Learn more",
       btnClass: "btn-black",
-      btnLink: "https://www.veritone.com/applications/redact/",
+      btnLink: "https://www.broadbean.com/product-suite/ofccp-compliance-software/",
     },
     accordionData: [
       {
         id: 1,
-        heading: "Remove manual workflows that slow you down",
+        heading: "A seamless way to list jobs for diversity and compliance        ",
         paragraph:
-          "Optimize your internal processes with AI-driven solutions that eliminate manual redaction, saving your internal teams countless hours while helping them keep up with project demand and aggressive deadlines.          ",
+          "Submit your jobs hassle-free to appropriate state workforce agencies and state-run Career One-Stop Centers. State-issued confirmation receipts ensure documentation for all published listings.          ",
       },
       {
         id: 2,
-        heading: "Focus on more pivotal tasks instead of paperwork         ",
+        heading: "Audit-proof reporting",
         paragraph:
-          "Adopt our existing redaction solution or work with a team of our redaction specialists to reduce in-house time and resource commitments, allowing your team to work on other urgent priorities.          ",
+          "Veritone Hire captures comprehensive diversity data and provides compliance verification reports to ensure your OFCCP job listing requirements are met to the highest standard in the event of an audit.          ",
       },
       {
         id: 3,
-        heading: "Prevent employee burnout and turnover",
-        paragraph: "Constant exposure to video footage of criminal acts, especially violent ones, can negatively impact your team, resulting in burnout and increased turnover rates. Enhance efficiency and productivity by redirecting your team’s focus towards higher-priority tasks instead.        ",
+        heading: "A team of experts who are always ready to help",
+        paragraph:
+          "Access to a dedicated team member, who will manage state postings on your behalf. Our expert team will guide you with unparalleled support and advice during audits, which is included free of charge.",
       },
     ],
   };
@@ -606,7 +561,7 @@ export const hireBanner = {
       },
     ],
   };
-  
+
   export const hireColTwoCards = {
     intro: {
       title: "AI-powered services to help your team keep up with high demands.      ",
@@ -683,3 +638,12 @@ export const hireBanner = {
     btnUrl2: "",
   };
   
+  
+
+
+
+
+
+
+
+
