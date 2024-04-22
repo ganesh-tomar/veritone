@@ -7,7 +7,7 @@ import { useState, useEffect } from 'react';
 const Footer = () => {
 	const Footerdata = [
 		{
-			heading: 'Explore.',
+			heading: 'Explore',
 			links: [
 				{
 					classlink: 'Home',
@@ -21,10 +21,6 @@ const Footer = () => {
 					classlink: 'Platform',
 					classurl: 'https://www.veritone.com/aiware/enterprise-ai-platform/',
 				},				
-				{
-					classlink: 'Products',
-					classurl: 'https://www.veritone.com/applications/',
-				},
 				{
 					classlink: 'Services',
 					classurl: 'https://www.veritone.com/services/professional-services/',
@@ -120,7 +116,7 @@ const Footer = () => {
 		},
 	];
 
-
+	const currentYear = new Date().getFullYear();
 	return (
 		<footer className={`footer ${styles.footer} padding-120`}>
 			<div className="container">
@@ -349,7 +345,7 @@ const Footer = () => {
 						</div>
 					</div>
 					<p className="small lg:text-center sm:text-center sm:max-w-[250px] sm:mx-auto">
-					© Veritone, Inc. All rights reserved. © 2024
+						© Veritone, Inc. All rights reserved. © {currentYear }
 					</p>
 				</div>
 			</div>

@@ -1,15 +1,8 @@
-// import { setOutgoingHeaders } from '@pantheon-systems/wordpress-kit';
-// import { NextSeo } from 'next-seo';
-// import Image from 'next/image';
-// import { PostGrid } from '../components/grid';
+
 import Layout from '../components/layout';
-// import { getFooterMenu } from '../lib/Menus';
-// import { getLatestPosts } from '../lib/Posts';
-// import styles from './index.module.css';
-// import Button from '../components/button/Button';
 import dynamic from 'next/dynamic'
 import { Suspense } from 'react'
-const DynamicHeroBanner = dynamic(() => import('../components/HeroBanner'), {
+const HeroBanner = dynamic(() => import('../components/HeroBanner'), {
 	suspense: true,
 })
 // import HeroBanner from '../components/HeroBanner';
@@ -37,40 +30,37 @@ const Home = () => {
 	}
 	let test = setFormOverlay.bind(this)
 
-
-
 	return (
 
 		<>
-			<NextSeo 
-			 title="Veritone: Enterprise AI for Good"
-			 description="Transform your workflows and superpower your teams with innovative, custom AI solutions, AI services, and a powerful enterprise AI platform."
-			 canonical='https://www.veritone.com'
-			 openGraph={{
-				url: 'https://www.veritone.com',
-				title: 'Veritone: Enterprise AI for Good',
-				description: 'Transform your workflows and superpower your teams with innovative, custom AI solutions, AI services, and a powerful enterprise AI platform.',
-				images: [
-				  {
-					url: 'https://nextjs.veritone.com/images/veritone_OG_image.jpg',
-					width: 800,
-					height: 600,
-					alt: 'Veritone',
-					type: 'image/jpeg',
-				  },
-				],
-				siteName: 'Veritone',
-			  }}
-			  twitter={{
-				handle: '@handle',
-				site: '@site',
-				cardType: 'summary_large_image',
-			  }}
-			   />
+			<NextSeo
+				title="Veritone | AI that makes you even better"
+				description="Transform your workflows and superpower your teams with innovative, custom AI solutions, AI services, and a powerful enterprise AI platform."
+				canonical='https://www.veritone.com'
+				openGraph={{
+					url: 'https://www.veritone.com',
+					title: 'Veritone | AI that makes you even better',
+					description: 'Transform your workflows and superpower your teams with innovative, custom AI solutions, AI services, and a powerful enterprise AI platform.',
+					images: [
+						{
+							url: 'https://nextjs.veritone.com/images/veritone_OG_image.jpg',
+							width: 800,
+							height: 600,
+							alt: 'Veritone',
+							type: 'image/jpeg',
+						},
+					],
+					siteName: 'Veritone',
+				}}
+				twitter={{
+					handle: '@handle',
+					site: '@site',
+					cardType: 'summary_large_image',
+				}}
+			/>
 			<Suspense fallback={`Loading...`}>
-				<DynamicHeroBanner {...heroData} setFormOverlay={setFormOverlay} />
+				<HeroBanner {...heroData} setFormOverlay={setFormOverlay} />
 			</Suspense>
-			{/* <HeroBanner {...heroData} /> */}
 			<IntroWithLogo {...introWithLogo} />
 			<Tabs data={tabs} />
 			<FullWidthContent {...fullWidthContent} />

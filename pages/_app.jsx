@@ -1,5 +1,4 @@
 import '../styles/globals.css';
-import '../components/button/button.module.css';
 import '../components/button/button.css';
 import '../styles/checkboxSwitch.css';
 import ChatBot from '../components/ChatBot';
@@ -14,7 +13,7 @@ function MyApp({ Component, pageProps }) {
 		<>
 			<Head>
 				<meta name="twitter:card" content="summary_large_image" />
-                <meta name="twitter:title" content="Veritone: Enterprise AI for Good" />
+                <meta name="twitter:title" content="Veritone | AI that makes you even better" />
                 <meta name="twitter:description" content="Transform your workflows and superpower your teams with innovative, custom AI solutions, AI services, and a powerful enterprise AI platform." />
                 <meta name="twitter:image" content="https://nextjs.veritone.com/images/veritone_OG_image.jpg" />
                 <meta name="twitter:site" content="https://twitter.com/veritoneinc" />

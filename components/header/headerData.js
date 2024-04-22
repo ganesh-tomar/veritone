@@ -434,7 +434,7 @@ export const headerData = [
                             newWindow: true
                         },
                         {
-                            link: "Managed Services",
+                            link: "Media Services",
                             url:"https://www.broadbean.com/product-suite/media-and-buying-services/",
                             newWindow: true
                         }
