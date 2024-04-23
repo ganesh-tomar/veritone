@@ -3,13 +3,14 @@ import Image from "next/image";
 import Button from "./button/Button";
 import style from '../styles/bannerSecond.module.css'
 
-export default function BannerSecondLevel({ title, blurb, buttonText, buttonClass, bgimage, bgimageName, buttonUrl, imagePath, imageName, bg }) {
-    // useEffect(() => {
-    //     if (imagePath) {
-    //         const bannerSuccesor = document.querySelector('.banner-second-level').nextSibling;
-    //         bannerSuccesor.classList.add('md:!pt-[165px]')
-    //     }
-    // }, [])
+export default function BannerSecondLevel({ title, blurb, buttonText, buttonClass, bgimage, bgimageName, buttonUrl, imagePath, imageName, bg, pageBg }) {
+
+    useEffect(() => {
+        var body = document.querySelector("body");
+        if (pageBg && pageBg == 'riptideWeb') {
+            body.classList.add(pageBg);
+        }
+    });
 
     return (
         <section className={`banner-second-level flex items-center overflow-hidden padding-120 min-h-[848px] ipad:min-h-[600px] md:min-h-[550px] md:pt-[80px] ${bg}`}>

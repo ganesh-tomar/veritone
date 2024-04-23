@@ -9,6 +9,7 @@ import ColTwoCards from '../../components/ColTwoCards';
 import ResourceCards from '../../components/ResourceCards';
 import { NextSeo } from 'next-seo';
 import { useRouter } from 'next/router';
+import { useEffect } from 'react';
 
 //importing sections data
 
@@ -16,7 +17,8 @@ import { useRouter } from 'next/router';
 import { banner, stickyNavData, tabs, accordionData, colTwoCards, resourceCards, twitterSliderData, introWithAccordionData1, introWithAccordionData2, introWithAccordionData3, introWithAccordionData4, footerCta } from '../../public/mediaEntertainmentData/entertainment'
 
 import { publicBanner, publicStickyNavData, publicTabs, publicAccordionData, publicColTwoCards, publicResourceCards, publicTwitterSliderData, publicIntroWithAccordionData1, publicIntroWithAccordionData2, publicIntroWithAccordionData3, publicIntroWithAccordionData4, publicFooterCta } from '../../public/solutions/public-sector'
-import { hireBanner, hireStickyNavData, hireTabs, hireAccordionData, hireColTwoCards, hireResourceCards, hireTwitterSliderData, hireIntroWithAccordionData1, hireIntroWithAccordionData2, hireIntroWithAccordionData3, hireIntroWithAccordionData4, hireFooterCta } from '../../public/solutions/hire'
+import { hireBanner, hireStickyNavData, hireTabs, hireAccordionData, hireColTwoCards, hireResourceCards, hireTwitterSliderData, hireIntroWithAccordionData1, hireIntroWithAccordionData2, hireIntroWithAccordionData3, hireIntroWithAccordionData4, hireFooterCta, themeColor } from '../../public/solutions/hire'
+import { document } from 'postcss';
 
 const Home = () => {
 	const router = useRouter();
@@ -61,7 +63,7 @@ const Home = () => {
 			<>
 				<NextSeo title="AI Solutions for Media, Entertainment & Broadcast | Veritone" description="Transform your media & entertainment business with Veritone's AI solutions. Drive growth and innovation. Click now." />
 				<BannerSecondLevel {...hireBanner} />
-				<StickyNav data={hireStickyNavData} />
+				<StickyNav data={hireStickyNavData} themeColor={themeColor} />
 				<IntroWithAccordion data={hireIntroWithAccordionData1} pt="padding-top-120" pb='no-padding-bottom' />
 				<IntroWithAccordion data={hireIntroWithAccordionData2} reverse={"true"} pt='padding-medium-top' pb='no-padding-bottom' />
 				<IntroWithAccordion data={hireIntroWithAccordionData3} pt='padding-medium-top' reverse={"true"} pb='no-padding-bottom' />

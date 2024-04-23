@@ -1,9 +1,10 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Link from "next/link";
 import Button from "./button/Button";
 import ContactUs from "./button/ContactUs";
 
 const Footercta = ({ title, description, btnText1, btnUrl1, btnClass1, btnText2, btnUrl2, btnClass2, setFormOverlay }) => {
+
   return (
     <section className="footer-cta padding-large relative w-full py-[100px] bg-cosmos ">
       <div className="container ">

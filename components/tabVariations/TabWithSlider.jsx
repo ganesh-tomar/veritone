@@ -90,9 +90,9 @@ const Tabs = ({ tab, tab_content, bg }) => {
                       <div className={`content-outer ${styles.content_outer} pt-[45px] lg:pt-[60px] w-full flex flex-wrap`}>
                         <div className={`img-outer ${styles.imgOuter} relative top-[0] bottm-[0] tabletlarge:w-[297px] tablet:w-[297px] tabletlarge:h-[194px] tablet:h-[194px] m-[auto] tabletlarge:ml-0 tablet:ml-0 tabletlarge:mr-auto tablet:mr-auto w-[487px] h-[256px] sm:h-[auto] laptop-portrait:w-[350px] sm:w-[100%]`}>
                           <Image className={`w-[100%] h-full object-cover `} src={item.imgpath3} alt={item.alt3} width={360} height={120} />
-                          {item.logo != "#"? 
-                                                    <Image className={`logo absolute left-[0] top-[0] right-[0] bottom-[0] h-[120px] w-[120px] object-contain tabletlarge:w-[163px] tablet:w-[163px] m-auto z-10`} src={item.logo} alt={item.logo_alt} width={360} height={46} />
-                          :""}
+                          {item.logo != "#" ?
+                            <Image className={`logo absolute left-[0] top-[0] right-[0] bottom-[0] h-[120px] w-[120px] object-contain tabletlarge:w-[163px] tablet:w-[163px] m-auto z-10`} src={item.logo} alt={item.logo_alt} width={360} height={46} />
+                            : ""}
                         </div>
                         <div className={`content ${styles.content}`}>
                           <div className={`inner-content ${styles.innerContent} ${color} pt-[47px] lg:pt-[70px] pb-[67px] lg:pb-[45px] pl-[190px] tabletlarge:pl-[210px] tablet:pl-[84px] pr-[100px] h-full laptopmid:pl-[225px] laptop:pl-[150px] lg:pl-[20px]`}>

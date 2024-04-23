@@ -3,6 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import style from '../styles/StickyNav.module.css'
 const StickyNav = (props) => {
+  console.log(props.themeColor.themeColor);
   let bladeData = props.data;
   const [activeSection, setActiveSection] = useState('');
   const [winWidth, isWinWidth] = useState(0);
@@ -179,7 +180,7 @@ const StickyNav = (props) => {
                             {data.blurb}
                           </p>
                           <div className={`${style.arrow}`}>
-                            <Image className='w-full h-full max-h-[33px] max-w-[25px]' src="/images/icons/arrow.svg" width={100} height={100} alt="Arrow" />
+                            {props.themeColor.themeColor === "riptideWeb" ? <Image className='w-full h-full max-h-[33px] max-w-[25px]' src="/images/icons/arrow-riptideWeb.svg" width={100} height={100} alt="Arrow" /> : <Image className='w-full h-full max-h-[33px] max-w-[25px]' src="/images/icons/arrow.svg" width={100} height={100} alt="Arrow" />}
                           </div>
                         </div>
                       ) : null
@@ -194,7 +195,7 @@ const StickyNav = (props) => {
           {
             bladeData.map((data, index) => {
               // ${Array.isArray(crossedSection) && crossedSection.includes(data?.link) ? style.expand : ''}
-              return <li key={index} className={`${activeSection === data?.link ? 'activated ' : 'bg-softEmber'} ${style.navItem} transition-all duration-300 w-[8px] h-[60px] mb-[20px] rounded-[5px]`}>
+              return <li key={index} className={`${activeSection === data?.link ? 'activatedTab' : 'bg-softEmber'} ${style.navItem} transition-all duration-300 w-[8px] h-[60px] mb-[20px] rounded-[5px]`}>
                 <Link href={`#${data.link}`} onClick={(e) => handleStickyClick(e, data.link, index)}
                   className={`h-full w-full inline-block`}>
                   <div className={`${style.navLink} h-full`}>

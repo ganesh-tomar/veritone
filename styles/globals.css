@@ -502,3 +502,30 @@ header .mainHeader .innerWrap .innerMenu li {
     opacity: 1 !important;
     border-color: #d5ea21 !important;
 }
+body.riptideWeb .sticky-nav h4::before{
+    background-color: #2AA29C;
+}
+
+body.riptideWeb .intro-with-accordion .accordion > div::after{
+    background-image: url('/images/icons/arrow-riptideWeb.svg');
+}
+body .sticky-nav .activatedTab{
+    background-color: #FA524D;
+}
+body.riptideWeb .sticky-nav .activatedTab{
+    background-color: #2AA29C;
+}
+
+body.riptideWeb .tabs .wrapp .active > h4{
+    color: #2AA29C;
+}
+body.riptideWeb .tabs .wrapp div::after{
+    background: #2AA29C !important;
+    transition: width 0.3s ease;
+}
+body.riptideWeb .tabs .wrapp .active::after{
+    background: #2AA29C !important;
+}
+body.riptideWeb .tabs .wrapp .inner-content{
+    background: #2AA29C !important;
+}

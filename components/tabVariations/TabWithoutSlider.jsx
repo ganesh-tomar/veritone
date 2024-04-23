@@ -25,7 +25,7 @@ const Tabs = ({ tab, tab_content, bg, tabBg, pt }) => {
   return (
     <section className={`tabs padding-medium ${styles.tabs} ${styles.tabWithoutSlider} overflow-x-clip`}>
       <div className={`container ${styles.container} `} >
-        <div className={`wrapp `}>
+        <div className={`wrapp`}>
           <div className={`${styles.tabValBox} bg-softEmber ${open ? styles.expand : ''} sm-up:hidden`} onClick={dropdownHandler}>
             <ul className={`relative w-full flex flex-wrap justify-center items-center z-[4] sm:px-[20px] before:content-[''] before:w-[calc(100%+162px)] before:absolute before:h-full before:top-0 before:left-[-81px] before:bg-softEmber`}>
               {selectedIndex !== null && (
@@ -46,7 +46,7 @@ const Tabs = ({ tab, tab_content, bg, tabBg, pt }) => {
               {tab?.map((item, index) => {
                 return (
                   <li onClick={() => handler(index)} key={index} className={`cursor-pointer inline-block w-fit sm:w-full ${index === selectedIndex ? 'sm:hidden' : ''}`}>
-                    <div className={`${styles.tablist} ${i === index ? ` ${styles.active} ` : ''} relative w-fit mx-[32px] flex items-center justify-center sm:justify-start sm:mx-0 xl:my-[10px]`}>
+                    <div className={`${styles.tablist} ${i === index ? ` ${styles.active}  active` : ''} relative w-fit mx-[32px] flex items-center justify-center sm:justify-start sm:mx-0 xl:my-[10px]`}>
                       <div className={``}>
                         <Image className={`w-full h-full max-h-[32px] max-w-[32px] object-contain mr-[20px]`} src={item.tab_icon} alt={item.tab_icon_name} width={120} height={120} />
                       </div>
@@ -58,10 +58,8 @@ const Tabs = ({ tab, tab_content, bg, tabBg, pt }) => {
             </ul>
           </div>
           <div className={`tab-outer relative ${styles.tab_outer} pt-[59px]`}>
-
             {tab_content?.map((item, index) => {
               return (
-
                 <div key={index} className={`tab-content transition-opacity  overflow-hidden ${i === index ? `h-fit opacity-[1] ` : 'h-0 opacity-[0] '} flex flex-wrap ipad:overflow-visible`}>
                   <div className={`col-seven ${styles.col_seven} pr-[60px]`}>
                     <h2 className={`pr-[30px] md:pr-[0]`}>{item.tab_title}</h2>
@@ -81,7 +79,10 @@ const Tabs = ({ tab, tab_content, bg, tabBg, pt }) => {
                   <div className={`content-outer ${styles.content_outer} pt-[30px] lg:pt-[60px] w-full flex flex-wrap`}>
                     <div className={`img-outer ${styles.imgOuter} relative top-[0] bottm-[0] m-[auto] w-[487px] h-[256px] sm:h-[auto] laptop:w-[350px] sm:w-[100%]`}>
                       <Image className={`w-[100%] h-full object-cover`} src={item.imgpath3} alt={item.alt3} width={1000} height={1000} />
-                      <Image className={`logo absolute left-[0] top-[0] right-[0] bottom-[0] h-100px] w-[200px] m-auto z-10`} src={item.logo} alt={item.logo_alt} width={1000} height={1000} />
+                      {
+                        item.logo && <Image className={`logo absolute left-[0] top-[0] right-[0] bottom-[0] h-100px] w-[200px] m-auto z-10`} src={item.logo} alt={item.logo_alt} width={1000} height={1000} />
+                      }
+
                     </div>
                     <div className={`content ${styles.content}`}>
                       <div className={`inner-content ${styles.innerContent} ${item.bg} pt-[47px] lg:pt-[70px] pb-[67px] lg:pb-[45px] pl-[255px] pr-[60px] h-full laptopmid:pl-[225px] laptop:pl-[150px] lg:pl-[20px]`}>
@@ -92,26 +93,20 @@ const Tabs = ({ tab, tab_content, bg, tabBg, pt }) => {
                             <li className={`relative`}><h6>{item.tag1}</h6></li>
                             <li className={`relative`}><h6>{item.tag2}</h6></li>
                           </ul>}
-
                           <div className={`btn-wrap ${styles.btn_wrap} pt-[27px]`}>
                             {item.bottom_btn_url != '' && (<Button buttonClass={`${item.btnClass} mr-[23px] sm:mr-[0]`} buttonText={`${item.bottom_btn_text}`} url={`${item.bottom_btn_url}`} />)}
                             {item.videoUrl && (<Button buttonText={'Watch now'} url={'#'} buttonClass={'transparent'} videoUrl={item.videoUrl} />)}
                             {item.bottom_link_url && (<Button buttonClass={`text-link-white sm:mt-[20px]`} buttonText={`${item.bottom_link_text}`} url={`${item.bottom_link_url}`} />)}
-
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-
               )
             })}
-
-
           </div>
         </div>
-
       </div>
     </section>
   )

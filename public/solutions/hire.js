@@ -1,14 +1,13 @@
-
-
-
-
-
+export const themeColor = {
+  themeColor: "riptideWeb",
+}
 
 export const hireBanner = {
+    pageBg: "riptideWeb",
     title: "Superhuman hiring is here.",
     bg: "bg-cosmos",
     blurb:
-      "Veritone Hire empowers talent acquisition teams to attract 100% of jobs through a single vendor that seamlessly integrates with over 120 applicant tracking systems using the combined strengths of Broadbean and PandoLogic.",
+      "Veritone Hire empowers talent acquisition teams to advertise all of their jobs through a single vendor that seamlessly integrates with over 120 applicant tracking systems and over 2000 publishers using the combined strengths of Broadbean and PandoLogic and Veritone AI.",
     buttonText: "Request a demo",
     buttonClass: "default",
     buttonUrl: "/",
@@ -101,13 +100,14 @@ export const hireBanner = {
         alt: "woman_with_mic",
         imgpath2: "/images/hire/staffing_b.jpg",
         alt2: "aplifier_keys",
-        imgpath3: "/images/mic.png",
+        imgpath3: "/images/hire/vaco.jpg",
         alt3: "mic",
-        logo: "/images/westwood_one.svg",
+        logo: "",
         logo_alt: "Vaco",
         inner_title: "Vaco",
-        inner_blurb:
-          "Veritone Hire enabled the staffing firm to increase the number of job posts their specialist teams were able to publish.",
+        inner_blurb: "Veritone Hire enabled the staffing firm to increase the number of job posts their specialist teams were able to publish.",
+        tag1: "EFFICIENCY",
+        tag2: "ENGAGEMENT",
         bg: "bg-ember",
         btnClass: "btn-black",
         bottom_btn_text: "View case study",
@@ -130,8 +130,9 @@ export const hireBanner = {
         logo: "/images/hire/bullhorn_logo.png",
         logo_alt: "Bullhorn",
         inner_title: "Bullhorn",
-        inner_blurb:
-          "Veritone Hire enabled the staffing firm to increase the number of job posts their specialist teams were able to publish.",
+        inner_blurb:"Veritone Hire enabled the staffing firm to increase the number of job posts their specialist teams were able to publish.",
+        tag1: "METADATA",
+        tag2: "LICENSING",
         bg: "bg-ember",
         btnClass: "btn-black",
         bottom_btn_text: "Watch video",
@@ -245,7 +246,7 @@ export const hireBanner = {
         clientImage: "/images/slider_card_a.png",
         userName: "@veritone_inc",
         url: "",
-        comments: 12,
+        comments: 12, 
         refresh: 356,
         likes: "1.1k",
         share: 12,
@@ -361,9 +362,9 @@ export const hireBanner = {
     accordionData: [
       {
         id: 1,
-        heading: "Streamline the recruitment process",
+        heading: "Maximize hiring outcomes",
         paragraph:
-          "Source quality applicants faster, smarter, and more efficiently with programmatic job advertising, a performance-based job advertising method that intelligently automates and optimizes job advertising spend through AI          ",
+          "Optimize campaign performance and track the conversion of your advertising spend with key down-funnel metrics (including CPH and CPQA) to enhance candidate quality, reduce time-to-fill, and lower cost-per-hire.",
       },
       {
         id: 2,
@@ -571,14 +572,16 @@ export const hireBanner = {
       image: "/images/hire/AI-solutions.jpg",
       icon: "/images/icons/pencil.svg",
       iconName: "pencil",
+      cardBg: 'riptideWeb',
       title: "AI solutions and services, personalized",
       buttonText: "Professional Services",
       buttonUrl: "https://unlock.veritone.com/ps-pro-serv-contact-us",
     },
     imageCard2: {
         image: "/images/hire/connect.jpg",
-        icon: "/images/icons/pencil.svg",
+        icon: "/images/hire/direct_employer-white.svg",
         iconName: "pencil",
+        cardBg: 'riptideWeb',
         title: "Connect with us in person",
         buttonText: "Veritone Hire Events",
         buttonUrl: "/",

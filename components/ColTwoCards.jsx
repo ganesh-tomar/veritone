@@ -41,14 +41,15 @@ export default function ColTwoCards({ data }) {
                             <div className="imageWrap w-full max-h-[430px] h-full lg:max-h-[227px] lg:h-[227px]">
                                 <Image className={`w-full h-full object-cover`} src={data.imageCard2.image} alt={`card_a`} width={1000} height={1000} />
                             </div>
-                            <div className="yellow_card absolute bottom-0 left-0 w-full pt-[54px] pl-[53px] pr-[120px] pb-[58px] flex bg-lightning desktopMid:pr-[30px] laptopmid:pr-[38px] laptop:pr-[38px] laptop:pl-[38px] tablet:px-[38px] tablet:py-[38px] md:px-[15px] md:py-[30px] lg:relative lg:bottom-auto lg:left-auto md:flex-wrap">
+                            <div className={`yellow_card absolute bottom-0 left-0 w-full pt-[54px] pl-[53px] pr-[120px] pb-[58px] flex ${(data.imageCard.cardBg && data.imageCard.cardBg == 'riptideWeb') ? 'bg-riptideWeb' : 'bg-lightning'}  desktopMid:pr-[30px] laptopmid:pr-[38px] laptop:pr-[38px] laptop:pl-[38px] tablet:px-[38px] tablet:py-[38px] md:px-[15px] md:py-[30px] lg:relative lg:bottom-auto lg:left-auto md:flex-wrap`}>
                                 <div className="imageWrap w-full max-w-[50px] max-h-[50px] h-full xl:max-w-[44px] xl:max-h-[44px] md:mb-[20px]">
                                     <Image className={`w-full h-full object-cover`} src={data.imageCard2.icon} alt={data.imageCard2.iconName} width={1000} height={1000} />
                                 </div>
-                                <div className="content w-[calc(100%-50px)] pl-[23px] xl:w-[calc(100%-44px)] md:w-full md:pl-0">
+                                <div className={`content w-[calc(100%-50px)] ${(data.imageCard.cardBg && data.imageCard.cardBg == 'riptideWeb') ? 'text-white' : ''}  pl-[23px] xl:w-[calc(100%-44px)] md:w-full md:pl-0`}>
                                     <h3 className="text-ellipsis leading-[1.25] line-clamp-3">{data.imageCard2.title}</h3>
                                     <div className="btn-wrap mt-[30px] md:mt-[20px]">
-                                        <Button buttonClass={`text-link-black`} buttonText={data.imageCard2.buttonText} url={data.imageCard2.buttonUrl} />
+                                        {data.imageCard.cardBg && data.imageCard.cardBg == 'riptideWeb' ? <Button buttonClass={`text-link-white`} buttonText={data.imageCard2.buttonText} url={data.imageCard2.buttonUrl} /> : <Button buttonClass={`text-link-black`} buttonText={data.imageCard2.buttonText} url={data.imageCard2.buttonUrl} />}
+
                                     </div>
                                 </div>
                             </div>
