@@ -64,8 +64,8 @@ const Home = () => {
 				<StickyNav data={hireStickyNavData} />
 				<IntroWithAccordion data={hireIntroWithAccordionData1} pt="padding-top-120" pb='no-padding-bottom' />
 				<IntroWithAccordion data={hireIntroWithAccordionData2} reverse={"true"} pt='padding-medium-top' pb='no-padding-bottom' />
-				<IntroWithAccordion data={hireIntroWithAccordionData3} pt='padding-medium-top' pb='no-padding-bottom' />
-				<IntroWithAccordion data={hireIntroWithAccordionData4} reverse={"true"} pt='padding-medium-top' pb='padding-medium-bottom' />
+				<IntroWithAccordion data={hireIntroWithAccordionData3} pt='padding-medium-top' reverse={"true"} pb='no-padding-bottom' />
+				<IntroWithAccordion data={hireIntroWithAccordionData4} pt='padding-medium-top' pb='padding-medium-bottom' />
 				<Tabs data={hireTabs} />
 				{/* <Accordion data={hireAccordionData} /> */}
 				<ColTwoCards data={hireColTwoCards} />

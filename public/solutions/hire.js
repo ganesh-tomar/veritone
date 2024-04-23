@@ -32,16 +32,16 @@ export const hireBanner = {
       link: "source",
     },
     {
-      heading: "Automate",
-      phoneHeading: "Automate diversity sourcing and stay OFCCP compliant",
-      blurb: "diversity sourcing and stay OFCCP compliant",
-      link: "automate",
-    },
-    {
       heading: "Leverage",
       phoneHeading: "Leverage media planning and buying services",
       blurb: "media planning and buying services",
       link: "leverage",
+    },
+    {
+      heading: "Automate",
+      phoneHeading: "Automate diversity sourcing and stay OFCCP compliant",
+      blurb: "diversity sourcing and stay OFCCP compliant",
+      link: "automate",
     },
   ];
 
@@ -74,7 +74,7 @@ export const hireBanner = {
         btnlink: "https://unlock.veritone.com/hire-contact-us",
         imgpath: "/images/hire/direct_employer_a.jpg",
         alt: "cameraman",
-        imgpath2: "/images/hire/direct_employer_a.jpg",
+        imgpath2: "/images/hire/stocksy.svg",
         alt2: "camera",
         imgpath3: "/images/pizza.png",
         alt3: "camera_lens",
@@ -314,8 +314,8 @@ export const hireBanner = {
   
   export const hireIntroWithAccordionData1 = {
     id: "optimize",
-    backwardImage: "/images/IntroWithAccordion/person-image.png",
-    forewardImage: "/images/IntroWithAccordion/shutterstock.png",
+    backwardImage: "/images/hire/optimize_b.svg",
+    forewardImage: "/images/hire/optimize_a.svg",
     borderBottom: true,
     intro: {
       title: "Optimize your recruitment strategy with data and insights",
@@ -348,8 +348,8 @@ export const hireBanner = {
   };
   export const hireIntroWithAccordionData2 = {
     id: "source",
-    backwardImage: "/images/IntroWithAccordion/mic_.png",
-    forewardImage: "/images/IntroWithAccordion/girl.png",
+    backwardImage: "/images/hire/source_b.jpg",
+    forewardImage: "/images/hire/connect.jpg",
     borderBottom: true,
     intro: {
       title: "Source top talent in the right place, at the right time .      ",
@@ -361,19 +361,19 @@ export const hireBanner = {
     accordionData: [
       {
         id: 1,
-        heading: "Streamline the recruitment process        ",
+        heading: "Streamline the recruitment process",
         paragraph:
           "Source quality applicants faster, smarter, and more efficiently with programmatic job advertising, a performance-based job advertising method that intelligently automates and optimizes job advertising spend through AI          ",
       },
       {
         id: 2,
-        heading: "Save on recruitment costs        ",
+        heading: "Save on recruitment costs",
         paragraph:
           "Increase candidate volume via AI-powered advertising technology allowing you the power to set your own budgets, giving you complete control over how much or how little you would like to spend.          ",
       },
       {
         id: 3,
-        heading: "Maximize hiring outcomes        ",
+        heading: "Maximize hiring outcomes",
         paragraph:
           "Optimize campaign performance and track the conversion of your advertising spend with key down-funnel metrics (including CPH and CPQA) to enhance candidate quality, reduce time-to-fill, and lower cost-per-hire.          ",
       },
@@ -381,8 +381,9 @@ export const hireBanner = {
   };
   export const hireIntroWithAccordionData3 = {
     id: "accelerate",
-    backwardImage: "/images/IntroWithAccordion/video_camera.png",
-    forewardImage: "/images/IntroWithAccordion/girl_2.png",
+    backwardImage: "/images/hire/leverage_b.jpg",
+    forewardImage: "/images/hire/leverage_a.jpg",
+    
     borderBottom: true,
     intro: {
       title: "Leverage Veritone Hire’s media planning and buying services.",
@@ -416,8 +417,8 @@ export const hireBanner = {
 
   export const hireIntroWithAccordionData4 = {
     id: "automated",
-    backwardImage: "/images/IntroWithAccordion/video_camera.png",
-    forewardImage: "/images/IntroWithAccordion/girl_2.png",
+    backwardImage: "/images/hire/automated_b.jpg",
+    forewardImage: "/images/hire/automated_a.jpg",
     borderBottom: true,
     intro: {
       title: "Automated solutions that help you recruit for diversity and comply with OFCCP.",
