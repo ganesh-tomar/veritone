@@ -381,7 +381,7 @@ export const hireBanner = {
     ],
   };
   export const hireIntroWithAccordionData3 = {
-    id: "accelerate",
+    id: "leverage",
     backwardImage: "/images/hire/leverage_b.jpg",
     forewardImage: "/images/hire/leverage_a.jpg",
     
@@ -417,7 +417,7 @@ export const hireBanner = {
   };
 
   export const hireIntroWithAccordionData4 = {
-    id: "automated",
+    id: "automate",
     backwardImage: "/images/hire/automated_b.jpg",
     forewardImage: "/images/hire/automated_a.jpg",
     borderBottom: true,
