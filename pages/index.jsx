@@ -2,6 +2,7 @@
 import Layout from '../components/layout';
 import dynamic from 'next/dynamic'
 import { Suspense } from 'react'
+import { useEffect } from 'react';
 const HeroBanner = dynamic(() => import('../components/HeroBanner'), {
 	suspense: true,
 })
@@ -29,6 +30,20 @@ const Home = () => {
 		setUrl(url)
 	}
 	let test = setFormOverlay.bind(this)
+
+	const [isLoading, setIsLoading] = useState(true);
+
+	useEffect(() => {
+		const timeout = setTimeout(() => {
+			setIsLoading(false);
+		}, 2500);
+
+		return () => clearTimeout(timeout);
+	}, []);
+
+	if (isLoading) {
+		return <div>Loading...</div>;
+	}
 
 	return (
 
