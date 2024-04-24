@@ -12,7 +12,7 @@ const AccordionItem = ({ id, heading, paragraph, icon, tag1, tag2, btnText, btnL
         >
             <div className={`accordionHead flex lg:flex-wrap`}>
                 <div className="iconWrap max-w-[50px] max-h-[50px] w-full h-full mt-[40px] lg:max-w-[44px] lg:max-h-[44px]">
-                    <Image className={`w-full object-contain h-[50px] lg:h-[44px]`} src={icon} alt={`icon`} width={120} height={120} />
+                    <Image className={`w-full object-contain h-[50px] lg:h-[44px]`} src={icon} alt={`icon`} quality={100} width={120} height={120} />
                 </div>
                 <div className={`${style.accordionHead} head w-[calc(100%-80px)] py-[30px] lg:pt-[16px] ml-[30px] pr-[260px] lg:pr-0 lg:w-full lg:ml-0`}>
                     <h4 className="lg:pr-[60px]">

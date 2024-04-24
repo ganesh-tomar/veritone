@@ -143,7 +143,7 @@ export default function Header() {
                             winWidth > 1024 ? <div className="row flex items-center justify-between ipad:hidden">
                                 <div className="logo relative sm:w-[77px] mb-[20px]">
                                     <Link href="/" className='emptyLink'>.</Link>
-                                    <Image src="/images/logo/logo.svg" width={148} height={28} alt="Logo" />
+                                    <Image src="/images/logo/logo.svg" width={148} quality={100} height={28} alt="Logo" />
                                 </div>
                                 <nav className={`max-w-[655px] mainNavWrap w-full transition-all duration-700 ease-in-out`}>
                                     <ul className='flex laptopsmall:justify-center'>
@@ -201,7 +201,7 @@ export default function Header() {
                                     <div className={`searchForm ${Style.searchForm} absolute left-[50%] w-full translate-x-[-50%] px-[20px] max-w-[1252px] mx-[auto] overflow-x-auto transition-all rounded-b-[4px] duration-300 ease-in-out  ${isSerachOpen ? 'top-[86px] ipad:top-[92px]' : 'top-[-140%] ipad:top-[-82px]'}`}>
                                         <div className="searchWrapper relative bg-cosmos py-[30px] px-[40px]">
                                             <div className="crossBtn absolute top-[5px] right-[10px] w-[20px] h-[20px] sm:right-[20px] cursor-pointer" onClick={() => searchCrossBtn()}>
-                                                <Image src="/images/icons/cross.svg" width={24} height={24} alt='Cross'></Image>
+                                                <Image src="/images/icons/cross.svg" width={24} quality={100} height={24} alt='Cross'></Image>
                                             </div>
                                             <form action="" autoComplete="off">
                                                 <label htmlFor="search" className='text-[0]'>.</label>

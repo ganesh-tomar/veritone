@@ -9,7 +9,7 @@ const HeroBanner = ({ heroTitle, heroBlurb, imgpath, alt, video_url, bg, setForm
 	return (
 		<section className={`hero-banner ${styles.heroBanner} ${bg} ${!video_url == '' ? styles.blackOverlay : ''} items-center flex flex-wrap justify-center pt-[193px] laptopmid:pt-[180px] laptop:pt-[150px] tablet:pt-[140px] md:pt-[130px]`}>
 			<div className={`bg-img ${styles.bg_img} absolute top-[0] left-[0] bottom-[0] w-[100%]`}>
-				{imgpath && (<Image className={`h-[100%] w-[100%] object-cover`} src={imgpath} alt={alt} width={120} height={120} />)}
+				{imgpath && (<Image className={`h-[100%] w-[100%] object-cover`} src={imgpath} alt={alt} quality={100} width={120} height={120} />)}
 			</div>
 			{video_url && (<video autoPlay muted loop playsInline preload="none" className={`${styles.video_url} object-cover absolute top-[0] left-[0] bottom-[0] w-[100%] h-[100%]`}>
 				<source src={video_url} type="video/mp4" />

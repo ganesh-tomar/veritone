@@ -15,7 +15,7 @@ export default function BannerSecondLevel({ title, blurb, buttonText, buttonClas
     return (
         <section className={`banner-second-level flex items-center overflow-hidden padding-120 min-h-[848px] ipad:min-h-[600px] md:min-h-[550px] md:pt-[80px] ${bg}`}>
             <div className="bg-image absolute w-full h-full top-0 left-0">
-                <Image className={`object-cover w-full h-full`} src={bgimage} alt={bgimageName} width={3000} height={3000} />
+                <Image className={`object-cover w-full h-full`} src={bgimage} alt={bgimageName} quality={100} width={3000} height={3000} />
             </div>
             <div className="container">
                 <div className="row flex justify-between items-center md:flex-wrap md:flex-col-reverse pr-[74px] desktop:pr-[135px] xl:pr-[90px] md:pr-0">
@@ -27,7 +27,7 @@ export default function BannerSecondLevel({ title, blurb, buttonText, buttonClas
                         </div>
                     </div>
                     <div className={`${style.imageWrap} relative w-full h-full max-w-[385px] max-h-[475px] xl:max-w-[285px] xl:max-h-[375px] md:max-w-[160px] md:max-h-[195px] md:mb-[25px]`}>
-                        <Image className={`object-cover w-full h-full`} src={imagePath} alt={imageName} width={2000} height={2000} />
+                        <Image className={`object-cover w-full h-full`} src={imagePath} quality={100} alt={imageName} width={2000} height={2000} />
                     </div>
                 </div>
             </div>

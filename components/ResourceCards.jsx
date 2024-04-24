@@ -38,6 +38,7 @@ export default function ResourceCards({ data }) {
                                         width={2000}
                                         height={2000}
                                         alt={item.imageName}
+                                        quality={100}
                                         className={`w-full h-full scale-[1] group-hover:scale-[1.1] transition-all duration-300`}
                                     />
                                 </div>
@@ -52,8 +53,8 @@ export default function ResourceCards({ data }) {
 
                 </div>
                 {winWidth < 596 ? <div className="btnWrap w-[15%] ipad:w-auto text-right lg:pt-[25px] sm:w-full">
-                        <Button buttonText={data.intro.btnText} url={data.intro.btnUrl} buttonClass={data.intro.btnClass} />
-                    </div> : ''}
+                    <Button buttonText={data.intro.btnText} url={data.intro.btnUrl} buttonClass={data.intro.btnClass} />
+                </div> : ''}
             </div>
         </section>
     )

@@ -172,6 +172,7 @@ export default function TwitterSlider({ data, onlyInternalPosts }) {
                                             width={500}
                                             height={500}
                                             alt={slide.imageName}
+                                            quality={100}
                                             className={`w-full h-full`}
                                         />
                                     </div>
@@ -183,6 +184,7 @@ export default function TwitterSlider({ data, onlyInternalPosts }) {
                                                     width={300}
                                                     height={300}
                                                     alt={slide.client}
+                                                    quality={100}
                                                     className={`w-full h-full object-cover`}
                                                 />
                                             </div>

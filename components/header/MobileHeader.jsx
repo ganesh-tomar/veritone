@@ -55,7 +55,7 @@ export default function MobileHeader() {
         }
     }
     const showSubManuRes = (e, val, validURL) => {
-        if (winWidth <= 1024 && validURL =="#") {
+        if (winWidth <= 1024 && validURL == "#") {
             e.preventDefault()
             e.stopPropagation()
             setActiveMobileSubMenu(val);
@@ -123,7 +123,7 @@ export default function MobileHeader() {
         <div className="row flex items-center justify-between laptop-portrait:hidden xl-up:hidden">
             <div className="logo relative sm:w-[77px] mb-[20px] ipad:mb-0">
                 <Link href="/" className='emptyLink'>.</Link>
-                <Image src="/images/logo/logo.svg" width={148} height={28} alt="Logo" />
+                <Image src="/images/logo/logo.svg" width={148} quality={100} height={28} alt="Logo" />
             </div>
             <nav className={`max-w-[655px] mainNavWrap w-full ipad:absolute ipad:top-[55px] sm:top-[41px] ipad:max-w-full ipad:p-[20px] ipad:h-[calc(100vh-250px)] sm:h-[calc(100vh-30px)] md:h-[calc(100vh-50px)] tablet:h-[calc(100vh-20px)] tabletlarge:h-[calc(100vh-50px)] tablet:pb-[100px] tabletlarge:pb-[60px] ipad:justify-between sm:justify-between sm:pb-[60px] ipad:flex-col transition-all duration-700 ease-in-out ipad:overflow-auto ipad:overflow-x-clip ipad:bg-cosmos ipad:flex  ${isMenuOpen ? 'ipad:left-[0%]' : 'ipad:left-[-100%]'} `}>
                 <ul className='flex laptopsmall:justify-center ipad:flex-wrap ipad:pt-[60px] phablet:pt-[0]'>
@@ -145,7 +145,7 @@ export default function MobileHeader() {
                                                                 const multiLink = subItem?.multiLink;
                                                                 return (
                                                                     <li key={i} className=' subMenuCheck pb-[10px] mb-[11px] ipad:mb-[7px] w-[calc(100%+42px)]' >
-                                                                        <Link href={`${subItem.url}`} className={`text-white ${Style.rightArrow} relative pr-0 text-[22px] laptopsmall:text-[20px] ipad:text-[19px] font-[700]`} onClick={(e) => showSubManuRes(e, i,subItem.url)} >{subItem?.menu}</Link>
+                                                                        <Link href={`${subItem.url}`} className={`text-white ${Style.rightArrow} relative pr-0 text-[22px] laptopsmall:text-[20px] ipad:text-[19px] font-[700]`} onClick={(e) => showSubManuRes(e, i, subItem.url)} >{subItem?.menu}</Link>
                                                                     </li>
                                                                 )
                                                             })
@@ -182,7 +182,7 @@ export default function MobileHeader() {
                 <div className={`searchForm ${Style.searchForm} absolute left-[50%] w-full  translate-x-[-50%] px-[20px] max-w-[1252px] mx-[auto] overflow-x-auto transition-all rounded-b-[4px] duration-300 ease-in-out  ${isSerachOpen ? 'top-[86px] ipad:top-[92px]' : 'top-[-140%] ipad:top-[-82px]'}`}>
                     <div className="searchWrapper relative bg-cosmos py-[30px] px-[40px]">
                         <div className="crossBtn absolute top-[5px] right-[10px] w-[20px] h-[20px] sm:right-[20px] cursor-pointer" onClick={() => searchCrossBtn()}>
-                            <Image src="/images/icons/cross.svg" width={24} height={24} alt='Cross'></Image>
+                            <Image src="/images/icons/cross.svg" width={24} quality={100} height={24} alt='Cross'></Image>
                         </div>
                         <form action="" autoComplete="off">
                             <label htmlFor="search" className='text-[0]'>.</label>

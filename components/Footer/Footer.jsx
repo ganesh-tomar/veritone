@@ -20,7 +20,7 @@ const Footer = () => {
 				{
 					classlink: 'Platform',
 					classurl: 'https://www.veritone.com/aiware/enterprise-ai-platform/',
-				},				
+				},
 				{
 					classlink: 'Services',
 					classurl: 'https://www.veritone.com/services/professional-services/',
@@ -70,7 +70,7 @@ const Footer = () => {
 				{
 					classlink: 'Careers',
 					classurl: 'https://www.veritone.com/careers/',
-				},				
+				},
 				{
 					classlink: 'News',
 					classurl: 'https://www.veritone.com/press-releases/',
@@ -78,7 +78,7 @@ const Footer = () => {
 				{
 					classlink: 'Investors',
 					classurl: 'https://investors.veritone.com/?_gl=1*1vjqcuz*_gcl_au*MTY4MjI5NjAzMC4xNzA5MDg1Njgz',
-				},				
+				},
 				{
 					classlink: 'Partners',
 					classurl: 'https://www.veritone.com/partners/',
@@ -129,6 +129,7 @@ const Footer = () => {
 							src="/images/logo.svg"
 							width={1000}
 							height={1000}
+							quality={100}
 							loading='eager'
 							className="w-full h-full object-contain"
 							alt="veritone"
@@ -140,7 +141,7 @@ const Footer = () => {
 					<div className="item-small sm:h-auto  lg:mb-[80px] max-w-[225px] h-[226px] flex flex-wrap flex-col sm:flex-col  lg:w-full lg:h-auto justify-between lg:max-w-full">
 						<div className="para-wrap relative lg:max-w-[225px] lg:mb-[50px]">
 							<p className="text-[16px]">
-							AI that makes you even better
+								AI that makes you even better
 							</p>
 						</div>
 						<div className="link-wrap lg:max-w-[225px]">
@@ -156,12 +157,12 @@ const Footer = () => {
 						</div>
 					</div>
 					<div className="item-big  w-[54%] lg:w-full lg:ml-[-20px] laptop:w-[65%] flex flex-wrap sm:justify-start  justify-end ml-[-60px]">
-					{Footerdata.map((wrap, index) => (
-                        <ul
-                            className={`col-three w-[calc(33.33%-120px)] lg:w-[calc(25%-40px)] sm:w-[calc(50%-40px)]  lg:mx-[20px] mx-[60px] lg-up:last:hidden sm:mb-[50px] lg:block
+						{Footerdata.map((wrap, index) => (
+							<ul
+								className={`col-three w-[calc(33.33%-120px)] lg:w-[calc(25%-40px)] sm:w-[calc(50%-40px)]  lg:mx-[20px] mx-[60px] lg-up:last:hidden sm:mb-[50px] lg:block
                             ${index === 2 ? 'mr-0' : ''}`}
-                            key={index}
-                        >
+								key={index}
+							>
 								<span className="text-[15px] font-bold uppercase mb-[20px] inline-block">
 									{wrap.heading}
 								</span>
@@ -179,7 +180,7 @@ const Footer = () => {
 						))}
 					</div>
 				</div>
-				<div className={`${styles. socialWrapper} socialWrapper  relative before:content-[''] before:absolute before:top-[-23px] sm:before:top-[-40px] before:left-0 before:w-full before:h-[2px] before:bg-cosmos`}>
+				<div className={`${styles.socialWrapper} socialWrapper  relative before:content-[''] before:absolute before:top-[-23px] sm:before:top-[-40px] before:left-0 before:w-full before:h-[2px] before:bg-cosmos`}>
 					<div className="wrapper w-full flex flex-wrap  justify-between mb-[19px] lg:mb-[50px]">
 						<ul className={`${styles.linkWrap} linkWrap flex flex-wrap md:max-w-[70%] lg:hidden md:mx-auto md:mb-[30px] md:w-full justify-between `}>
 							<li>
@@ -187,7 +188,7 @@ const Footer = () => {
 									className={`${styles.Link} Link text-[16px] font-normal  text-cosmos relative mr-[40px] lg:mr-[25px]  hover:text-purple transition-all duration-300 ease-in-out`}
 									href="https://www.veritone.com/terms/									"
 								>
-								Terms of Service
+									Terms of Service
 								</Link>
 							</li>
 							<li>
@@ -225,7 +226,7 @@ const Footer = () => {
 						</ul>
 						<div className="social-wrap md:max-w-[248px] relative sm:w-full flex flex-wrap lg:mx-auto md:w-full  justify-between w-[18.5%] lg:w-[30%] lg:mb-0">
 							<div className={`${styles.hovericon} hovericon relative max-w-[24px] max-h-[24px] hover:fill-purple transition-all duration-300 ease-in-out`}>
-							<Link href="https://www.facebook.com/veritoneinc" className='emptyLink' target='_blank'>.</Link>
+								<Link href="https://www.facebook.com/veritoneinc" className='emptyLink' target='_blank'>.</Link>
 								<svg
 									width="24"
 									height="24"
@@ -246,11 +247,11 @@ const Footer = () => {
 										</clipPath>
 									</defs>
 								</svg>
-							
+
 							</div>
-						     
-							 <div className={`${styles.hovericon} hovericon relative max-w-[24px] max-h-[24px] hover:fill-purple transition-all duration-300 ease-in-out`}>
-							 <Link href="https://twitter.com/veritoneinc" className='emptyLink'  target='_blank'>.</Link>
+
+							<div className={`${styles.hovericon} hovericon relative max-w-[24px] max-h-[24px] hover:fill-purple transition-all duration-300 ease-in-out`}>
+								<Link href="https://twitter.com/veritoneinc" className='emptyLink' target='_blank'>.</Link>
 								<svg
 									width="24"
 									height="24"
@@ -266,11 +267,11 @@ const Footer = () => {
 										className={` ${styles.svg} svg hover:fill-purple transition-all duration-300 ease-in-out`}
 									/>
 								</svg>
-							
-							 </div>
 
-							 <div className={`${styles.hovericon} hovericon relative max-w-[24px] max-h-[24px] hover:fill-purple transition-all duration-300 ease-in-out`}>
-							 <Link href="https://www.linkedin.com/company/veritone-inc-/" className='emptyLink'  target='_blank'>.</Link>
+							</div>
+
+							<div className={`${styles.hovericon} hovericon relative max-w-[24px] max-h-[24px] hover:fill-purple transition-all duration-300 ease-in-out`}>
+								<Link href="https://www.linkedin.com/company/veritone-inc-/" className='emptyLink' target='_blank'>.</Link>
 								<svg
 									width="24"
 									height="24"
@@ -284,10 +285,10 @@ const Footer = () => {
 										className={` ${styles.svg} svg hover:fill-purple transition-all duration-300 ease-in-out`}
 									/>
 								</svg>
-							
-							 </div>
-							 <div className={`${styles.hovericon} hovericon relative max-w-[24px] max-h-[24px] hover:fill-purple transition-all duration-300 ease-in-out`}>
-							 <Link href="https://www.youtube.com/c/VeritoneInc"  className='emptyLink' target='_blank'>.</Link>
+
+							</div>
+							<div className={`${styles.hovericon} hovericon relative max-w-[24px] max-h-[24px] hover:fill-purple transition-all duration-300 ease-in-out`}>
+								<Link href="https://www.youtube.com/c/VeritoneInc" className='emptyLink' target='_blank'>.</Link>
 								<svg
 									width="24"
 									height="24"
@@ -301,11 +302,11 @@ const Footer = () => {
 										className={` ${styles.svg} svg hover:fill-purple transition-all duration-300 ease-in-out`}
 									/>
 								</svg>
-							
-							 </div>				
-							 		
-						     <div className={`${styles.hovericon} hovericon relative max-w-[24px] max-h-[24px] hover:fill-purple transition-all duration-300 ease-in-out`}>
-							 <Link href="https://www.instagram.com/veritone_inc/" className='emptyLink'  target='_blank'>.</Link>
+
+							</div>
+
+							<div className={`${styles.hovericon} hovericon relative max-w-[24px] max-h-[24px] hover:fill-purple transition-all duration-300 ease-in-out`}>
+								<Link href="https://www.instagram.com/veritone_inc/" className='emptyLink' target='_blank'>.</Link>
 								<svg
 									width="24"
 									height="24"
@@ -336,16 +337,16 @@ const Footer = () => {
 										</clipPath>
 									</defs>
 								</svg>
-							
-							 </div>
-						     
 
-						
-						
+							</div>
+
+
+
+
 						</div>
 					</div>
 					<p className="small lg:text-center sm:text-center sm:max-w-[250px] sm:mx-auto">
-						© Veritone, Inc. All rights reserved. © {currentYear }
+						© Veritone, Inc. All rights reserved. © {currentYear}
 					</p>
 				</div>
 			</div>

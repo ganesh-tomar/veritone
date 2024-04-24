@@ -11,6 +11,7 @@ const FullWidthContent = ({ col }) => {
 					alt={col.alt}
 					width={1000}
 					height={1000}
+					quality={75}
 					className="w-full h-full object-cover"
 				/>
 			</div>

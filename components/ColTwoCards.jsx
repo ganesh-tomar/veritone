@@ -22,11 +22,11 @@ export default function ColTwoCards({ data }) {
                 <div className={`outer w-[calc(100%+22px)] left-0 top-0 ml-[-11px] flex flex-wrap lg:w-full lg:ml-0 lg:block  ${data.imageCard2 && 'lg-up:h-[550px]'} `}>
                     <div className="relative w-[calc(50%-22px)] lg-up:flex lg-up:flex-wrap lg-up:flex-col lg-up:justify-between mx-[11px] lg:w-full lg:mx-0">
                         <div className="imageWrap w-full max-h-[430px] h-full lg:max-h-[227px] lg:h-[227px]">
-                            <Image className={`w-full h-full object-cover`} src={data.imageCard.image} alt={`card_a`} width={1000} height={1000} />
+                            <Image className={`w-full h-full object-cover`} src={data.imageCard.image} quality={100} alt={`card_a`} width={1000} height={1000} />
                         </div>
                         <div className="yellow_card absolute bottom-0 left-0 w-full pt-[54px] pl-[53px] pr-[120px] pb-[58px] flex bg-lightning desktopMid:pr-[30px] laptopmid:pr-[38px] laptop:pr-[38px] laptop:pl-[38px] tablet:px-[38px] tablet:py-[38px] md:px-[15px] md:py-[30px] lg:relative lg:bottom-auto lg:left-auto md:flex-wrap">
                             <div className="imageWrap w-full max-w-[50px] max-h-[50px] h-full xl:max-w-[44px] xl:max-h-[44px] md:mb-[20px]">
-                                <Image className={`w-full h-full object-cover`} src={data.imageCard.icon} alt={data.imageCard.iconName} width={1000} height={1000} />
+                                <Image className={`w-full h-full object-cover`} src={data.imageCard.icon} quality={100} alt={data.imageCard.iconName} width={1000} height={1000} />
                             </div>
                             <div className="content w-[calc(100%-50px)] pl-[23px] xl:w-[calc(100%-44px)] md:w-full md:pl-0">
                                 <h3 className="text-ellipsis leading-[1.25] line-clamp-3">{data.imageCard.title}</h3>
@@ -39,11 +39,11 @@ export default function ColTwoCards({ data }) {
                     {
                         data.imageCard2 && <div className="relative lg:mt-[20px] w-[calc(50%-22px)] lg-up:flex lg-up:flex-wrap lg-up:flex-col lg-up:justify-between mx-[11px] lg:w-full lg:mx-0">
                             <div className="imageWrap w-full max-h-[430px] h-full lg:max-h-[227px] lg:h-[227px]">
-                                <Image className={`w-full h-full object-cover`} src={data.imageCard2.image} alt={`card_a`} width={1000} height={1000} />
+                                <Image className={`w-full h-full object-cover`} src={data.imageCard2.image} quality={100} alt={`card_a`} width={1000} height={1000} />
                             </div>
                             <div className={`yellow_card absolute bottom-0 left-0 w-full pt-[54px] pl-[53px] pr-[120px] pb-[58px] flex ${(data.imageCard.cardBg && data.imageCard.cardBg == 'riptideWeb') ? 'bg-riptideWeb' : 'bg-lightning'}  desktopMid:pr-[30px] laptopmid:pr-[38px] laptop:pr-[38px] laptop:pl-[38px] tablet:px-[38px] tablet:py-[38px] md:px-[15px] md:py-[30px] lg:relative lg:bottom-auto lg:left-auto md:flex-wrap`}>
                                 <div className="imageWrap w-full max-w-[50px] max-h-[50px] h-full xl:max-w-[44px] xl:max-h-[44px] md:mb-[20px]">
-                                    <Image className={`w-full h-full object-cover`} src={data.imageCard2.icon} alt={data.imageCard2.iconName} width={1000} height={1000} />
+                                    <Image className={`w-full h-full object-cover`} src={data.imageCard2.icon} quality={100} alt={data.imageCard2.iconName} width={1000} height={1000} />
                                 </div>
                                 <div className={`content w-[calc(100%-50px)] ${(data.imageCard.cardBg && data.imageCard.cardBg == 'riptideWeb') ? 'text-white' : ''}  pl-[23px] xl:w-[calc(100%-44px)] md:w-full md:pl-0`}>
                                     <h3 className="text-ellipsis leading-[1.25] line-clamp-3">{data.imageCard2.title}</h3>
@@ -64,6 +64,7 @@ export default function ColTwoCards({ data }) {
                                             className={`w-full h-full object-cover`}
                                             src={`/images/icons/${card.icon}`}
                                             alt={`card_${index}`}
+                                            quality={100}
                                             width={1000}
                                             height={1000}
                                         />
