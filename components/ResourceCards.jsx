@@ -32,7 +32,7 @@ export default function ResourceCards({ data }) {
                         <div key={index} className="colThree w-[calc(33.33%-22px)] lg:w-[calc(50%-22px)] md:w-full lg:mb-[30px] mx-[11px]">
                             <div className={`card relative group`}>
                                 <Link className='emptyLink' href={item.url}>.</Link>
-                                <div className="imageWrap mb-[32px] max-h-[230px] w-full h-full overflow-hidden">
+                                <div className="imageWrap mb-[32px] h-[230px] w-full  overflow-hidden">
                                     <Image
                                         src={item.imagePath}
                                         width={2000}
