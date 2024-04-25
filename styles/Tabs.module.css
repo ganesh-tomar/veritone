@@ -349,7 +349,7 @@
 }
 .tabs.tabWithoutSlider .tabValBox {
   position: relative;
-  height: 70px;
+  height: fit-content;
   padding: 5px 70px 5px 0;
   overflow: hidden;
   cursor: pointer;
