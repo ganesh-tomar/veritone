@@ -30,7 +30,7 @@ const Tabs = ({ tab, tab_content, bg, tabBg, pt }) => {
             <ul className={`relative w-full flex  flex-wrap justify-center items-center z-[4] sm:px-[20px] before:content-[''] before:w-[calc(100%+162px)] before:absolute before:h-full before:top-0 before:left-[-81px]`}>
               {selectedIndex !== null && (
                 <li key={selectedIndex} className={`cursor-pointer w-full`}>
-                  <div className={`${styles.tablist} ${selectedIndex === selectedIndex ? ` ${styles.active} ` : ''} relative w-fit mx-[32px] flex items-center justify-center sm:justify-start sm:mx-0 xl:my-[10px]`}>
+                  <div className={`${styles.tablist} tablist ${selectedIndex === selectedIndex ? ` ${styles.active} ` : ''} relative w-fit mx-[32px] flex items-center justify-center sm:justify-start sm:mx-0 xl:my-[10px]`}>
                     <div className={``}>
                       {/* Render the icon and heading of the selected tab */}
                       <Image className={`w-full h-full max-h-[32px] max-w-[32px] object-contain mr-[20px]`} src={tab[selectedIndex].tab_icon} quality={100} alt={tab[selectedIndex].tab_icon_name} width={120} height={120} />

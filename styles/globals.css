@@ -507,7 +507,7 @@ body.riptideWeb .sticky-nav h4::before{
 }
 
 body.riptideWeb .intro-with-accordion .accordion > div::after{
-    background-image: url('/images/icons/arrow-riptideWeb.svg');
+    background-image: url('/images/hire/arrow.svg');
 }
 body .sticky-nav .activatedTab{
     background-color: #FA524D;
@@ -565,10 +565,28 @@ body.riptideWeb .tabs .wrapp .listBox{
 body.riptideWeb .tabs .wrapp .listBox ul::before{
     background: #DEE8E8;
 }
-body.riptideWeb .tabs .wrapp div::after{
-    background: #2AA29C !important;
-    transition: width 0.3s ease;
+@media screen and (min-width: 595px) {
+    body.riptideWeb .tabs .wrapp div::after{
+        background: #2AA29C !important;
+        transition: width 0.3s ease;
+    }
 }
+@media screen and (max-width: 596px) {
+    body.riptideWeb .tabs .wrapp > div::after{
+        background-image: url("/images/hire/arrow.svg");
+    }
+    
+    body.riptideWeb .tabs .wrapp .tablist::after{
+        background: #2AA29C !important;
+        transition: width 0.3s ease;
+    }
+    body.riptideWeb .tabs .wrapp .tablist h4{
+        color: #2AA29C !important;
+        transition: width 0.3s ease;
+    }
+}
+
+
 body.riptideWeb .tabs .wrapp .active::after{
     background: #2AA29C !important;
 }
