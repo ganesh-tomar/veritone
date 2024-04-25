@@ -577,7 +577,7 @@ export const hireBanner = {
       cardBg: 'riptideWeb',
       title: "AI solutions and services, personalized",
       buttonText: "Professional Services",
-      buttonUrl: "https://unlock.veritone.com/ps-pro-serv-contact-us",
+      buttonUrl: "https://www.veritone.com/services/professional-services/",
     },
     imageCard2: {
         image: "/images/hire/connect.jpg",
@@ -586,7 +586,7 @@ export const hireBanner = {
         cardBg: 'riptideWeb',
         title: "Connect with us in person",
         buttonText: "Veritone Hire Events",
-        buttonUrl: "/",
+        buttonUrl: "https://www.veritone.com/events/?vertical%5B%5D=hr-solutions",
       },
   };
   
@@ -635,7 +635,7 @@ export const hireBanner = {
       "No matter the job advertising method, the hiring challenge, or the company size, Veritone Hire has a solution for you.      ",
     btnText1: "Get started",
     btnClass1: "default",
-    btnUrl1: "https://unlock.veritone.com/hire-contact-us    ",
+    btnUrl1: "https://unlock.veritone.com/hire-contact-us",
     btnText2: "",
     btnClass2: "",
     btnUrl2: "",
