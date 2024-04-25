@@ -14,10 +14,10 @@ import { useEffect } from 'react';
 //importing sections data
 
 
-import { banner, stickyNavData, tabs, accordionData, colTwoCards, resourceCards, twitterSliderData, introWithAccordionData1, introWithAccordionData2, introWithAccordionData3, introWithAccordionData4, footerCta } from '../../public/mediaEntertainmentData/entertainment'
+import { banner, stickyNavData, tabs, accordionData, colTwoCards, resourceCards, twitterSliderData, introWithAccordionData1, introWithAccordionData2, introWithAccordionData3, introWithAccordionData4, footerCta, themeColor } from '../../public/mediaEntertainmentData/entertainment'
 
-import { publicBanner, publicStickyNavData, publicTabs, publicAccordionData, publicColTwoCards, publicResourceCards, publicTwitterSliderData, publicIntroWithAccordionData1, publicIntroWithAccordionData2, publicIntroWithAccordionData3, publicIntroWithAccordionData4, publicFooterCta } from '../../public/solutions/public-sector'
-import { hireBanner, hireStickyNavData, hireTabs, hireAccordionData, hireColTwoCards, hireResourceCards, hireTwitterSliderData, hireIntroWithAccordionData1, hireIntroWithAccordionData2, hireIntroWithAccordionData3, hireIntroWithAccordionData4, hireFooterCta, themeColor } from '../../public/solutions/hire'
+import { publicBanner, publicStickyNavData, publicTabs, publicAccordionData, publicColTwoCards, publicResourceCards, publicTwitterSliderData, publicIntroWithAccordionData1, publicIntroWithAccordionData2, publicIntroWithAccordionData3, publicIntroWithAccordionData4, publicFooterCta, publicthemeColor } from '../../public/solutions/public-sector'
+import { hireBanner, hireStickyNavData, hireTabs, hireAccordionData, hireColTwoCards, hireResourceCards, hireTwitterSliderData, hireIntroWithAccordionData1, hireIntroWithAccordionData2, hireIntroWithAccordionData3, hireIntroWithAccordionData4, hireFooterCta, hireThemeColor } from '../../public/solutions/hire'
 import { document } from 'postcss';
 
 const Home = () => {
@@ -27,7 +27,7 @@ const Home = () => {
 			<>
 				<NextSeo title="AI Solutions for Media, Entertainment & Broadcast | Veritone" description="Transform your media & entertainment business with Veritone's AI solutions. Drive growth and innovation. Click now." />
 				<BannerSecondLevel {...banner} />
-				<StickyNav data={stickyNavData} />
+				<StickyNav data={stickyNavData} themeColor={themeColor} />
 				<IntroWithAccordion data={introWithAccordionData1} pt="padding-top-120" pb='no-padding-bottom' />
 				<IntroWithAccordion data={introWithAccordionData2} reverse={"true"} pt='padding-medium-top' pb='no-padding-bottom' />
 				<IntroWithAccordion data={introWithAccordionData3} pt='padding-medium-top' pb='no-padding-bottom' />
@@ -45,7 +45,7 @@ const Home = () => {
 			<>
 				<NextSeo title="AI Solutions for Media, Entertainment & Broadcast | Veritone" description="Transform your media & entertainment business with Veritone's AI solutions. Drive growth and innovation. Click now." />
 				<BannerSecondLevel {...publicBanner} />
-				<StickyNav data={publicStickyNavData} />
+				<StickyNav data={publicStickyNavData} themeColor={publicthemeColor} />
 				<IntroWithAccordion data={publicIntroWithAccordionData1} pt="padding-top-120" pb='no-padding-bottom' />
 				<IntroWithAccordion data={publicIntroWithAccordionData2} reverse={"true"} pt='padding-medium-top' pb='no-padding-bottom' />
 				<IntroWithAccordion data={publicIntroWithAccordionData3} pt='padding-medium-top' pb='no-padding-bottom' />
@@ -63,7 +63,7 @@ const Home = () => {
 			<>
 				<NextSeo title="AI Solutions for Media, Entertainment & Broadcast | Veritone" description="Transform your media & entertainment business with Veritone's AI solutions. Drive growth and innovation. Click now." />
 				<BannerSecondLevel {...hireBanner} />
-				<StickyNav data={hireStickyNavData} themeColor={themeColor} />
+				<StickyNav data={hireStickyNavData} themeColor={hireThemeColor} />
 				<IntroWithAccordion data={hireIntroWithAccordionData1} pt="padding-top-120" pb='no-padding-bottom' />
 				<IntroWithAccordion data={hireIntroWithAccordionData2} reverse={"true"} pt='padding-medium-top' pb='no-padding-bottom' />
 				<IntroWithAccordion data={hireIntroWithAccordionData3} pt='padding-medium-top' reverse={"true"} pb='no-padding-bottom' />

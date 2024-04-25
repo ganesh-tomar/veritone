@@ -1,4 +1,4 @@
-export const themeColor = {
+export const hireThemeColor = {
   themeColor: "riptideWeb",
 }
 
@@ -434,7 +434,7 @@ export const hireBanner = {
     accordionData: [
       {
         id: 1,
-        heading: "A seamless way to list jobs for diversity and compliance        ",
+        heading: "A seamless way to list jobs for diversity and compliance ",
         paragraph:
           "Submit your jobs hassle-free to appropriate state workforce agencies and state-run Career One-Stop Centers. State-issued confirmation receipts ensure documentation for all published listings.          ",
       },
@@ -568,7 +568,7 @@ export const hireBanner = {
     intro: {
       title: "Hiring solutions made for you.",
       blurb:
-        "Veritone’s team of experts is available to help your organization integrate and apply AI to solve your unique challenges in a bespoke way.        ",
+        "Veritone’s team of experts is available to help your organization integrate and apply AI to solve your unique challenges in a bespoke way. ",
     },
     imageCard: {
       image: "/images/hire/AI-solutions.jpg",
@@ -600,7 +600,7 @@ export const hireBanner = {
     cards: [
       {
         imagePath: "/images/hire/resource_1.jpg",
-        url:'https://www.broadbean.com/uk/resources/whitepapers/stagnation-or-stimulation-fall-in-interest-rates-key-to-business-prosperity-in-2024/       ',
+        url:'https://www.broadbean.com/uk/resources/whitepapers/stagnation-or-stimulation-fall-in-interest-rates-key-to-business-prosperity-in-2024/ ',
         imageName: "speaker_setups",
         heading: "Stagnation or Stimulation?        ",
         blurb:
@@ -609,20 +609,20 @@ export const hireBanner = {
       },
       {
         imagePath: "/images/hire/resource_2.jpg",
-        url:'https://www.veritone.com/blog/job-application-tracking-in-a-cookie-less-world/         ',
+        url:'https://www.veritone.com/blog/job-application-tracking-in-a-cookie-less-world/',
         imageName: "board_keys",
         heading: "Job Application tracking in a cookie-less world",
         blurb:
-          "Veritone addresses this challenge by developing a cookie-less approach for programmatic job advertising, utilizing browser fingerprinting for accurate tracking.          ",
+          "Veritone addresses this challenge by developing a cookie-less approach for programmatic job advertising, utilizing browser fingerprinting for accurate tracking.",
         type: "Blog",
       },
       {
         imagePath: "/images/hire/resource_3.png",
-        url:'https://www.broadbean.com/uk/resources/blog/latest-news/unlocking-the-power-of-programmatic-your-guide-to-future-proof-recruitment/         ',
+        url:'https://www.broadbean.com/uk/resources/blog/latest-news/unlocking-the-power-of-programmatic-your-guide-to-future-proof-recruitment/',
         imageName: "person_mices",
         heading: "Unlock the power of programmatic",
         blurb:
-          "In the ever-evolving landscape of recruitment advertising, staying ahead of the curve is not just an advantage but a necessity"          ,
+          "In the ever-evolving landscape of recruitment advertising, staying ahead of the curve is not just an advantage but a necessity",
         type: "Blog",
       },
     ],
@@ -630,9 +630,9 @@ export const hireBanner = {
   
   
   export const hireFooterCta = {
-    title: "Ready for AI that helps you find more great people?     ",
+    title: "Ready for AI that helps you find more great people?",
     description:
-      "No matter the job advertising method, the hiring challenge, or the company size, Veritone Hire has a solution for you.      ",
+      "No matter the job advertising method, the hiring challenge, or the company size, Veritone Hire has a solution for you.",
     btnText1: "Get started",
     btnClass1: "default",
     btnUrl1: "https://unlock.veritone.com/hire-contact-us",

@@ -1,4 +1,9 @@
+
+export const themeColor = {
+  themeColor: "ember",
+}
 export const banner = {
+  pageBg: "ember",
   title: "Content is king. We help you rule.",
   bg: "bg-cosmos",
   blurb:

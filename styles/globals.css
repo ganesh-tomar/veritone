@@ -509,15 +509,27 @@ body.riptideWeb .sticky-nav h4::before{
 body.riptideWeb .intro-with-accordion .accordion > div::after{
     background-image: url('/images/hire/arrow.svg');
 }
-body .sticky-nav .activatedTab{
+
+body.ultraviolet .sticky-nav h4::before{
+    background-color: #8257EF;
+}
+
+body.ultraviolet .intro-with-accordion .accordion > div::after{
+    background-image: url('/images/public-sector/arrow.svg');
+}
+body .sticky-nav .fixedList li{
+    background-color: #EEE3E3;
+}
+body .sticky-nav .fixedList .activatedTab{
     background-color: #FA524D;
 }
-body.riptideWeb .sticky-nav .activatedTab{
+body.riptideWeb .sticky-nav .fixedList .activatedTab{
     background-color: #2AA29C;
 }
-.sticky-nav ul li{
-    color: #EEE3E3;
+body.ultraviolet .sticky-nav .fixedList .activatedTab{
+    background-color: #8257EF;
 }
+
 .navItem.active h4::before {
     transform: scaleX(1);
     transform-origin: top left;
@@ -526,6 +538,9 @@ body.riptideWeb .sticky-nav .activatedTab{
     body.riptideWeb .sticky-nav .navItem.active {
       background-color: #DEE8E8;
       border: none;
+    }
+    body.ultraviolet .sticky-nav .navItem.active{
+        background-color: #8257EF;
     }
     .sticky-nav .navItem.active {
       background-color: #eee3e3;
@@ -540,6 +555,13 @@ body.riptideWeb .sticky-nav ul li{
 }
 body.riptideWeb .tabs .wrapp .active > h4{
     color: #2AA29C;
+}
+
+body.ultraviolet .sticky-nav ul li{
+    color: #EEE3E3;
+}
+body.ultraviolet .tabs .wrapp .active > h4{
+    color: #8257EF;
 }
 .tabs .wrapp .tabValBox{
     background: #EEE3E3;
@@ -565,9 +587,29 @@ body.riptideWeb .tabs .wrapp .listBox{
 body.riptideWeb .tabs .wrapp .listBox ul::before{
     background: #DEE8E8;
 }
+
+
+
+body.ultraviolet .tabs .wrapp .tabValBox{
+    background: #EEE3E3;
+}
+body.ultraviolet .tabs .wrapp .tabValBox ul::before{
+    background: #EEE3E3;
+}
+body.ultraviolet .tabs .wrapp .listBox{
+    background: #EEE3E3;
+}
+body.ultraviolet .tabs .wrapp .listBox ul::before{
+    background: #EEE3E3;
+}
+
 @media screen and (min-width: 595px) {
     body.riptideWeb .tabs .wrapp div::after{
         background: #2AA29C !important;
+        transition: width 0.3s ease;
+    }
+    body.ultraviolet .tabs .wrapp div::after{
+        background: #8257EF !important;
         transition: width 0.3s ease;
     }
 }
@@ -584,6 +626,20 @@ body.riptideWeb .tabs .wrapp .listBox ul::before{
         color: #2AA29C !important;
         transition: width 0.3s ease;
     }
+
+
+    body.ultraviolet .tabs .wrapp > div::after{
+        background-image: url("/images/public-sector/arrow.svg");
+    }
+    
+    body.ultraviolet .tabs .wrapp .tablist::after{
+        background: #8257EF !important;
+        transition: width 0.3s ease;
+    }
+    body.ultraviolet .tabs .wrapp .tablist h4{
+        color: #8257EF !important;
+        transition: width 0.3s ease;
+    }
 }
 
 
@@ -592,4 +648,14 @@ body.riptideWeb .tabs .wrapp .active::after{
 }
 body.riptideWeb .tabs .wrapp .inner-content{
     background: #2AA29C !important;
+}
+
+body.ultraviolet .tabs .wrapp .active::after{
+    background: #8257EF !important;
+}
+body.ultraviolet .tabs .wrapp .inner-content{
+    background: #8257EF !important;
+}
+body.ultraviolet .accordion .accordion_wrap div::after{
+    background-image: url("/images/public-sector/arrow.svg");
 }

@@ -1,4 +1,9 @@
+
+export const publicthemeColor = {
+  themeColor: "ultraviolet",
+}
 export const publicBanner = {
+    pageBg: "ultraviolet",
     title: "AI for the greater good.",
     bg: "bg-cosmos",
     blurb:
@@ -617,6 +622,7 @@ export const publicBanner = {
       image: "/images/hire/AI-solutions.jpg",
       icon: "/images/icons/pencil.svg",
       iconName: "pencil",
+      cardBg: 'riptideWeb',
       title: "Personalized AI services that meet your needs",
       buttonText: "Professional Services",
       buttonUrl: "https://unlock.veritone.com/ps-pro-serv-contact-us      ",
@@ -625,6 +631,7 @@ export const publicBanner = {
         image: "/images/public-sector/redact-on-demand.jpg",
         icon: "/images/icons/pencil.svg",
         iconName: "pencil",
+        cardBg: 'ultraviolet',
         title: "On-demand audio and video redaction",
         buttonText: "Redact Managed Service",
         buttonUrl: "https://www.veritone.com/services/redaction-managed-service/",

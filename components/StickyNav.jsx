@@ -27,63 +27,6 @@ const StickyNav = (props) => {
 
   const [distanceFromTop, setDistanceFromTop] = useState(0);
   const elementRef = useRef(null);
-  // const Stickytop = {
-  //   top: `${scrollValue - 2}px`,
-  //   borderTop: `1px solid black`
-  // };
-
-  // useEffect(() => {
-  //   const handleScroll = () => {
-  //     const viewportHeight = window.innerHeight;
-  //     const viewportMidpoint = viewportHeight / 2;
-  //     const sections = document.querySelectorAll('.intro-with-accordion');
-  //     const firstSectionBounding = sections[0].getBoundingClientRect();
-  //     const fixedList = document.querySelector(`.${style.fixedList}`)
-  //     const lastSectionBounding = sections[sections.length - 1].getBoundingClientRect();
-  //     if (firstSectionBounding.top < viewportMidpoint) {
-  //       fixedList.classList.remove('opacity-0', 'invisible');
-  //     } else {
-  //       fixedList.classList.add('opacity-0', 'invisible');
-  //     }
-  //     // if (lastSectionBounding.bottom < viewportMidpoint) {
-  //     //   fixedList.classList.add('opacity-0', 'invisible');
-  //     // }
-  //   };
-
-  //   window.addEventListener('scroll', handleScroll);
-  //   return () => window.removeEventListener('scroll', handleScroll);
-  // }, []);
-
-  // useEffect(() => {
-  //   const calculateDistanceFromTop = () => {
-  //     const elementTop = elementRef.current.getBoundingClientRect().top;
-  //     const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-  //     const distance = elementTop + scrollTop;
-  //     const fixedList = document.querySelector(`.${style.fixedList}`)
-  //     setDistanceFromTop(distance);
-  //     if (scrollTop > distance) {
-  //       fixedList.classList.remove('opacity-0', 'invisible');
-  //     } else {
-  //       fixedList.classList.add('opacity-0', 'invisible');
-  //     }
-  //   };
-
-  //   const handleScroll = () => {
-  //     calculateDistanceFromTop();
-  //   };
-  //   // Initial calculation after page load
-  //   window.addEventListener('load', calculateDistanceFromTop);
-
-  //   // Recalculate on scroll
-  //   window.addEventListener('scroll', handleScroll);
-
-  //   // Cleanup event listeners
-  //   return () => {
-  //     window.removeEventListener('load', calculateDistanceFromTop);
-  //     window.removeEventListener('scroll', handleScroll);
-  //   };
-  // }, []);
-
   useEffect(() => {
     setTimeout(() => {
       window.addEventListener('scroll', handleScroll);
@@ -179,7 +122,9 @@ const StickyNav = (props) => {
                             {data.blurb}
                           </p>
                           <div className={`${style.arrow}`}>
-                            {props.themeColor?.themeColor === "riptideWeb" ? <Image className='w-full h-full max-h-[33px] max-w-[25px]' src="/images/icons/arrow-riptideWeb.svg" width={100} quality={100} height={100} alt="Arrow" /> : <Image className='w-full h-full max-h-[33px] max-w-[25px]' src="/images/icons/arrow.svg" width={100} quality={100} height={100} alt="Arrow" />}
+                            {props.themeColor?.themeColor === "ember" && <Image className='w-full h-full max-h-[33px] max-w-[25px]' src="/images/icons/arrow-riptideWeb.svg" width={100} quality={100} height={100} alt="Arrow" />}
+                            {props.themeColor?.themeColor === "riptideWeb" && <Image className='w-full h-full max-h-[33px] max-w-[25px]' src="/images/icons/arrow.svg" width={100} quality={100} height={100} alt="Arrow" />}
+                            {props.themeColor?.themeColor === "ultraviolet" && <Image className='w-full h-full max-h-[33px] max-w-[25px]' src="/images/public-sector/arrow-down.svg" width={100} quality={100} height={100} alt="Arrow" />}
                           </div>
                         </div>
                       ) : null
@@ -190,11 +135,11 @@ const StickyNav = (props) => {
             }
           </div>
         </div>
-        <ul className={`${style.fixedList} ipad:hidden`}>
+        <ul className={`${style.fixedList} fixedList ipad:hidden`}>
           {
             bladeData.map((data, index) => {
               // ${Array.isArray(crossedSection) && crossedSection.includes(data?.link) ? style.expand : ''} softRiptide
-              return <li key={index} className={`${activeSection === data?.link ? 'activatedTab' : 'bg-softEmber'} ${style.navItem} transition-all duration-300 w-[8px] h-[60px] mb-[20px] rounded-[5px]`}>
+              return <li key={index} className={`${activeSection === data?.link ? 'activatedTab' : ''} ${style.navItem} transition-all duration-300 w-[8px] h-[60px] mb-[20px] rounded-[5px]`}>
                 <Link href={`#${data.link}`} onClick={(e) => handleStickyClick(e, data.link, index)}
                   className={`h-full w-full inline-block`}>
                   <div className={`${style.navLink} h-full`}>
