@@ -483,9 +483,9 @@ export const publicBanner = {
     accordionData: [
       {
         id: 1,
-        heading: "Identify and track persons of interest without breaching privacy laws        ",
+        heading: "Review evidence with speed and accuracy ",
         paragraph:
-          "With human-like object recognition and tracking capabilities, authorities can efficiently locate suspects across surveillance footage without relying on facial recognition or other personally identifiable information.           ",
+          "Optimize your evidence review process by implementing automatic keyword, facial, object, and other search capabilities within unstructured data, and leverage advanced analytics to reveal insights that may have otherwise been overlooked.  ",
       },
       {
         id: 2,
@@ -630,7 +630,7 @@ export const publicBanner = {
     },
     imageCard2: {
         image: "/images/public-sector/redact-on-demand.jpg",
-        icon: "/images/icons/pencil.svg",
+        icon: "/images/public-sector/star.svg",
         iconName: "pencil",
         cardBg: 'ultraviolet',
         title: "On-demand audio and video redaction",
@@ -642,7 +642,7 @@ export const publicBanner = {
   
   export const publicResourceCards = {
     intro: {
-      title: "Stay in the know.",
+      title: "Public Sector resources.",
       btnText: "View all",
       btnUrl: "/",
       btnClass: "black-border-btn",
