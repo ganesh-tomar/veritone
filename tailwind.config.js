@@ -12,6 +12,7 @@ module.exports = {
       black: "#000",
       cosmos: "#212121",
       ember: "#FA524D",
+      softRiptide: "#DEE8E8",
       softEmber: "#EEE3E3",
       emberDark: "#D63632",
       lightning: "#E3F730",

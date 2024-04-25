@@ -6,6 +6,8 @@ export const banner = {
   buttonText: "Get started",
   buttonClass: "default",
   buttonUrl: "/",
+  topPattern: '/images/plus_pattern.svg',
+  topimageName: 'Human',
   bgimage: "/images/banner_second_bg.webp",
   bgimageName: "banner_second_image",
   imagePath: "/images/man.webp",

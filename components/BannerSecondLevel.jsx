@@ -3,7 +3,7 @@ import Image from "next/image";
 import Button from "./button/Button";
 import style from '../styles/bannerSecond.module.css'
 
-export default function BannerSecondLevel({ title, blurb, buttonText, buttonClass, bgimage, bgimageName, buttonUrl, imagePath, imageName, bg, pageBg }) {
+export default function BannerSecondLevel({ title, blurb, buttonText, buttonClass, bgimage, bgimageName, buttonUrl, imagePath, imageName, bg, pageBg, topPattern, topimageName }) {
 
     useEffect(() => {
         var body = document.querySelector("body");
@@ -27,6 +27,7 @@ export default function BannerSecondLevel({ title, blurb, buttonText, buttonClas
                         </div>
                     </div>
                     <div className={`${style.imageWrap} relative w-full h-full max-w-[385px] max-h-[475px] xl:max-w-[285px] xl:max-h-[375px] md:max-w-[160px] md:max-h-[195px] md:mb-[25px]`}>
+                        <div className=' absolute w-[275px h-[185px] top-[-77px] right-[-140px] laptop:w-[190px] laptop:h-[140px] laptop:top-[-57px] laptop:right-[-90px]  tablet:w-[190px] tablet:h-[140px] tablet:top-[-57px] tablet:right-[-90px]  md:w-[140px] md:h-[95px] md:top-[40px] md:right-[-100px]'>  <Image className={`object-contain w-full h-full`} src={topPattern} quality={100} alt={topimageName} width={2000} height={2000} /></div>
                         <Image className={`object-cover w-full h-full`} src={imagePath} quality={100} alt={imageName} width={2000} height={2000} />
                     </div>
                 </div>

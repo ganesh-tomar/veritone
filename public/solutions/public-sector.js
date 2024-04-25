@@ -6,6 +6,8 @@ export const publicBanner = {
     buttonText: "Request a Demo",
     buttonClass: "default",
     buttonUrl: "/",
+    topPattern: '/images/plus_pattern.svg',
+    topimageName: 'Human',
     bgimage: "/images/banner_second_bg.webp",
     bgimageName: "banner_second_image",
     imagePath: "/images/man.webp",

@@ -515,7 +515,29 @@ body .sticky-nav .activatedTab{
 body.riptideWeb .sticky-nav .activatedTab{
     background-color: #2AA29C;
 }
-
+.sticky-nav ul li{
+    color: #EEE3E3;
+}
+.navItem.active h4::before {
+    transform: scaleX(1);
+    transform-origin: top left;
+}
+@media (max-width: 767px) {
+    body.riptideWeb .sticky-nav .navItem.active {
+      background-color: #DEE8E8;
+      border: none;
+    }
+    .sticky-nav .navItem.active {
+      background-color: #eee3e3;
+      border: none;
+    }
+    .sticky-nav .navItem h4::before {
+      display: none;
+    }
+  }
+body.riptideWeb .sticky-nav ul li{
+    color: #DEE8E8;
+}
 body.riptideWeb .tabs .wrapp .active > h4{
     color: #2AA29C;
 }

@@ -148,9 +148,9 @@ const StickyNav = (props) => {
       fixedList.classList.add(style.show);
     } else {
       fixedList.classList.remove(style.show);
-      setTimeout(() => {
-        setActiveIndex(0);
-      }, 300);
+      // setTimeout(() => {
+      //   setActiveIndex(0);
+      // }, 300);
     }
 
     setActiveSection(activeSectionId);
@@ -166,7 +166,7 @@ const StickyNav = (props) => {
               bladeData.map((data, index) => {
                 return <div key={index}
 
-                  className={`${activeIndex === index ? style.active : ''} ${style.navItem} navItem md:border-[2px] md:border-cosmos
+                  className={`${activeIndex === index ? 'active' : ''} ${style.navItem} navItem md:border-[2px] md:border-cosmos
                   w-[calc(25%-20px)] mx-[5px] max-w-[233px] lg:pr-0 md:w-[calc(50%-10px)] md:p-0 md:mb-[10px] md:flex md:items-center md:justify-center md:max-w-full md:text-center rounded-lg`}>
                   <Link className={`md:p-[26px]`} href={`#${data.link}`} onClick={(e) => handleStickyClick(e, data.link, index)}>
                     <h4 className='relative inline-block text-cosmos md:text-[18px]'>
@@ -193,7 +193,7 @@ const StickyNav = (props) => {
         <ul className={`${style.fixedList} ipad:hidden`}>
           {
             bladeData.map((data, index) => {
-              // ${Array.isArray(crossedSection) && crossedSection.includes(data?.link) ? style.expand : ''}
+              // ${Array.isArray(crossedSection) && crossedSection.includes(data?.link) ? style.expand : ''} softRiptide
               return <li key={index} className={`${activeSection === data?.link ? 'activatedTab' : 'bg-softEmber'} ${style.navItem} transition-all duration-300 w-[8px] h-[60px] mb-[20px] rounded-[5px]`}>
                 <Link href={`#${data.link}`} onClick={(e) => handleStickyClick(e, data.link, index)}
                   className={`h-full w-full inline-block`}>

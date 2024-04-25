@@ -1,7 +1,7 @@
 .imageWrap {
 	position: relative;
 }
-.imageWrap::after {
+/* .imageWrap::after {
 	content: '';
 	position: absolute;
 	width: 275px;
@@ -28,4 +28,4 @@
 		top: 40px;
 		right: -100px;
 	}
-}
+} */
