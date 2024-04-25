@@ -597,6 +597,7 @@ export const hireBanner = {
       btnUrl: "/",
       btnClass: "black-border-btn",
     },
+    pageBg: "riptideWeb",
     cards: [
       {
         imagePath: "/images/hire/resource_1.jpg",

@@ -605,6 +605,7 @@ export const resourceCards = {
     btnUrl: "https://www.veritone.com/industries/media-entertainment/#resources",
     btnClass: "black-border-btn",
   },
+  pageBg: "ember",
   cards: [
     {
       imagePath: "/images/speaker_setups.png",

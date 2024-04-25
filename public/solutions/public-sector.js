@@ -647,6 +647,7 @@ export const publicBanner = {
       btnUrl: "/",
       btnClass: "black-border-btn",
     },
+    pageBg: "ultraviolet",
     cards: [
       {
         imagePath: "/images/public-sector/illuminate_screencap.jpg",

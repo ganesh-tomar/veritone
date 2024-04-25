@@ -43,7 +43,7 @@ export default function ResourceCards({ data }) {
                                     />
                                 </div>
                                 <div className="content pr-[32px]">
-                                    <h4 className={`group-hover:text-ember transition-color duration-300`}>{item.heading}</h4>
+                                    <h4 className={` ${data.pageBg == "ember" && 'group-hover:text-ember'}  ${data.pageBg == "riptideWeb" && 'group-hover:text-riptideWeb'} ${data.pageBg == "ultraviolet" && 'group-hover:text-ultraviolet'} transition-color duration-300`}>{item.heading}</h4>
                                     <span className='text-[20px] font-bold pt-[10px] inline-block uppercase'>{item.type}</span>
                                     <p className='pt-[10px]'>{item.blurb}</p>
                                 </div>
