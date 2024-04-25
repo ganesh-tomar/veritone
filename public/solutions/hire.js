@@ -355,7 +355,7 @@ export const hireBanner = {
     forewardImage: "/images/hire/connect.jpg",
     borderBottom: true,
     intro: {
-      title: "Source top talent in the right place, at the right time .      ",
+      title: "Source top talent in the right place, at the right time.      ",
       blurb: "Work with programmatic job advertising designed to amplify your recruitment reach and optimize your budget and job ads.      ",
       btnText: "Learn more",
       btnClass: "btn-black",
@@ -364,9 +364,9 @@ export const hireBanner = {
     accordionData: [
       {
         id: 1,
-        heading: "Maximize hiring outcomes",
+        heading: "Streamline the recruitment process",
         paragraph:
-          "Optimize campaign performance and track the conversion of your advertising spend with key down-funnel metrics (including CPH and CPQA) to enhance candidate quality, reduce time-to-fill, and lower cost-per-hire.",
+          "Source quality applicants faster, smarter, and more efficiently with programmatic job advertising, a performance-based job advertising method that intelligently automates and optimizes job advertising spend through AI.          ",
       },
       {
         id: 2,

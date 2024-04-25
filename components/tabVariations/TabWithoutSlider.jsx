@@ -26,8 +26,8 @@ const Tabs = ({ tab, tab_content, bg, tabBg, pt }) => {
     <section className={`tabs padding-medium ${styles.tabs} ${styles.tabWithoutSlider} overflow-x-clip`}>
       <div className={`container ${styles.container} `} >
         <div className={`wrapp`}>
-          <div className={`${styles.tabValBox} bg-softEmber ${open ? styles.expand : ''} sm-up:hidden`} onClick={dropdownHandler}>
-            <ul className={`relative w-full flex flex-wrap justify-center items-center z-[4] sm:px-[20px] before:content-[''] before:w-[calc(100%+162px)] before:absolute before:h-full before:top-0 before:left-[-81px] before:bg-softEmber`}>
+          <div className={`${styles.tabValBox} tabValBox ${open ? styles.expand : ''} sm-up:hidden`} onClick={dropdownHandler}>
+            <ul className={`relative w-full flex  flex-wrap justify-center items-center z-[4] sm:px-[20px] before:content-[''] before:w-[calc(100%+162px)] before:absolute before:h-full before:top-0 before:left-[-81px]`}>
               {selectedIndex !== null && (
                 <li key={selectedIndex} className={`cursor-pointer w-full`}>
                   <div className={`${styles.tablist} ${selectedIndex === selectedIndex ? ` ${styles.active} ` : ''} relative w-fit mx-[32px] flex items-center justify-center sm:justify-start sm:mx-0 xl:my-[10px]`}>
@@ -41,7 +41,7 @@ const Tabs = ({ tab, tab_content, bg, tabBg, pt }) => {
               )}
             </ul>
           </div>
-          <div className={`${styles.listBox} ${open ? styles.expand : ''}`}>
+          <div className={`${styles.listBox} listBox ${open ? styles.expand : ''}`}>
             <ul className={`relative w-full flex flex-wrap justify-center items-center z-[4] py-[28px] sm:px-[20px] xl:py-[20px] before:content-[''] before:w-[calc(100%+162px)] before:absolute before:h-full before:top-0 before:left-[-81px] before:bg-softEmber`}>
               {tab?.map((item, index) => {
                 return (

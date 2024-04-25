@@ -541,6 +541,30 @@ body.riptideWeb .sticky-nav ul li{
 body.riptideWeb .tabs .wrapp .active > h4{
     color: #2AA29C;
 }
+.tabs .wrapp .tabValBox{
+    background: #EEE3E3;
+}
+.tabs .wrapp .tabValBox ul::before{
+    background: #EEE3E3;
+}
+.tabs .wrapp  .listBox{
+    background: #EEE3E3;
+}
+.tabs .wrapp  .listBox ul::before{
+    background: #EEE3E3;
+}
+body.riptideWeb .tabs .wrapp .tabValBox{
+    background: #DEE8E8;
+}
+body.riptideWeb .tabs .wrapp .tabValBox ul::before{
+    background: #DEE8E8;
+}
+body.riptideWeb .tabs .wrapp .listBox{
+    background: #DEE8E8;
+}
+body.riptideWeb .tabs .wrapp .listBox ul::before{
+    background: #DEE8E8;
+}
 body.riptideWeb .tabs .wrapp div::after{
     background: #2AA29C !important;
     transition: width 0.3s ease;
