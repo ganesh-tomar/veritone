@@ -25,27 +25,27 @@ export const publicBanner = {
     tab: [
       {
         tab_heading: "State & Local Gov",
-        tab_icon: "/images/icons/play.svg",
+        tab_icon: "/images/icons/state.svg",
         tab_icon_name: "play",
       },
       {
         tab_heading: "Education",
-        tab_icon: "/images/icons/mic.svg",
+        tab_icon: "/images/icons/edu.svg",
         tab_icon_name: "mic",
       },
       {
         tab_heading: "Federal Civilian",
-        tab_icon: "/images/icons/film.svg",
+        tab_icon: "/images/icons/fedciv.svg",
         tab_icon_name: "film",
       },
       {
         tab_heading: "DoD/Intel",
-        tab_icon: "/images/icons/baseball.svg",
+        tab_icon: "/images/icons/DoD.svg",
         tab_icon_name: "baseball",
       },
       {
         tab_heading: "Legal",
-        tab_icon: "/images/icons/comments.svg",
+        tab_icon: "/images/icons/Leg.svg",
         tab_icon_name: "comments",
       },
     ],
@@ -435,6 +435,39 @@ export const publicBanner = {
     ],
   };
   export const publicIntroWithAccordionData3 = {
+    id: "automate",
+    backwardImage: "/images/public-sector/automate_b.jpg",
+    forewardImage: "/images/public-sector/automate_a.png",
+    borderBottom: false,
+    intro: {
+      title: "Automate redaction workflows and give your team the support they need to focus on more mission-critical tasks.      ",
+      blurb:
+        "Veritone’s AI solutions and services allow your team to get back to tasks that can only be done by humans, helping your organization become faster, more productive, and more cost-efficient.        ",
+      btnText: "Learn more",
+      btnClass: "btn-black",
+      btnLink: "https://www.veritone.com/applications/redact/",
+    },
+    accordionData: [
+      {
+        id: 1,
+        heading: "Remove manual workflows that slow you down",
+        paragraph:
+          "Optimize your internal processes with AI-driven solutions that eliminate manual redaction, saving your internal teams countless hours while helping them keep up with project demand and aggressive deadlines.          ",
+      },
+      {
+        id: 2,
+        heading: "Focus on more pivotal tasks instead of paperwork         ",
+        paragraph:
+          "Adopt our existing redaction solution or work with a team of our redaction specialists to reduce in-house time and resource commitments, allowing your team to work on other urgent priorities.          ",
+      },
+      {
+        id: 3,
+        heading: "Prevent employee burnout and turnover",
+        paragraph: "Constant exposure to video footage of criminal acts, especially violent ones, can negatively impact your team, resulting in burnout and increased turnover rates. Enhance efficiency and productivity by redirecting your team’s focus towards higher-priority tasks instead.        ",
+      },
+    ],
+  };
+  export const publicIntroWithAccordionData4 = {
     id: "accelerate",
     backwardImage: "/images/public-sector/accelerate_b.jpg",
     forewardImage: "/images/public-sector/accelerate_a.jpg",
@@ -468,39 +501,7 @@ export const publicBanner = {
       },
     ],
   };
-  export const publicIntroWithAccordionData4 = {
-    id: "automate",
-    backwardImage: "/images/public-sector/automate_b.jpg",
-    forewardImage: "/images/public-sector/automate_a.png",
-    borderBottom: false,
-    intro: {
-      title: "Automate redaction workflows and give your team the support they need to focus on more mission-critical tasks.      ",
-      blurb:
-        "Veritone’s AI solutions and services allow your team to get back to tasks that can only be done by humans, helping your organization become faster, more productive, and more cost-efficient.        ",
-      btnText: "Learn more",
-      btnClass: "btn-black",
-      btnLink: "https://www.veritone.com/applications/redact/",
-    },
-    accordionData: [
-      {
-        id: 1,
-        heading: "Remove manual workflows that slow you down",
-        paragraph:
-          "Optimize your internal processes with AI-driven solutions that eliminate manual redaction, saving your internal teams countless hours while helping them keep up with project demand and aggressive deadlines.          ",
-      },
-      {
-        id: 2,
-        heading: "Focus on more pivotal tasks instead of paperwork         ",
-        paragraph:
-          "Adopt our existing redaction solution or work with a team of our redaction specialists to reduce in-house time and resource commitments, allowing your team to work on other urgent priorities.          ",
-      },
-      {
-        id: 3,
-        heading: "Prevent employee burnout and turnover",
-        paragraph: "Constant exposure to video footage of criminal acts, especially violent ones, can negatively impact your team, resulting in burnout and increased turnover rates. Enhance efficiency and productivity by redirecting your team’s focus towards higher-priority tasks instead.        ",
-      },
-    ],
-  };
+ 
   
   export const publicAccordionData = {
     intro: {
