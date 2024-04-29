@@ -148,11 +148,11 @@ export const publicBanner = {
         bottom_link_url: "",
       },
       {
-        tab_title: "Rapid data analysis, important insights.        ",
+        tab_title: "Rapid data analysis, important insights.",
         blurb:
           "Leverage AI to sift through large amounts of data, helping you quickly find key evidence and other actionable insights that help you process criminal or legal matter within a tight timeline.          ",
         btntext: "Learn more",
-        btnlink: "https://unlock.veritone.com/intel-contact-us",
+        btnlink: "https://www.veritone.com/industries/legal-compliance/",
         imgpath: "/images/public-sector/legal_a.jpg",
         alt: "legal",
         imgpath2: "/images/public-sector/legal_b.jpg",
@@ -163,11 +163,12 @@ export const publicBanner = {
         logo_alt: "24_logo",
         inner_title: "Veritone Illuminate",
         inner_blurb:
-          "See why so many firms and agencies trust Veritone Illuminate to optimize and accelerate their early case assessment.          ",
+          "See why so many firms and agencies trust Veritone Illuminate to optimize and accelerate their early case assessment.",
         bg: "bg-ember",
         btnClass: "btn-black",
         bottom_btn_text: "Watch demo",
-        bottom_btn_url: "https://www.veritone.com/resource-library/?keyword=illuminate+demo",
+        videoUrl:"https://player.vimeo.com/video/375771167?loop=false&autoplay=false&muted=false&gesture=media&playsinline=false&byline=false&portrait=false&title=false&speed=true&transparent=false&customControls=true",
+        bottom_btn_url: "",
         bottom_link_text: "",
         bottom_link_url: "",
       },
@@ -507,21 +508,18 @@ export const publicBanner = {
   export const publicAccordionData = {
     intro: {
       title: "Innovative AI solutions for people who want to help other people.      ",
-      btnText: "Show more",
-      btnClass: "btn-black",
-      btnLink: "/",
     },
     items: [
       {
         id: 1,
         heading: "A centralized intelligent digital evidence management suite.",
-        icon: "/images/icons/cog.svg",
+        icon: "/images/icons/idems.svg",
         paragraph:
           "Discover an intelligent digital evidence management system that helps your team seamlessly access, search, manage, organize, and share digital evidence all within one powerful suite. Veritone iDEMS is made up of five Veritone applications to accelerate investigations, protect the integrity of cases, and improve overall legal processes.           ",
         tag1: "INTELLIGENT DIGITAL EVIDENCE MANAGEMENT SYSTEM",
         tag2: "iDEMS",
         btnText: "Learn More",
-        btnLink: "/",
+        btnLink: "veritone.com/solutions/idems/        ",
       },
       {
         id: 2,
@@ -532,84 +530,84 @@ export const publicBanner = {
         tag1: "INTELLIGENT DIGITAL EVIDENCE HUB",
         tag2: "INVESTIGATE",
         btnText: "Learn More",
-        btnLink: "/",
+        btnLink: "veritone.com/applications/evidence        ",
       },
       {
         id: 3,
         heading: "Sensitive data redaction across audio and video files.        ",
-        icon: "/images/icons/badge.svg",
+        icon: "/images/icons/redact.svg",
         paragraph:
           "Maximize efficiency and resource allocation with Veritone Redact, an AI-driven software solution that automates the redaction of sensitive data from audio, video, and image-based evidence, saving both time and costs. Veritone Redact and Redaction Managed Service allow law enforcement agencies and legal organizations to focus on what truly matters while safeguarding confidentiality and meeting legal and public records request deadlines.",
         tag1: "AUTOMATED REDACTION",
         tag2: "REDACT",
         btnText: "Learn More",
-        btnLink: "/",
+        btnLink: "veritone.com/applications/redact",
       },
       {
         id: 4,
-        heading: "Secure, AI-driven video analysis.        ",
-        icon: "/images/icons/bulb.svg",
+        heading: "Secure, AI-driven video analysis.",
+        icon: "/images/icons/tracker.svg",
         paragraph:
           "Employ AI models that prioritize confidence-based similarity scores rather than biometric or facial recognition, ensuring proper oversight and protection in investigative processes. Veritone Tracker makes individual tracking across videos easier and more efficient, enabling teams to identify persons of interest without compromising personally identifiable information.          ",
         tag1: "FIND PERSONS OF INTEREST",
         tag2: "TRACKER",
         btnText: "Learn more",
-        btnLink: "/",
+        btnLink: "veritone.com/applications/tracker",
       },
       {
         id: 5,
-        heading: "Streamline case investigations and clearances with relevant data.         ",
-        icon: "/images/icons/bulb.svg",
+        heading: "Streamline case investigations and clearances with relevant data.",
+        icon: "/images/icons/illuminate.svg",
         paragraph:
           "Rapidly and affordably search, analyze, and explore vast Electronically Stored Information (ESI) datasets, including audio, video, and text-based documents. Veritone Illuminate empowers public safety and justice agencies and eDiscovery teams to expedite early case assessment and disclosure workflows, allowing these teams to meet caseload demands without compromising compliance or security.          ",
         tag1: "AI-DRIVEN EDISCOVERY",
         tag2: "ILLUMINATE",
         btnText: "Learn more",
-        btnLink: "/",
+        btnLink: "veritone.com/applications/illuminate",
       },
       {
         id: 6,
         heading: "Automate the collection and reporting of RIPA-compliant stop data information.        ",
-        icon: "/images/icons/bulb.svg",
+        icon: "/images/icons/automate.svg",
         paragraph:
           "Maximize officer efficiency, save time, and reduce expenses with Veritone Contact, an intelligent, in-the-field stop data collection and reporting application designed for California AB 953 Racial Identity and Profiling Act (RIPA) compliance.          ",
         tag1: "STOP DATA COLLECTION",
         tag2: "CONTACT",
         btnText: "Learn more",
-        btnLink: "https://www.veritone.com/applications/contact/",
+        btnLink: "veritone.com/applications/contact",
       },
       {
         id: 7,
         heading: "Find and identify persons of interest      ",
-        icon: "/images/icons/bulb.svg",
+        icon: "/images/icons/identify.svg",
         paragraph:
           "Leverage your booking database's potential to accelerate suspect lead identification and raise case clearance rates while safeguarding personally identifiable information. With Veritone IDentify, your team can identify subjects with greater speed, accuracy, and efficiency, and take action on gathered intelligence in a fraction of the time.          ",
         tag1: "SUSPECT IDENTIFICATION",
         tag2: "IDENTIFY",
         btnText: "Learn more",
-        btnLink: "https://www.veritone.com/applications/identify/",
+        btnLink: "veritone.com/applications/identify",
       },
       {
         id: 8,
         heading: "Discover a better way to manage your media library.        ",
-        icon: "/images/icons/bulb.svg",
+        icon: "/images/icons/hub.svg",
         paragraph:
           "Streamline asset tagging and management while optimizing data for faster discovery through powerful machine-learning features with Veritone Digital Media Hub — perfect for educational organizations and public agencies with large libraries of current and archived content.          ",
         tag1: "MEDIA MANAGEMENT",
         tag2: "DIGITAL MEDIA HUB",
         btnText: "Learn more",
-        btnLink: " https://www.veritone.com/applications/digital-media-hub/",
+        btnLink: " veritone.com/applications/digital-media-hub",
       },
       {
         id: 9,
         heading: "Transform the way you hire with programmatic job advertising.        ",
-        icon: "/images/icons/bulb.svg",
+        icon: "/images/icons/hire.svg",
         paragraph:
           "Putting together the best team to achieve your organization’s goals and objectives is no small task. Thankfully, Veritone Programmatic can optimize, automate, and source the best candidates so you can spend less time searching and more time connecting.          ",
         tag1: "AI-POWERED CANDIDATE SOURCING",
         tag2: "VERITONE HIRE",
         btnText: "Learn more",
-        btnLink: "/",
+        btnLink: "veritone.com/solutions/hire        ",
       },
     ],
   };
@@ -625,7 +623,7 @@ export const publicBanner = {
       icon: "/images/icons/pencil.svg",
       iconName: "pencil",
       cardBg: 'riptideWeb',
-      title: "Personalized AI services that meet your needs",
+      title: "AI solutions and services, personalized",
       buttonText: "Professional Services",
       buttonUrl: "https://unlock.veritone.com/ps-pro-serv-contact-us      ",
     },
@@ -643,9 +641,9 @@ export const publicBanner = {
   
   export const publicResourceCards = {
     intro: {
-      title: "Public Sector resources.",
+      title: "Stay in the know",
       btnText: "View all",
-      btnUrl: "/",
+      btnUrl: "https://www.veritone.com/resource-library/?vertical%5B%5D=compliance&vertical%5B%5D=government&vertical%5B%5D=justice&vertical%5B%5D=legal&vertical%5B%5D=public-safety",
       btnClass: "black-border-btn",
     },
     pageBg: "ultraviolet",
@@ -661,7 +659,7 @@ export const publicBanner = {
       },
       {
         imagePath: "/images/public-sector/resource2.png",
-        url:'#',
+        url:'https://go.veritone.com/law-enforcement-transparency-and-trust-report-2022',
         imageName: "board_keys",
         heading: "Law Enforcement Transparency & Trust Report",
         blurb:
@@ -670,7 +668,7 @@ export const publicBanner = {
       },
       {
         imagePath: "/images/public-sector/resource-3.jpg",
-        url:'#',
+        url:'https://unlock.veritone.com/whitepaper-intelligent-digital-evidence-redaction',
         imageName: "person_mices",
         heading: "Intelligent Digital Evidence Redaction",
         blurb:

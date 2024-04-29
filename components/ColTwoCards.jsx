@@ -18,7 +18,7 @@ export default function ColTwoCards({ data }) {
                     {data.intro.blurb && <p className="max-w-[667px] mx-auto pt-[30px] text-white">{data.intro.blurb}</p>}
                 </div>
             </div>
-            <div className="max-w-[1546px] relative mx-auto w-full mt-[38px] px-[20px]">
+            <div className={`max-w-[1546px] relative mx-auto w-full mt-[38px] ${data.imageCard2 ? 'mt-[85px]' : 'mt-[38px]'} px-[20px]`}>
                 <div className={`outer w-[calc(100%+22px)] left-0 top-0 ml-[-11px] flex flex-wrap lg:w-full lg:ml-0 lg:block  ${data.imageCard2 && 'lg-up:h-[550px]'} `}>
                     <div className="relative w-[calc(50%-22px)] lg-up:flex lg-up:flex-wrap lg-up:flex-col lg-up:justify-between mx-[11px] lg:w-full lg:mx-0">
                         <div className="imageWrap w-full max-h-[430px] h-full lg:max-h-[227px] lg:h-[227px]">
