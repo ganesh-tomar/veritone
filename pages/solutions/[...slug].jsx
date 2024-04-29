@@ -7,9 +7,10 @@ import Accordion from '../../components/Accordion';
 import IntroWithAccordion from '../../components/IntroWithAccordion';
 import ColTwoCards from '../../components/ColTwoCards';
 import ResourceCards from '../../components/ResourceCards';
+import FormOverlay from '../../components/global/FormOverlay';
 import { NextSeo } from 'next-seo';
 import { useRouter } from 'next/router';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 
 //importing sections data
 
@@ -21,12 +22,20 @@ import { hireBanner, hireStickyNavData, hireTabs, hireAccordionData, hireColTwoC
 import { document } from 'postcss';
 
 const Home = () => {
+	const [open, setOpen] = useState(0)
+	const [url, setUrl] = useState('im not a big fan of the government')
+
+	const setFormOverlay = (url) => {
+		open == 0 ? setOpen(1) : setOpen(0)
+		setUrl(url)
+	}
+	let test = setFormOverlay.bind(this)
 	const router = useRouter();
 	if (router.asPath === '/solutions/media-entertainment') {
 		return (
 			<>
 				<NextSeo title="AI Solutions for Media, Entertainment & Broadcast | Veritone" description="Transform your media & entertainment business with Veritone's AI solutions. Drive growth and innovation. Click now." />
-				<BannerSecondLevel {...banner} />
+				<BannerSecondLevel {...banner} setFormOverlay={setFormOverlay} />
 				<StickyNav data={stickyNavData} themeColor={themeColor} />
 				<IntroWithAccordion data={introWithAccordionData1} pt="padding-top-120" pb='no-padding-bottom' />
 				<IntroWithAccordion data={introWithAccordionData2} reverse={"true"} pt='padding-medium-top' pb='no-padding-bottom' />
@@ -37,7 +46,8 @@ const Home = () => {
 				<ColTwoCards data={colTwoCards} />
 				<ResourceCards data={resourceCards} />
 				<TwitterSlider data={twitterSliderData} onlyInternalPosts={true} />
-				<Footercta {...footerCta} />
+				<Footercta {...footerCta} setFormOverlay={setFormOverlay} />
+				<FormOverlay toggle={open} setFormOverlay={setFormOverlay} buttonText={'Connect with us'} url={'#'} buttonClass={'default mr-[30px]'} formUrl={url} />
 			</>
 		);
 	} else if (router.asPath === '/solutions/public-sector') {
@@ -55,7 +65,8 @@ const Home = () => {
 				<ColTwoCards data={publicColTwoCards} />
 				<ResourceCards data={publicResourceCards} />
 				<TwitterSlider data={publicTwitterSliderData} onlyInternalPosts={true} />
-				<Footercta {...publicFooterCta} />
+				<Footercta {...publicFooterCta} setFormOverlay={setFormOverlay} />
+				<FormOverlay toggle={open} setFormOverlay={setFormOverlay} buttonText={'Connect with us'} url={'#'} buttonClass={'default mr-[30px]'} formUrl={url} />
 			</>
 		);
 	} else if (router.asPath === '/solutions/hire') {
@@ -73,7 +84,8 @@ const Home = () => {
 				<ColTwoCards data={hireColTwoCards} />
 				<ResourceCards data={hireResourceCards} />
 				<TwitterSlider data={hireTwitterSliderData} onlyInternalPosts={true} />
-				<Footercta {...hireFooterCta} />
+				<Footercta {...hireFooterCta} setFormOverlay={setFormOverlay} />
+				<FormOverlay toggle={open} setFormOverlay={setFormOverlay} buttonText={'Connect with us'} url={'#'} buttonClass={'default mr-[30px]'} formUrl={url} />
 			</>
 		);
 	}

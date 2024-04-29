@@ -10,7 +10,8 @@ export const banner = {
     "The demand for content is higher than it’s ever been. Now you can keep pace with enterprise AI that empowers your teams to manage, monetize, and create content more efficiently.",
   buttonText: "Get started",
   buttonClass: "default",
-  buttonUrl: "/",
+  buttonUrl: "",
+  formUrl: "https://unlock.veritone.com/l/636301/2023-04-27/4cx8sc?source=https://www.veritone.com/solutions/media-entertainment/",
   topPattern: '/images/plus_pattern.svg',
   topimageName: 'Human',
   bgimage: "/images/banner_second_bg.webp",
@@ -80,7 +81,7 @@ export const tabs = {
       blurb:
         "Track brand mentions, demonstrate advertising lift, and generate new revenue with our suite of AI-infused applications and services designed for radio networks and stations.",
       btntext: "Read more",
-      btnlink: "https://www.veritone.com/industries/tv/",
+      btnlink: "https://www.veritone.com/industries/radio/",
       imgpath: "/images/woman_with_mic.png",
       alt: "woman_with_mic",
       imgpath2: "/images/aplifier_keys.png",
@@ -105,7 +106,7 @@ export const tabs = {
       tab_title: "Manage your archives and monetize hidden gems.",
       blurb:
         "Get your digital archives under control and unlock innovative content – and profits – with Veritone Digital Media Hub and licensing solutions.",
-      btntext: "View case study",
+      btntext: "Learn more",
       btnlink: "https://www.veritone.com/industries/studios-production/",
       imgpath: "/images/filming.png",
       alt: "filming",
@@ -420,14 +421,14 @@ export const introWithAccordionData2 = {
     blurb: "It’s a new world — with new, generative AI solutions, you can take content and audiences places they’ve never been.",
     btnText: "Learn more",
     btnClass: "btn-black",
-    btnLink: "/",
+    btnLink: "https://www.veritone.com/p/generativeai",
   },
   accordionData: [
     {
       id: 1,
       heading: "Make great content even better",
       paragraph:
-        "From generative AI to synthetic voice translation to avatars, you can personalize, localize, and enhance content for even greater results.",
+        "From generative AI to synthetic voice translation to avatars, you can personalize, localize, and maximize content for even greater results.",
     },
     {
       id: 2,
@@ -445,8 +446,8 @@ export const introWithAccordionData2 = {
 };
 export const introWithAccordionData3 = {
   id: "reconnect",
-  backwardImage: "/images/IntroWithAccordion/video_camera.png",
-  forewardImage: "/images/IntroWithAccordion/girl_2.png",
+  backwardImage: "/images/multimedia/reconnect-b.jpg",
+  forewardImage: "/images/multimedia/reconnect-a.jpg",
   borderBottom: true,
   intro: {
     title: "Reconnect with audiences — and create new ones.",
@@ -479,8 +480,8 @@ export const introWithAccordionData3 = {
 };
 export const introWithAccordionData4 = {
   id: "rediscover",
-  backwardImage: "/images/IntroWithAccordion/writing_pad.png",
-  forewardImage: "/images/IntroWithAccordion/screens.png",
+  backwardImage: "/images/multimedia/rediscover_b.jpg",
+  forewardImage: "/images/multimedia/rediscover_a.jpg",
   borderBottom: false,
   intro: {
     title: "Rediscover new ways to extend reach and revenue.",
@@ -578,7 +579,7 @@ export const colTwoCards = {
     iconName: "pencil",
     title: "AI solutions and services, personalized",
     buttonText: "Explore our Services",
-    buttonUrl: "/",
+    buttonUrl: "https://www.veritone.com/services/professional-services/",
   },
   cards: [
     {
@@ -602,14 +603,14 @@ export const resourceCards = {
   intro: {
     title: "Media-savvy resources.",
     btnText: "View all",
-    btnUrl: "https://www.veritone.com/industries/media-entertainment/#resources",
+    btnUrl: "https://www.veritone.com/resource-library/?vertical%5B%5D=media-entertainment",
     btnClass: "black-border-btn",
   },
   pageBg: "ember",
   cards: [
     {
       imagePath: "/images/speaker_setups.png",
-      url:'#',
+      url:'https://go.veritone.com/bonneville-seattle-earns-key-account-annual-business/',
       imageName: "speaker_setups",
       heading: "Bonneville Seattle earns key business with Attribute.",
       blurb:
@@ -618,7 +619,7 @@ export const resourceCards = {
     },
     {
       imagePath: "/images/board_keys.png",
-      url:'#',
+      url:'https://unlock.veritone.com/uplift_study_white_paper',
       imageName: "board_keys",
       heading: "Veritone Uplift Study tracking 250+ campaigns",
       blurb:
@@ -627,7 +628,7 @@ export const resourceCards = {
     },
     {
       imagePath: "/images/person_mices.png",
-      url:'#',
+      url:'https://unlock.veritone.com/veritone-voice/whitepaper-truth-about-deepfakes-synthetic-voice-voice-cloning',
       imageName: "person_mices",
       heading: "The truth about deep fakes, synthetic voice, and more",
       blurb:
@@ -644,6 +645,7 @@ export const footerCta = {
     "Ready to join other leaders across media, sports, and broadcast in turning possibilities into profits, automating processes, and helping your team excel like never before?",
   btnText1: "Schedule a free demo",
   btnClass1: "default",
+  formUrl: "https://unlock.veritone.com/l/636301/2023-04-27/4cx8sc?source=https://www.veritone.com/",
   btnUrl1: "https://www.veritone.com/careers/contact-us/",
   btnText2: "",
   btnClass2: "",

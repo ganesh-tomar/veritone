@@ -4,6 +4,7 @@ import { useState } from "react";
 import Style from "./button.module.css"
 
 const ContactUs = ({ buttonText, url, buttonClass, formUrl, setFormOverlay }) => {
+  console.log(url);
   const [open, setOpen] = useState(0)
   const overlay = <div className={` ${Style.overlay} overlay transition-all duration-300 xl-up:w-[calc(100%-276px)] desktop:w-[calc(100%-244px)] wide-nav-screen:max-w-[2500px] wide-nav-screen:mx-auto  fixed w-screen h-screen z-[9999] `} >
     <div className={`overlaycardsWrap relative top-[50%] tablet-landscape:top-0 md:top-0 lg:pb-[50px] pt-[70px]`}>

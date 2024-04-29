@@ -1,9 +1,10 @@
 import React, { useEffect } from 'react';
 import Image from "next/image";
 import Button from "./button/Button";
+import ContactUs from './button/ContactUs';
 import style from '../styles/bannerSecond.module.css'
 
-export default function BannerSecondLevel({ title, blurb, buttonText, buttonClass, bgimage, bgimageName, buttonUrl, imagePath, imageName, bg, pageBg, topPattern, topimageName }) {
+export default function BannerSecondLevel({ title, blurb, buttonText, buttonClass, bgimage, bgimageName, buttonUrl, imagePath, imageName, bg, pageBg, topPattern, topimageName, setFormOverlay, formUrl }) {
 
 
     useEffect(() => {
@@ -30,7 +31,9 @@ export default function BannerSecondLevel({ title, blurb, buttonText, buttonClas
                         <h1 className='text-white'>{title}</h1>
                         <p className='text-white pt-[42px]'>{blurb}</p>
                         <div className="btn-wrap pt-[42px]">
-                            <Button buttonText={buttonText} url={buttonUrl} buttonClass={buttonClass} />
+                            {(formUrl == '') && <Button buttonText={"abc"} url={buttonUrl} buttonClass={buttonClass} />}
+                            {formUrl != "" && <ContactUs buttonText={buttonText} setFormOverlay={setFormOverlay} url={buttonUrl} buttonClass={buttonClass} formUrl={formUrl} />}
+
                         </div>
                     </div>
                     <div className={`${style.imageWrap} relative w-full h-full max-w-[385px] max-h-[475px] xl:max-w-[285px] xl:max-h-[375px] md:max-w-[160px] md:max-h-[195px] md:mb-[25px]`}>

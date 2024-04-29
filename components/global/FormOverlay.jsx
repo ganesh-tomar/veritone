@@ -24,7 +24,7 @@ const FormOverlay = ({ toggle, buttonText, url, buttonClass, formUrl, setFormOve
           />
         </svg>
       </div>
-      <div className="w-full max-w-[625px] h-[calc(100vh-30px)] overflow-auto mx-auto p-[20px] relative z-[15]">
+      <div className="w-full max-w-[740px] h-[calc(70vh-30px)] overflow-auto mx-auto p-[20px] relative z-[15]">
         <iframe id="pardot_popup_form"
           loading="lazy"
           title="Contact Veritone"
