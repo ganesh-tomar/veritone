@@ -46,7 +46,7 @@ const Tabs = ({ tab, tab_content, bg, tabBg, pt }) => {
               {tab?.map((item, index) => {
                 return (
                   <li onClick={() => handler(index)} key={index} className={`cursor-pointer inline-block w-fit sm:w-full ${index === selectedIndex ? 'sm:hidden' : ''}`}>
-                    <div className={`${styles.tablist} ${i === index ? ` ${styles.active}  active` : ''} relative w-fit mx-[32px] flex items-center justify-center sm:justify-start sm:mx-0 xl:my-[10px]`}>
+                    <div className={`${styles.tablist} ${i === index ? ` ${styles.active}  active` : ''} relative w-fit mx-[25px] flex items-center justify-center sm:justify-start sm:mx-0 xl:my-[10px]`}>
                       <div className={``}>
                         <Image className={`w-full h-full max-h-[32px] max-w-[32px] object-contain mr-[20px]`} src={item.tab_icon} quality={100} alt={item.tab_icon_name} width={120} height={120} />
                       </div>

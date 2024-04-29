@@ -54,7 +54,7 @@ const Home = () => {
 		return (
 			<>
 				<NextSeo title="AI Solutions for Media, Entertainment & Broadcast | Veritone" description="Transform your media & entertainment business with Veritone's AI solutions. Drive growth and innovation. Click now." />
-				<BannerSecondLevel {...publicBanner} />
+				<BannerSecondLevel {...publicBanner} setFormOverlay={setFormOverlay} />
 				<StickyNav data={publicStickyNavData} themeColor={publicthemeColor} />
 				<IntroWithAccordion data={publicIntroWithAccordionData1} pt="padding-top-120" pb='no-padding-bottom' />
 				<IntroWithAccordion data={publicIntroWithAccordionData2} reverse={"true"} pt='padding-medium-top' pb='no-padding-bottom' />
@@ -73,7 +73,7 @@ const Home = () => {
 		return (
 			<>
 				<NextSeo title="AI Solutions for Media, Entertainment & Broadcast | Veritone" description="Transform your media & entertainment business with Veritone's AI solutions. Drive growth and innovation. Click now." />
-				<BannerSecondLevel {...hireBanner} />
+				<BannerSecondLevel {...hireBanner} setFormOverlay={setFormOverlay} />
 				<StickyNav data={hireStickyNavData} themeColor={hireThemeColor} />
 				<IntroWithAccordion data={hireIntroWithAccordionData1} pt="padding-top-120" pb='no-padding-bottom' />
 				<IntroWithAccordion data={hireIntroWithAccordionData2} reverse={"true"} pt='padding-medium-top' pb='no-padding-bottom' />

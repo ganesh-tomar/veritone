@@ -10,12 +10,13 @@ export const publicBanner = {
       "Transform workflows, unlock new efficiencies, and streamline time-consuming processes with powerful AI solutions that help government, legal, and education organizations better serve their communities.      ",
     buttonText: "Request a Demo",
     buttonClass: "default",
-    buttonUrl: "/",
-    topPattern: '/images/plus_pattern.svg',
+    buttonUrl: "",
+    formUrl: "https://unlock.veritone.com/l/636301/2023-04-27/4cx8sc?source=https://www.veritone.com/solutions/media-entertainment/",
+    topPattern: '/images/public-sector/publicSector_hero_human+.png',
     topimageName: 'Human',
-    bgimage: "/images/banner_second_bg.webp",
+    bgimage: "/images/public-sector/publicSector_hero_background.jpg",
     bgimageName: "banner_second_image",
-    imagePath: "/images/man.webp",
+    imagePath: "/images/public-sector/publicSector_hero_human.png",
     imageName: "banner_second_image",
   };
   
@@ -350,7 +351,7 @@ export const publicBanner = {
     {
       heading: "Analyze",
       phoneHeading: "Analyze and extract insights",
-      blurb: "evidence to extract actionable insights",
+      blurb: "evidence to extract insights",
       link: "analyze",
     },
     {
@@ -434,7 +435,7 @@ export const publicBanner = {
       },
     ],
   };
-  export const publicIntroWithAccordionData3 = {
+  export const publicIntroWithAccordionData4 = {
     id: "automate",
     backwardImage: "/images/public-sector/automate_b.jpg",
     forewardImage: "/images/public-sector/automate_a.png",
@@ -467,7 +468,7 @@ export const publicBanner = {
       },
     ],
   };
-  export const publicIntroWithAccordionData4 = {
+  export const publicIntroWithAccordionData3 = {
     id: "accelerate",
     backwardImage: "/images/public-sector/accelerate_b.jpg",
     forewardImage: "/images/public-sector/accelerate_a.jpg",
@@ -478,7 +479,7 @@ export const publicBanner = {
         "By equipping teams with AI technology and services that streamline the end-to-end evidence management process, Veritone helps agencies catch perpetrators faster, close more cases, and maintain compliance and transparency.        ",
       btnText: "Learn more",
       btnClass: "btn-black",
-      btnLink: "https://www.veritone.com/applications/illuminate/",
+      btnLink: "https://www.veritone.com/applications/tracker/",
     },
     accordionData: [
       {
@@ -686,6 +687,7 @@ export const publicBanner = {
       "With Veritone’s AI solutions for government agencies and legal and education organizations, your team can spend fewer hours facing process pain points and focus on what matters most — helping others.      ",
     btnText1: "Let’s join forces",
     btnClass1: "default",
+    formUrl: "https://unlock.veritone.com/l/636301/2023-04-27/4cx8sc?source=https://www.veritone.com/",
     btnUrl1: "/",
     btnText2: "",
     btnClass2: "",

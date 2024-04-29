@@ -518,7 +518,7 @@ body.ultraviolet .intro-with-accordion .accordion > div::after{
     background-image: url('/images/public-sector/arrow.svg');
 }
 body .sticky-nav .fixedList li{
-    background-color: #EEE3E3;
+    background-color: #E5E0E5;
 }
 body .sticky-nav .fixedList .activatedTab{
     background-color: #FA524D;
@@ -543,7 +543,7 @@ body.ultraviolet .sticky-nav .fixedList .activatedTab{
         background-color: #8257EF;
     }
     .sticky-nav .navItem.active {
-      background-color: #eee3e3;
+      background-color: #E5E0E5;
       border: none;
     }
     .sticky-nav .navItem h4::before {
@@ -558,22 +558,22 @@ body.riptideWeb .tabs .wrapp .active > h4{
 }
 
 body.ultraviolet .sticky-nav ul li{
-    color: #EEE3E3;
+    color: #E5E0E5;
 }
 body.ultraviolet .tabs .wrapp .active > h4{
     color: #8257EF;
 }
 .tabs .wrapp .tabValBox{
-    background: #EEE3E3;
+    background: #E5E0E5;
 }
 .tabs .wrapp .tabValBox ul::before{
-    background: #EEE3E3;
+    background: #E5E0E5;
 }
 .tabs .wrapp  .listBox{
-    background: #EEE3E3;
+    background: #E5E0E5;
 }
 .tabs .wrapp  .listBox ul::before{
-    background: #EEE3E3;
+    background: #E5E0E5;
 }
 body.riptideWeb .tabs .wrapp .tabValBox{
     background: #DEE8E8;
@@ -591,16 +591,16 @@ body.riptideWeb .tabs .wrapp .listBox ul::before{
 
 
 body.ultraviolet .tabs .wrapp .tabValBox{
-    background: #EEE3E3;
+    background: #E5E0E5;
 }
 body.ultraviolet .tabs .wrapp .tabValBox ul::before{
-    background: #EEE3E3;
+    background: #E5E0E5;
 }
 body.ultraviolet .tabs .wrapp .listBox{
-    background: #EEE3E3;
+    background: #E5E0E5;
 }
 body.ultraviolet .tabs .wrapp .listBox ul::before{
-    background: #EEE3E3;
+    background: #E5E0E5;
 }
 
 @media screen and (min-width: 595px) {
