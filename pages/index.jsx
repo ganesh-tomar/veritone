@@ -2,17 +2,21 @@
 import Layout from '../components/layout';
 import dynamic from 'next/dynamic'
 import { Suspense } from 'react'
+import React, { lazy } from 'react';
 const HeroBanner = dynamic(() => import('../components/HeroBanner'), {
 	suspense: true,
 })
 // import HeroBanner from '../components/HeroBanner';
-import IntroWithLogo from '../components/IntroWithLogo';
-import TwoColumnText from '../components/TwoColumnText';
-import Tabs from '../components/Tabs';
-import Footercta from '../components/Footercta';
+const IntroWithLogo = lazy(() => import('../components/IntroWithLogo'));
+const TwoColumnText = lazy(() => import('../components/TwoColumnText'));
+const Tabs = lazy(() => import('../components/Tabs'));
+const Footercta = lazy(() => import('../components/Footercta'));
+
+const FullWidthContent = lazy(() => import('../components/FullWidthContent'));
+const FormOverlay = lazy(() => import('../components/global/FormOverlay'));
+
+
 import TwitterSlider from '../components/TwitterSlider';
-import FullWidthContent from '../components/FullWidthContent';
-import FormOverlay from '../components/global/FormOverlay';
 import { useState } from 'react';
 import { NextSeo } from 'next-seo';
 
@@ -65,7 +69,7 @@ const Home = () => {
 			<Tabs data={tabs} />
 			<FullWidthContent {...fullWidthContent} />
 			<TwoColumnText {...twoColumnText} />
-			<TwitterSlider data={twitterSliderData} onlyInternalPosts={true} />
+			{/* <TwitterSlider data={twitterSliderData} onlyInternalPosts={true} /> */}
 			<Footercta {...footerCta} setFormOverlay={setFormOverlay} />
 			<FormOverlay toggle={open} setFormOverlay={setFormOverlay} buttonText={'Connect with us'} url={'#'} buttonClass={'default mr-[30px]'} formUrl={url} />
 		</>
