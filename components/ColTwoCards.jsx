@@ -3,12 +3,6 @@ import Image from "next/image";
 import Button from "./button/Button";
 
 export default function ColTwoCards({ data }) {
-    // useEffect(() => {
-    //     const sectionNext = document.querySelector('section.col-two-cards').nextSibling;
-    //     sectionNext.classList.add('lg-up:pt-[316px]');
-    // }, [])
-
-
     return (
         <section className="col-two-cards pb-0">
             <span className="bg-cosmos absolute block w-full h-[85%] top-0 left-0 lg:h-[40%] sm:h-[36%]"></span>

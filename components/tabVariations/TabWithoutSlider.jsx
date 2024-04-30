@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react'
+import React, { useState } from 'react'
 import Image from "next/image";
 import Button from "../button/Button";
 import styles from '../../styles/Tabs.module.css';
@@ -19,8 +19,6 @@ const Tabs = ({ tab, tab_content, bg, tabBg, pt }) => {
   const dropdownHandler = () => {
     setopen(!open);
   }
-  const liWidth = 100 / tab.length
-  // console.log(liWidth);
 
   return (
     <section className={`tabs padding-medium ${styles.tabs} ${styles.tabWithoutSlider} overflow-x-clip`}>

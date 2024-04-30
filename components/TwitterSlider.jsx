@@ -107,10 +107,7 @@ export default function TwitterSlider({ data, onlyInternalPosts }) {
             },
         },
     ];
-
     Object.assign(settings, { responsive: responsiveSettings });
-
-
     const changeHandler = (e) => {
         setChecked(false)
         if (e.target.checked) {
@@ -122,7 +119,6 @@ export default function TwitterSlider({ data, onlyInternalPosts }) {
         setTimeout(() => {
             setChecked(true)
         }, 300)
-
     }
     const touchHandler = (e) => {
         setAutoPlaySpeed(25000)

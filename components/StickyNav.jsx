@@ -6,17 +6,11 @@ const StickyNav = (props) => {
   let bladeData = props.data;
   const [activeSection, setActiveSection] = useState('');
   const [winWidth, isWinWidth] = useState(0);
-  const [sectionLeft, setsectionLeft] = useState(6)
-  const [screenHeight, setScreenHeight] = useState(0);
   const [activeIndex, setActiveIndex] = useState(0);
-  const [crossedSection, setcrossedSection] = useState([])
   useEffect(() => {
     const handleResize = () => {
       isWinWidth(window.innerWidth);
       setScreenHeight(window.innerHeight);
-      // const section = document.querySelector('.intro-with-accordion');
-      // console.log(section.offsetX);
-      // handleScroll()
     };
     window.addEventListener("resize", handleResize);
     handleResize();
@@ -24,8 +18,6 @@ const StickyNav = (props) => {
       window.removeEventListener("resize", handleResize);
     };
   });
-
-  const [distanceFromTop, setDistanceFromTop] = useState(0);
   const elementRef = useRef(null);
   useEffect(() => {
     setTimeout(() => {

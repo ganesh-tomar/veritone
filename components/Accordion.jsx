@@ -59,9 +59,6 @@ const Accordion = ({ data }) => {
         const handleResize = () => {
             const descHeight = document.querySelector(`.${style.accordionItem}.${style.active}`).querySelector(`.${style.description}`).offsetHeight;
             const content = document.querySelector(`.${style.accordionItem}.${style.active}`).querySelector(`.${style.accordionContent}`);
-            // console.log(descHeight);
-            // console.log(content);
-            // console.log(descHeight, 'new');
             content.style.transition = `none`;
             content.style.height = `${descHeight}px`;
             setTimeout(() => {
