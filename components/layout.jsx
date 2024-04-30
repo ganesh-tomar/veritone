@@ -13,7 +13,7 @@ export default function Layout({ children }) {
 	return (
 		<>
 			<Suspense fallback={`Loading...`}>
-				<Header />
+				{/* <Header /> */}
 			</Suspense>
 			<main className="mb-auto">
 				{children}
