@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from "next/image";
 import Button from "./button/Button";
-// import ContactUs from './button/ContactUs';
+import ContactUs from './button/ContactUs';
 import styles from '../styles/HeroBanner.module.css';
 
 const HeroBanner = ({ heroTitle, heroBlurb, imgpath, alt, video_url, bg, setFormOverlay }) => {
