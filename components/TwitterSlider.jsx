@@ -11,7 +11,6 @@ import "slick-carousel/slick/slick-theme.css";
 export default function TwitterSlider({ data, onlyInternalPosts }) {
     // let SlidesData;
     const [slidesData, setSlidesData] = useState(data.cards)
-    const [totalSlides, setTotalSlides] = useState(data.cards.length)
     const [checked, setChecked] = useState(true)
     const [winWidth, isWinWidth] = useState(0);
     const [autoplaySpeed, setAutoPlaySpeed] = useState(3000);
@@ -23,11 +22,6 @@ export default function TwitterSlider({ data, onlyInternalPosts }) {
     });
     // let filteredItems;
     const sliderRef = useRef(null);
-    // useEffect(() => {
-    //     setSlidesData(data.cards);
-    // }, [third])
-
-    // console.log(sliderRef.current)
     const settings = {
         dots: false,
         arrows: false,
@@ -195,7 +189,6 @@ export default function TwitterSlider({ data, onlyInternalPosts }) {
                                         </div>
                                         <p className='content text-cosmos small'> {slide.desc}</p>
                                     </div>
-
                                     <style jsx>{`
                                                     .content{
                                                         overflow:hidden;
@@ -205,20 +198,17 @@ export default function TwitterSlider({ data, onlyInternalPosts }) {
                                                         display: -webkit-box;
                                                     }
                                                     
-                                                    `}
+                                                `}
                                     </style>
                                 </div>
                             </div>
                         ))}
                     </Slider>
-
                 </div>
                 <div className="btnWrap mt-[38px] sm:mt-[30px] sm-up:hidden w-full max-w-[343px] mx-auto sm:max-w-[calc(100%-40px)] sm:mx-[20px]">
                     <Button buttonText={data.intro.btnText} url={data.intro.btnUrl} buttonClass={data.intro.btnClass} />
                 </div>
             </div>
-
-
         </section>
     );
 }

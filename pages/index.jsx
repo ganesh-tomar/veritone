@@ -69,7 +69,7 @@ const Home = () => {
 			<Tabs data={tabs} />
 			<FullWidthContent {...fullWidthContent} />
 			<TwoColumnText {...twoColumnText} />
-			{/* <TwitterSlider data={twitterSliderData} onlyInternalPosts={true} /> */}
+			<TwitterSlider data={twitterSliderData} onlyInternalPosts={true} />
 			<Footercta {...footerCta} setFormOverlay={setFormOverlay} />
 			<FormOverlay toggle={open} setFormOverlay={setFormOverlay} buttonText={'Connect with us'} url={'#'} buttonClass={'default mr-[30px]'} formUrl={url} />
 		</>
