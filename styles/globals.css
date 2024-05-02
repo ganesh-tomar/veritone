@@ -552,6 +552,7 @@ body.ultraviolet .sticky-nav .fixedList .activatedTab{
   }
 body.riptideWeb .sticky-nav ul li{
     color: #DEE8E8;
+    background-color: #DEE8E8;
 }
 body.riptideWeb .tabs .wrapp .active > h4{
     color: #2AA29C;
@@ -559,6 +560,7 @@ body.riptideWeb .tabs .wrapp .active > h4{
 
 body.ultraviolet .sticky-nav ul li{
     color: #E5E0E5;
+    background-color: #E5E0E5;
 }
 body.ultraviolet .tabs .wrapp .active > h4{
     color: #8257EF;

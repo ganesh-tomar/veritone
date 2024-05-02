@@ -81,16 +81,16 @@ const StickyNav = (props) => {
         crossedSections.push(section.id)
       }
     });
-    // const viewportHeight = window.innerHeight;
-    // const viewportMidpoint = viewportHeight / 2;
+    const viewportHeight = window.innerHeight;
+    const viewportMidpoint = viewportHeight / 2;
     const accordionsections = document.querySelectorAll('.intro-with-accordion');
     const firstSectionBounding = accordionsections[0].getBoundingClientRect();
     const fixedList = document.querySelector(`.${style.fixedList}`)
-    // const lastSectionBounding = accordionsections[accordionsections.length - 1].getBoundingClientRect();
-    if (firstSectionBounding.top < headerHeight + 1) {
-      fixedList.classList.add(style.show);
-    } else {
+    const lastSectionBounding = accordionsections[accordionsections.length - 1].getBoundingClientRect();
+    if (firstSectionBounding.top > headerHeight + 1 || lastSectionBounding.bottom < viewportMidpoint) {
       fixedList.classList.remove(style.show);
+    } else {
+      fixedList.classList.add(style.show);
     }
 
     setActiveSection(activeSectionId);

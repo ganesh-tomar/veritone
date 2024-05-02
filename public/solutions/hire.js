@@ -637,6 +637,7 @@ export const hireBanner = {
       "No matter the job advertising method, the hiring challenge, or the company size, Veritone Hire has a solution for you.",
     btnText1: "Get started",
     btnClass1: "default",
+    formUrl : '',
     btnUrl1: "https://unlock.veritone.com/hire-contact-us",
     btnText2: "",
     btnClass2: "",
