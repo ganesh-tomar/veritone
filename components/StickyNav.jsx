@@ -8,7 +8,7 @@ const StickyNav = (props) => {
   const [winWidth, isWinWidth] = useState(0);
   // const [sectionLeft, setsectionLeft] = useState(6)
   const [screenHeight, setScreenHeight] = useState(0);
-  const [activeIndex, setActiveIndex] = useState(0);
+  const [activeIndex, setActiveIndex] = useState();
   // const [crossedSection, setcrossedSection] = useState([])
   useEffect(() => {
     const handleResize = () => {
@@ -37,7 +37,7 @@ const StickyNav = (props) => {
   }, []);
   const handleStickyClick = (e, id, borderActive) => {
     e.preventDefault();
-    setActiveIndex(borderActive);
+    // setActiveIndex(borderActive);
 
     const header = document.querySelector('header > div');
     const headerHeight = header ? header.offsetHeight : 0;
