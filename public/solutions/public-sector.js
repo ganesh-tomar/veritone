@@ -524,7 +524,7 @@ export const publicBanner = {
       {
         id: 2,
         heading: "Organize and share evidence faster with an intelligent evidence hub        ",
-        icon: "/images/icons/increament_sign.svg",
+        icon: "/images/public-sector/evidence.svg",
         paragraph:
           "Leverage best-of-breed AI models that help expedite the analysis and investigation process with Veritone Investigate. Located at the heart of the Veritone IDEMS suite, this application acts as a central hub where your agency can store all of its digital evidence from disparate locations — making it easier to organize, share with internal and external organizations, and connect to other downstream workflows such redaction and tracking of persons of interests, just to name a few.          ",
         tag1: "INTELLIGENT DIGITAL EVIDENCE HUB",
@@ -629,7 +629,7 @@ export const publicBanner = {
     },
     imageCard2: {
         image: "/images/public-sector/redact-on-demand.jpg",
-        icon: "/images/public-sector/star.svg",
+        icon: "/images/public-sector/services.svg",
         iconName: "pencil",
         cardBg: 'ultraviolet',
         title: "On-demand audio and video redaction",
