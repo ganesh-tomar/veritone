@@ -6,6 +6,7 @@ export const hireBanner = {
     pageBg: "riptideWeb",
     title: "Superhuman hiring is here.",
     bg: "bg-cosmos",
+    formUrl : '',
     blurb:
       "Veritone Hire empowers talent acquisition teams to advertise all of their jobs through a single vendor that seamlessly integrates with over 120 applicant tracking systems and over 2000 publishers using the combined strengths of Broadbean and PandoLogic and Veritone AI.",
     buttonText: "Request a demo",

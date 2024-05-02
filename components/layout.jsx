@@ -7,9 +7,6 @@ const Header = dynamic(() => import('./header/Header'), {
 })
 import Footer from './Footer/Footer';
 export default function Layout({ children }) {
-
-
-
 	return (
 		<>
 			<Suspense fallback={`Loading...`}>

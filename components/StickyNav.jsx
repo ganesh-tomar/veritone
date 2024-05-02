@@ -115,7 +115,7 @@ const StickyNav = (props) => {
                     {
                       winWidth > 767 ? (
                         <div>
-                          <p className='xl-up:text-[30px] pt-[5px] leading-[1.11] truncate h-[108px] laptopsmall:h-[80px] tabletlarge:h-[85px] tablet:h-[85px] line-clamp-3 whitespace-normal'>
+                          <p className='xl-up:text-[30px] pt-[5px] leading-[1.11]  h-[140px] laptopsmall:h-[80px] tabletlarge:h-[85px] tablet:h-[100px]'>
                             {data.blurb}
                           </p>
                           <div className={`${style.arrow}`}>
