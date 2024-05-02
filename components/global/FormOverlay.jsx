@@ -9,8 +9,8 @@ const FormOverlay = ({ toggle, buttonText, url, buttonClass, formUrl, setFormOve
     setOpen(toggle)
   }, [toggle])
   const overlay = <div className={` ${Style.overlay} overlay transition-all duration-300 xl-up:w-[calc(100%-276px)] desktop:w-[calc(100%-244px)] wide-nav-screen:max-w-[2500px] wide-nav-screen:mx-auto  fixed w-screen h-screen z-[9999] `} >
-    <div className={`overlaycardsWrap relative top-[50%] tablet-landscape:top-0 md:top-0 lg:pb-[30px] pt-[30px]`}>
-      <div className={`cross w-[40px] h-[40px] cursor-pointer absolute right-[1%] top-[6px] desktop-laptop:right-[30px] desktop-laptop:top-[45px] lg:right-[30px] lg:top-[40px] z-[9999]`} onClick={() => removeOverlay()}>
+    <div className={`overlaycardsWrap tablet-landscape:top-0 md:top-0 lg:pb-[30px] pt-[30px]`}>
+      <div className={`cross w-[40px] h-[40px] cursor-pointer absolute right-[1%] top-[30px] desktop-laptop:right-[30px] desktop-laptop:top-[45px] lg:right-[30px] lg:top-[40px] z-[9999]`} onClick={() => removeOverlay()}>
         <svg
           width="40"
           height="40"
@@ -24,7 +24,7 @@ const FormOverlay = ({ toggle, buttonText, url, buttonClass, formUrl, setFormOve
           />
         </svg>
       </div>
-      <div className="w-full max-w-[740px] h-[calc(70vh-30px)] overflow-auto mx-auto p-[20px] relative z-[15]">
+      <div className="w-full max-w-[740px] h-[calc(85vh-30px)] overflow-auto mx-auto p-[20px] relative z-[15] top-[100px] md:top-[60px]">
         <iframe id="pardot_popup_form"
           loading="lazy"
           title="Contact Veritone"

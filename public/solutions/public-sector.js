@@ -625,7 +625,7 @@ export const publicBanner = {
       cardBg: 'riptideWeb',
       title: "AI solutions and services, personalized",
       buttonText: "Professional Services",
-      buttonUrl: "https://unlock.veritone.com/ps-pro-serv-contact-us      ",
+      buttonUrl: "https://unlock.veritone.com/ps-pro-serv-contact-us",
     },
     imageCard2: {
         image: "/images/public-sector/redact-on-demand.jpg",

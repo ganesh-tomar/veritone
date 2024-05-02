@@ -217,7 +217,8 @@
 
 
 .overlaycardsWrap{
-    transform: translateY(-50%);
+	top: 100px;
+    /* transform: translateY(-50%); */
 }
 @media screen and (min-width: 767px) and (max-width: 991px) and (orientation: landscape) {
     .overlaycardsWrap{
