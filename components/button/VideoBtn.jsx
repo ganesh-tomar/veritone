@@ -6,18 +6,15 @@ import { useState, useEffect } from "react";
 
 const VideoButton = ({ buttonText, url, buttonClass, videoUrl }) => {
 
-  var regExp, match, videoId;
+  let regExp, match, videoId;
   const [open, setOpen] = useState(0)
-  const [iframeSrc, setiframe] = useState('#')
+  const [iframeSrc, setiframe] = useState('#');
 
   useEffect(() => {
     if (videoUrl) {
-      // if (value.cta[0].type == 'video') {
       if (videoUrl.includes('vimeo')) {
-        // console.log('vimeo')
         const regex = /\/(\d+)(?:\?|$)/
         const vimeoId = (videoUrl).match(regex);
-        // console.log(vimeoId)
         if (vimeoId == null) {
           setiframe(`https://player.vimeo.com/video/${videoUrl}`)
         } else {

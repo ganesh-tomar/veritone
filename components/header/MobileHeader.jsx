@@ -12,7 +12,6 @@ export default function MobileHeader() {
 
     const menuData = headerData
     const [leftWidth, setLeftWidth] = useState('');
-    const [headerHeight, setHeaderHeight] = useState(0);
     const [ActiveMobiileMenu, setActiveMobiileMenu] = useState("h");
     const [ActiveMobileSubMenu, setActiveMobileSubMenu] = useState();
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -92,10 +91,6 @@ export default function MobileHeader() {
             document.querySelector('header .mainHeader').classList.remove('bg-cosmos')
         }
     };
-
-    const subMenuProrperty = {
-        top: `${headerHeight - 5}px`,
-    }
 
     const searchClick = () => {
         setActiveMobiileMenu("h")

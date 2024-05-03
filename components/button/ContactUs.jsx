@@ -29,7 +29,7 @@ const ContactUs = ({ buttonText, url, buttonClass, formUrl, setFormOverlay }) =>
           src={formUrl}
           width="100%"
           height="900"
-          frameborder="0">
+          frameBorder="0">
         </iframe>
       </div>
     </div>
@@ -44,9 +44,7 @@ const ContactUs = ({ buttonText, url, buttonClass, formUrl, setFormOverlay }) =>
     (open == 0 ? setOpen(1) : setOpen(0))
   }
   return (
-    <>
-      <Link onClick={(e) => clickHandler(e)} href={url} className={`button ${buttonClass}`}>{buttonText}</Link>
-    </>
+    <Link onClick={(e) => clickHandler(e)} href={url} className={`button ${buttonClass}`}>{buttonText}</Link>
   )
 }
 
