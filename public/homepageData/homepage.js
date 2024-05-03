@@ -378,7 +378,7 @@ export const twitterSliderData = {
 		},
 		{
 			imageSrc: '/images/twitterSlider/forbes.jpg',
-			imageName: 'jobiqo',
+			imageName: 'forbes',
 			desc: "Digital Evidence Management: Unlocking The Power Of AI In Investigations. Learn how by applying AI, teams can transform their DEMS into an iDEMS, an intelligent digital evidence management system.",
 			client: 'Forbes',
 			clientImage: '/images/twitterSlider/forbes_tech_logo.jpeg',
@@ -392,7 +392,7 @@ export const twitterSliderData = {
 		},
 		{
 			imageSrc: '/images/twitterSlider/gov_tech_article.jpg',
-			imageName: 'jobiqo',
+			imageName: 'gov_tech_article',
 			desc: "Digital Evidence Management: Another Way AI Can Help. Veritone on Tuesday launched a digital evidence management system that uses artificial intelligence for object recognition, redaction and other tasks. It comes in a time of big projected growth for evidence management tech.",
 			client: 'Government Technology',
 			clientImage: '/images/twitterSlider/government-technology-logo-200x112.png',
@@ -406,7 +406,7 @@ export const twitterSliderData = {
 		},
 		{
 			imageSrc: '/images/twitterSlider/ai_exec_order.jpg',
-			imageName: 'Forbes',
+			imageName: 'ai_exec_order',
 			desc: "President Biden’s recent executive order on artificial intelligence (AI) presents a major regulatory step for the responsible and ethical use of AI. As incremental regulations moved through state legislatures, the logical next step was to address the issue at a federal level.",
 			client: 'Forbes',
 			clientImage: '/images/twitterSlider/FORBES_logo.png',
@@ -420,7 +420,7 @@ export const twitterSliderData = {
 		},
 		{
 			imageSrc: '/images/twitterSlider/benzinga_youtube.jpg',
-			imageName: 'Forbes',
+			imageName: 'benzinga_youtube',
 			desc: "EXCLUSIVE: Veritone CEO, Ryan Steelberg joined the Benzinga Live Trading team on the show today to discuss what is happening at Veritone. ",
 			client: 'Benzinga',
 			clientImage: '/images/twitterSlider/benzinga_logo.jpeg',
