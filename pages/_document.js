@@ -11,7 +11,7 @@ class MyDocument extends Document {
 				<meta name="twitter:image" content="https://nextjs.veritone.com/images/veritone_OG_image.jpg" />
 				<meta name="twitter:site" content="https://twitter.com/veritoneinc" />
 
-                <script
+                <script strategy="lazyOnload"
 					dangerouslySetInnerHTML={{
 						__html: `  window.dataLayer = window.dataLayer || [];
 					function gtag(){dataLayer.push(arguments);}
@@ -19,7 +19,7 @@ class MyDocument extends Document {
 				  
 					gtag('config', 'G-V9F3W9WQ5R');`}}
 				/>
-                <script
+                <script strategy="lazyOnload"
 					dangerouslySetInnerHTML={{
 						__html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 					new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -27,7 +27,7 @@ class MyDocument extends Document {
 					'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 					})(window,document,'script','dataLayer','GTM-K8DLN47');`}}
 				/>
-				<script
+				<script strategy="lazyOnload"
 					dangerouslySetInnerHTML={{
 						__html: `window.addEventListener('message', function()
 					{
@@ -40,7 +40,7 @@ class MyDocument extends Document {
 					}
 					);`}}
 				/>
-                <script 
+                <script strategy="lazyOnload"
 					dangerouslySetInnerHTML={{__html:`	function initPardot() {
 						if (window.pardotDidInit) {
 							return false;
@@ -55,7 +55,7 @@ class MyDocument extends Document {
 					}
 					initPardot()`}}
 				/>
-				<script 
+				<script strategy="lazyOnload"
 					dangerouslySetInnerHTML={{__html:`piAId = '637301';
 					piCId = '20529';
 					piHostname = 'pi.pardot.com';`}}

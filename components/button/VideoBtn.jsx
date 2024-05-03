@@ -37,6 +37,7 @@ const VideoButton = ({ buttonText, url, buttonClass, videoUrl }) => {
 
 
 
+
   const overlay = <div className={`overlay transition-all duration-300 xl-up:w-[calc(100%-276px)] desktop:w-[calc(100%-244px)] wide-nav-screen:max-w-[2500px] wide-nav-screen:mx-auto  fixed w-screen h-screen z-[9999] `} >
     <div className={`overlaycardsWrap relative top-[50%] tablet-landscape:top-0 md:top-0 lg:pb-[50px] pt-[70px]`}>
       <div className={`cross w-[40px] h-[40px] cursor-pointer absolute right-[179px] -top-[27px] desktop-laptop:right-[30px] desktop-laptop:top-[45px] lg:right-[30px] lg:top-[40px] z-[9999]`} onClick={() => removeOverlay()}>

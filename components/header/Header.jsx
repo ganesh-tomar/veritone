@@ -69,14 +69,14 @@ export default function Header() {
         return () => {
             window.removeEventListener('scroll', handleScroll);
         };
-    });
+    }, []);
     useEffect(() => {
         if (window.scrollY > 5) {
             setHeaderBg(1)
         } else {
             setHeaderBg(0)
         }
-    })
+    }, []);
     const showManu = (e, val) => {
         if (winWidth > 1024) {
             e.preventDefault()

@@ -20,7 +20,7 @@ export default function TwitterSlider({ data, onlyInternalPosts }) {
         window.addEventListener('resize', function () {
             isWinWidth(window.innerWidth);
         })
-    });
+    }, []);
     // let filteredItems;
     const sliderRef = useRef(null);
     const settings = {
