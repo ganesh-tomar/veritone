@@ -1,42 +1,39 @@
-import { React, useEffect, useState, useRef } from 'react'
+import { React, useEffect, useState } from 'react'
 import Style from '../../styles/header/Header.module.css';
 import { headerData } from "./headerData"
 import Link from 'next/link';
 import Button from '../button/Button';
 import Image from 'next/image';
-import Router, { useRouter } from 'next/router';
 import MobileSubNav from './MobileSubNav'
 
 export default function MobileHeader() {
-    const router = useRouter()
 
     const menuData = headerData
-    const [leftWidth, setLeftWidth] = useState('');
-    const [ActiveMobiileMenu, setActiveMobiileMenu] = useState("h");
-    const [ActiveMobileSubMenu, setActiveMobileSubMenu] = useState();
+    const [headerHeight, setHeaderHeight] = useState(0);
+    const [activeMobileMenu, setActiveMobileMenu] = useState("h");
+    const [activeMobileSubMenu, setActiveMobileSubMenu] = useState();
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [leftValue, setLeftValue] = useState(0);
-    const [isSerachOpen, setSearchOpen] = useState(0);
-    const [headerColor, setHeaderBg] = useState(0);
-    const [winWidth, isWinWidth] = useState(0);
+    const [isSerachOpen, setIsSerachOpen] = useState(0);
+    const [headerColor, setHeaderColor] = useState(0);
+    const [winWidth, setWinWidth] = useState(0);
     const [back, setBack] = useState();
-    const [subBack, setSubBack] = useState();
     const [tabHeight, setTabHeight] = useState(0);
 
     useEffect(() => {
-        var currentActiveTab = document.querySelector("header .activeMobiileMenu .currentActiveTab");
+        const currentActiveTab = document.querySelector("header .ActiveMobileMenu .currentActiveTab");
         if (currentActiveTab) {
             setTabHeight(currentActiveTab.clientHeight);
         }
-    }, [ActiveMobiileMenu, ActiveMobileSubMenu]);
+    }, [activeMobileMenu, activeMobileSubMenu]);
 
     useEffect(() => {
         const mainSections = document.querySelector('main');
 
         mainSections.addEventListener('click', function () {
-            setActiveMobiileMenu();
+            setActiveMobileMenu();
             setActiveMobileSubMenu();
-            setSearchOpen(0)
+            setIsSerachOpen(0)
         })
     })
 
@@ -44,13 +41,10 @@ export default function MobileHeader() {
         if (winWidth <= 1024) {
             e.preventDefault();
             e.stopPropagation()
-            // if(scrollRemove != 1) {
-            setActiveMobiileMenu(val);
+            setActiveMobileMenu(val);
             setActiveMobileSubMenu();
             setLeftValue(0)
             setBack("")
-            setSubBack("")
-            // }
         }
     }
     const showSubManuRes = (e, val, validURL) => {
@@ -62,7 +56,6 @@ export default function MobileHeader() {
                 setLeftValue(1)
             }, [500])
             setBack("")
-            setSubBack("")
         }
     }
 
@@ -72,34 +65,37 @@ export default function MobileHeader() {
                 setBack(val)
             } else {
                 setLeftValue(0)
-                setSubBack(val)
                 setTabHeight(0)
             }
 
         }
     }
     const toggleMenu = () => {
-        setSearchOpen(0)
+        setIsSerachOpen(0)
         setIsMenuOpen(!isMenuOpen);
         if (headerColor != 1) {
-            setHeaderBg(1)
+            setHeaderColor(1)
             document.querySelector('header .mainHeader').classList.add('bg-cosmos');
         } else {
-            setHeaderBg(0)
-            setActiveMobiileMenu();
+            setHeaderColor(0)
+            setActiveMobileMenu();
             setActiveMobileSubMenu();
             document.querySelector('header .mainHeader').classList.remove('bg-cosmos')
         }
     };
 
+    const subMenuProrperty = {
+        top: `${headerHeight - 5}px`,
+    }
+
     const searchClick = () => {
-        setActiveMobiileMenu("h")
+        setActiveMobileMenu("h")
         setActiveMobileSubMenu()
         setIsMenuOpen(false)
-        setSearchOpen(1)
+        setIsSerachOpen(1)
     }
     const searchCrossBtn = () => {
-        setSearchOpen(0)
+        setIsSerachOpen(0)
     }
     const [query, setQuery] = useState('');
     const handleSearch = (e) => {
@@ -118,7 +114,7 @@ export default function MobileHeader() {
         <div className="row flex items-center justify-between laptop-portrait:hidden xl-up:hidden">
             <div className="logo relative sm:w-[77px] mb-[20px] ipad:mb-0">
                 <Link href="/" className='emptyLink'>.</Link>
-                <Image src="/images/logo/logo.svg" width={148} quality={100} height={28} alt="Logo" />
+                <Image src="/images/logo/logo.svg" width={148} height={28} quality={100} alt="Logo" />
             </div>
             <nav className={`max-w-[655px] mainNavWrap w-full ipad:absolute ipad:top-[55px] sm:top-[41px] ipad:max-w-full ipad:p-[20px] ipad:h-[calc(100vh-250px)] sm:h-[calc(100vh-30px)] md:h-[calc(100vh-50px)] tablet:h-[calc(100vh-20px)] tabletlarge:h-[calc(100vh-50px)] tablet:pb-[100px] tabletlarge:pb-[60px] ipad:justify-between sm:justify-between sm:pb-[60px] ipad:flex-col transition-all duration-700 ease-in-out ipad:overflow-auto ipad:overflow-x-clip ipad:bg-cosmos ipad:flex  ${isMenuOpen ? 'ipad:left-[0%]' : 'ipad:left-[-100%]'} `}>
                 <ul className='flex laptopsmall:justify-center ipad:flex-wrap ipad:pt-[60px] phablet:pt-[0]'>
@@ -127,8 +123,8 @@ export default function MobileHeader() {
                             const submenu = item.subMainMenu.subMenu
                             return (
                                 <li key={index} className={`mr-[25px] mainNav laptopsmall:mr-[20px] last:mr-0 ipad:w-full ipad:mr-0 inline-block ipad:mb-[18px] pb-[25px] ipad:pb-0`}  >
-                                    <Link href="#" className={`arrow main-nav text-[20px] pr-[18px] pl-[35px] sm:pr-[20px] ipad:text-[19px] relative laptop-portrait:pl-[22px] text-white ipad:pl-0 ${Style.dropDownArrow} ipad:font-[700] ${ActiveMobiileMenu === index ? `${Style.show}` : ''} `} datatype={`${index}`} onClick={(e) => showMenuRes(e, index)}>{item?.mainMenu}</Link>
-                                    <div className={` subMenu ${Style.subMenu} absolute transition-all duration-700 ease-in-out z-[9]  h-[622px] overflow-x-hidden laptop-portrait:h-[480px] phablet:h-full tablet:h-full ipad:h-full ipad:w-full laptopsmall:h-full sm:h-full ${ActiveMobiileMenu === index ? ' activeMobiileMenu laptop-portrait:block laptop-portrait:opacity-100 laptop-portrait:visible xl-up:block xl-up:opacity-100 xl-up:visible abc' : 'laptop-portrait:hidden laptop-portrait:opacity-0 laptop-portrait:invisible xl-up:hidden xl-up:opacity-0 xl-up:invisible '} ${back !== "x" && ActiveMobiileMenu === index ? 'ipad:left-0 ipad:z-10' : 'ipad:left-[-100%]'} ipad:!top-0`} style={leftWidth == '' ? subMenuProrperty : subMenuProrperty}>
+                                    <Link href="#" className={`arrow main-nav text-[20px] pr-[18px] pl-[35px] sm:pr-[20px] ipad:text-[19px] relative laptop-portrait:pl-[22px] text-white ipad:pl-0 ${Style.dropDownArrow} ipad:font-[700] ${activeMobileMenu === index ? `${Style.show}` : ''} `} datatype={`${index}`} onClick={(e) => showMenuRes(e, index)}>{item?.mainMenu}</Link>
+                                    <div className={` subMenu ${Style.subMenu} absolute transition-all duration-700 ease-in-out z-[9]  h-[622px] overflow-x-hidden laptop-portrait:h-[480px] phablet:h-full tablet:h-full ipad:h-full ipad:w-full laptopsmall:h-full sm:h-full ${activeMobileMenu === index ? ' ActiveMobileMenu laptop-portrait:block laptop-portrait:opacity-100 laptop-portrait:visible xl-up:block xl-up:opacity-100 xl-up:visible abc' : 'laptop-portrait:hidden laptop-portrait:opacity-0 laptop-portrait:invisible xl-up:hidden xl-up:opacity-0 xl-up:invisible '} ${back !== "x" && activeMobileMenu === index ? 'ipad:left-0 ipad:z-10' : 'ipad:left-[-100%]'} ipad:!top-0`} style={subMenuProrperty}>
                                         <div className={` innerSubMenu ${Style.innerSubMenu} relative inline-flex flex-nowrap ipad:h-full phablet:h-full tablet:tablet:h-full sm:h-full w-full h-full ipad:block`}>
                                             <div className={`subMenuLinks ${Style.subMenuLinks}  !bg-cosmos sm:mt-[-5px] pl-[36px] pr-[42px] pt-[50px] pb-[77px] tablet:pb-[120px] sm:pb-[120px] tablet:pt-[50px] laptopsmall:pt-[50px] h-full text-white flex flex-col justify-between sm:flex laptop-portrait:pb-[50px] laptopsmall:pl-[20px] ipad:pl-[20px] sm:pt-[50px] ipad:pt-[50px] phablet:[calc(100vh+100px)] tablet:h-full laptopsmall:h-[calc(100vh-100px)]`}>
                                                 <div className="subMenuWrapper ">
@@ -137,7 +133,6 @@ export default function MobileHeader() {
                                                     <ul className=''>
                                                         {
                                                             submenu.map((subItem, i) => {
-                                                                const multiLink = subItem?.multiLink;
                                                                 return (
                                                                     <li key={i} className=' subMenuCheck pb-[10px] mb-[11px] ipad:mb-[7px] w-[calc(100%+42px)]' >
                                                                         <Link href={`${subItem.url}`} className={`text-white ${Style.rightArrow} relative pr-0 text-[22px] laptopsmall:text-[20px] ipad:text-[19px] font-[700]`} onClick={(e) => showSubManuRes(e, i, subItem.url)} >{subItem?.menu}</Link>
@@ -146,16 +141,16 @@ export default function MobileHeader() {
                                                             })
                                                         }
                                                     </ul>
+                                                    <div className="btnWrap">
+                                                        {
+                                                            item.subMainMenu.buttonUrl ?
+                                                                <Button buttonText={item.subMainMenu.buttonText} url={item.subMainMenu.buttonUrl} buttonClass={`${item.subMainMenu.btnClass} mt-[140px] smallDefaultBtn sm:w-full`} />
+                                                                : ""
+                                                        }
+                                                    </div>
                                                 </div>
-                                                {/* <div className="btnWrap sm:mt-[160px]">
-                                                    {
-                                                        item.subMainMenu.buttonText ?
-                                                            <Button buttonText={item.subMainMenu.buttonText} url={'/'} buttonClass={`${item.subMainMenu.btnClass} smallDefaultBtn sm:w-full`} />
-                                                            : ""
-                                                    }
-                                                </div> */}
                                             </div>
-                                            <MobileSubNav data={submenu} dataIndex={ActiveMobileSubMenu} reverseFunction={backBtn} tabHeight={tabHeight} leftValue={leftValue} />
+                                            <MobileSubNav data={submenu} dataIndex={activeMobileSubMenu} reverseFunction={backBtn} tabHeight={tabHeight} leftValue={leftValue} />
                                         </div>
                                     </div>
                                 </li>
@@ -177,7 +172,7 @@ export default function MobileHeader() {
                 <div className={`searchForm ${Style.searchForm} absolute left-[50%] w-full  translate-x-[-50%] px-[20px] max-w-[1252px] mx-[auto] overflow-x-auto transition-all rounded-b-[4px] duration-300 ease-in-out  ${isSerachOpen ? 'top-[86px] ipad:top-[92px]' : 'top-[-140%] ipad:top-[-82px]'}`}>
                     <div className="searchWrapper relative bg-cosmos py-[30px] px-[40px]">
                         <div className="crossBtn absolute top-[5px] right-[10px] w-[20px] h-[20px] sm:right-[20px] cursor-pointer" onClick={() => searchCrossBtn()}>
-                            <Image src="/images/icons/cross.svg" width={24} quality={100} height={24} alt='Cross'></Image>
+                            <Image src="/images/icons/cross.svg" width={24} quality={100} height={24} alt='Cross' />
                         </div>
                         <form action="" autoComplete="off">
                             <label htmlFor="search" className='text-[0]'>.</label>

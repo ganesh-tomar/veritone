@@ -5,60 +5,52 @@ import Button from '../button/Button';
 import Image from 'next/image';
 import { headerData } from "./headerData"
 import MobileHeader from './MobileHeader'
-import Router, { useRouter } from 'next/router';
 import TabHeader from './TabHeader';
 
 export default function Header() {
-    const router = useRouter()
     const menuData = headerData
-
-    const [leftWidth, setLeftWidth] = useState('');
-    // const [leftWidthDiv, setLeftWidthDiv] = useState('');
     const containerRef = useRef(null);
     const mainDivRef = useRef(null);
     const [headerHeight, setHeaderHeight] = useState(0);
-    // const [menuHeaderWidth, setMenuHeaderWidth] = useState(0);
     const [activeMenu, setActiveMenu] = useState("h");
     const [activeSubMenu, setActiveSubMenu] = useState();
-    const [winWidth, isWinWidth] = useState(0);
+    const [winWidth, setWinWidth] = useState(0);
     const [isMenuOpen, setIsMenuOpen] = useState(false);
-    const [isSerachOpen, setSearchOpen] = useState(0);
-    const [headerColor, setHeaderBg] = useState(0);
-    const [scrollRemove, setScrollRemove] = useState(0);
-    const [activeArrow, setActiveArrow] = useState(0);
-    const [hoverBackground, setBackground] = useState(0);
+    const [isSerachOpen, setIsSerachOpen] = useState(0);
+    const [headerColor, setHeaderColor] = useState(0);
+    const [hoverBackground, setHoverBackground] = useState(0);
 
     useEffect(() => {
         const headerElement = document.querySelector('header .mainHeader');
         const mainSections = document.querySelector('main');
         const logoCLick = document.querySelector('.logo');
 
-        isWinWidth(window.innerWidth);
+        setWinWidth(window.innerWidth);
         if (headerElement) {
             const height = headerElement.offsetHeight;
             setHeaderHeight(height);
         }
         mainSections.addEventListener('click', function () {
-            setSearchOpen(0)
+            setIsSerachOpen(0)
         })
 
         window.addEventListener('resize', function () {
             setActiveMenu("h")
             setActiveSubMenu()
-            isWinWidth(window.innerWidth);
+            setWinWidth(window.innerWidth);
         })
 
         logoCLick.addEventListener('click', function () {
             setActiveMenu("h")
             setActiveSubMenu()
-            setSearchOpen(0)
+            setIsSerachOpen(0)
         })
 
         const handleScroll = () => {
             if (window.scrollY > 5) {
-                setHeaderBg(1)
+                setHeaderColor(1)
             } else {
-                setHeaderBg(0)
+                setHeaderColor(0)
             }
         }
 
@@ -69,22 +61,22 @@ export default function Header() {
         return () => {
             window.removeEventListener('scroll', handleScroll);
         };
-    }, []);
+    }, [winWidth, activeMenu, activeSubMenu, isSerachOpen, headerColor]);
     useEffect(() => {
         if (window.scrollY > 5) {
-            setHeaderBg(1)
+            setHeaderColor(1)
         } else {
-            setHeaderBg(0)
+            setHeaderColor(0)
         }
-    }, []);
+    }, [])
     const showManu = (e, val) => {
         if (winWidth > 1024) {
             e.preventDefault()
             if (activeMenu != val) {
                 setActiveMenu(val)
                 setActiveSubMenu()
-                setSearchOpen(0)
-                setBackground(1)
+                setIsSerachOpen(0)
+                setHoverBackground(1)
             }
         }
     }
@@ -92,8 +84,8 @@ export default function Header() {
         if (winWidth > 1024) {
             setActiveMenu("h")
             setActiveSubMenu()
-            setSearchOpen(0)
-            setBackground(0)
+            setIsSerachOpen(0)
+            setHoverBackground(0)
         }
     }
     const showSubManu = (e, value) => {
@@ -101,10 +93,6 @@ export default function Header() {
             e.preventDefault()
 
             setActiveSubMenu(value);
-
-            if (activeSubMenu) {
-                const tabs = document.querySelector('.header .mainHeader .subMenu .subMenuLinks .tabs');
-            }
         }
     }
 
@@ -116,10 +104,10 @@ export default function Header() {
         setActiveMenu("h")
         setActiveSubMenu()
         setIsMenuOpen(false)
-        setSearchOpen(1)
+        setIsSerachOpen(1)
     }
     const searchCrossBtn = () => {
-        setSearchOpen(0)
+        setIsSerachOpen(0)
     }
     const [query, setQuery] = useState('');
     const handleSearch = (e) => {
@@ -152,8 +140,8 @@ export default function Header() {
                                                 const submenu = item.subMainMenu.subMenu
                                                 return (
                                                     <li key={index} className={`mr-[25px] mainNav laptopsmall:mr-[20px] last:mr-0 inline-block pb-[25px]`} onMouseEnter={(e) => showManu(e, index)} onMouseLeave={(e) => hideMenu(e, index)} >
-                                                        <Link href="#" className={`arrow main-nav text-[20px] pr-[18px] pl-[35px] relative laptop-portrait:pl-[22px] text-white ${Style.dropDownArrow} ${activeMenu === index ? `${Style.show}` : ''} `} datatype={`${index}`} >{item?.mainMenu}</Link>
-                                                        <div className={`${Style.subMenu}  subMenu absolute transition-all duration-700 ease-in-out z-[9]   ${item.subMainMenu.btnClass ? '' : 'h-auto xl-up:w-[360px]'} overflow-x-hidden phablet:h-auto tablet:h-full ipad:h-full ipad:w-full ${activeMenu === index ? 'laptop-portrait:block laptop-portrait:opacity-100 laptop-portrait:visible xl-up:block xl-up:opacity-100 xl-up:visible abc' : 'laptop-portrait:hidden laptop-portrait:opacity-0 laptop-portrait:invisible xl-up:hidden xl-up:opacity-0 xl-up:invisible '} `} style={leftWidth == '' ? subMenuProrperty : subMenuProrperty}>
+                                                        <Link href="#" className={`arrow main-nav text-[20px] pr-[18px] pl-[35px] relative laptop-portrait:pl-[22px] text-white ${Style.dropDownArrow} ${activeMenu == index ? `${Style.show}` : ''} `} datatype={`${index}`} >{item?.mainMenu}</Link>
+                                                        <div className={`${Style.subMenu}  subMenu absolute transition-all duration-700 ease-in-out z-[9]   ${item.subMainMenu.btnClass ? '' : 'h-auto xl-up:w-[360px]'} overflow-x-hidden phablet:h-auto tablet:h-full ipad:h-full ipad:w-full ${activeMenu === index ? 'laptop-portrait:block laptop-portrait:opacity-100 laptop-portrait:visible xl-up:block xl-up:opacity-100 xl-up:visible abc' : 'laptop-portrait:hidden laptop-portrait:opacity-0 laptop-portrait:invisible xl-up:hidden xl-up:opacity-0 xl-up:invisible '} `} style={subMenuProrperty}>
                                                             <div className="innerSubMenu relative inline-flex flex-nowrap w-full">
                                                                 <div className={`${Style.subMenuLinks} subMenuLinks  bg-cosmos pl-[36px] pr-[42px] pt-[50px] pb-[77px] ${item.subMainMenu.btnClass ? '' : 'w-full pb-[36px]'} laptopsmall:pt-[50px] text-white flex flex-col justify-between laptop-portrait:pb-[50px] laptopsmall:pl-[20px]`}>
                                                                     <div className="subMenuWrapper ">
@@ -161,10 +149,9 @@ export default function Header() {
                                                                         <ul className=''>
                                                                             {
                                                                                 submenu.map((subItem, i) => {
-                                                                                    // const multiLink = subItem?.multiLink;
                                                                                     return (
                                                                                         <li key={i} className=' subMenuCheck pb-[10px] mb-[11px] w-[270px]' onMouseEnter={(e) => showSubManu(e, i)} >
-                                                                                            <Link href={`${subItem.url}`} className={`text-white ${Style.rightArrow} relative pr-0 text-[22px] laptopsmall:text-[20px] font-[700] ${activeArrow ? Style.arrowActive : ''}`} >{subItem?.menu}</Link>
+                                                                                            <Link href={`${subItem.url}`} className={`text-white ${Style.rightArrow} relative pr-0 text-[22px] laptopsmall:text-[20px] font-[700]`} >{subItem?.menu}</Link>
                                                                                         </li>
                                                                                     )
                                                                                 })
@@ -201,7 +188,7 @@ export default function Header() {
                                     <div className={`searchForm ${Style.searchForm} absolute left-[50%] w-full translate-x-[-50%] px-[20px] max-w-[1252px] mx-[auto] overflow-x-auto transition-all rounded-b-[4px] duration-300 ease-in-out  ${isSerachOpen ? 'top-[86px] ipad:top-[92px]' : 'top-[-140%] ipad:top-[-82px]'}`}>
                                         <div className="searchWrapper relative bg-cosmos py-[30px] px-[40px]">
                                             <div className="crossBtn absolute top-[5px] right-[10px] w-[20px] h-[20px] sm:right-[20px] cursor-pointer" onClick={() => searchCrossBtn()}>
-                                                <Image src="/images/icons/cross.svg" width={24} quality={100} height={24} alt='Cross'></Image>
+                                                <Image src="/images/icons/cross.svg" width={24} height={24} quality={100} alt='Cross' />
                                             </div>
                                             <form action="" autoComplete="off">
                                                 <label htmlFor="search" className='text-[0]'>.</label>
