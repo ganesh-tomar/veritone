@@ -520,8 +520,12 @@ body.ultraviolet .intro-with-accordion .accordion > div::after{
 body .sticky-nav .fixedList li{
     background-color: #E5E0E5;
 }
+
 body.ember .sticky-nav .fixedList li {
     background-color: #EEE3E3;
+}
+body.ember .sticky-nav .fixedList .activatedTab{
+    background-color: #FA524D;
 }
 body .sticky-nav .fixedList .activatedTab{
     background-color: #FA524D;
