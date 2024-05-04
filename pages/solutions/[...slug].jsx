@@ -10,7 +10,7 @@ import ResourceCards from '../../components/ResourceCards';
 import FormOverlay from '../../components/global/FormOverlay';
 import { NextSeo } from 'next-seo';
 import { useRouter } from 'next/router';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 
 //importing sections data
 
@@ -18,8 +18,8 @@ import { useEffect, useState } from 'react';
 import { banner, stickyNavData, tabs, accordionData, colTwoCards, resourceCards, twitterSliderData, introWithAccordionData1, introWithAccordionData2, introWithAccordionData3, introWithAccordionData4, footerCta, themeColor } from '../../public/mediaEntertainmentData/entertainment'
 
 import { publicBanner, publicStickyNavData, publicTabs, publicAccordionData, publicColTwoCards, publicResourceCards, publicTwitterSliderData, publicIntroWithAccordionData1, publicIntroWithAccordionData2, publicIntroWithAccordionData3, publicIntroWithAccordionData4, publicFooterCta, publicthemeColor } from '../../public/solutions/public-sector'
-import { hireBanner, hireStickyNavData, hireTabs, hireAccordionData, hireColTwoCards, hireResourceCards, hireTwitterSliderData, hireIntroWithAccordionData1, hireIntroWithAccordionData2, hireIntroWithAccordionData3, hireIntroWithAccordionData4, hireFooterCta, hireThemeColor } from '../../public/solutions/hire'
-import { document } from 'postcss';
+import { hireBanner, hireStickyNavData, hireTabs, hireColTwoCards, hireResourceCards, hireTwitterSliderData, hireIntroWithAccordionData1, hireIntroWithAccordionData2, hireIntroWithAccordionData3, hireIntroWithAccordionData4, hireFooterCta, hireThemeColor } from '../../public/solutions/hire'
+
 
 const Home = () => {
 	const [open, setOpen] = useState(0)
@@ -29,7 +29,7 @@ const Home = () => {
 		open == 0 ? setOpen(1) : setOpen(0)
 		setUrl(url)
 	}
-	let test = setFormOverlay.bind(this)
+
 	const router = useRouter();
 	if (router.asPath === '/solutions/media-entertainment') {
 		return (
