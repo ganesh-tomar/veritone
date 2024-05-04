@@ -520,6 +520,9 @@ body.ultraviolet .intro-with-accordion .accordion > div::after{
 body .sticky-nav .fixedList li{
     background-color: #E5E0E5;
 }
+body.ember .sticky-nav .fixedList li {
+    background-color: #EEE3E3;
+}
 body .sticky-nav .fixedList .activatedTab{
     background-color: #FA524D;
 }
@@ -570,6 +573,9 @@ body.ultraviolet .tabs .wrapp .active > h4{
 }
 .tabs .wrapp .tabValBox ul::before{
     background: #E5E0E5;
+}
+.tabs.ember .wrapp .tabValBox ul::before{
+    background: #EEE3E3 ;
 }
 .tabs .wrapp  .listBox{
     background: #E5E0E5;

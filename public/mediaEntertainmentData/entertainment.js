@@ -176,7 +176,7 @@ export const tabs = {
       bg: "bg-ember",
       btnClass: "btn-black",
       bottom_btn_text: "View case study",
-      bottom_btn_url: "https://go.veritone.com/veritone-and-partners-activate-24-hours-of-action-packed-live-racing/p/1?_gl=1*c2yken*_gcl_au*MTA2Mjk2MjU0OS4xNzA1MTA0OTc2",
+      bottom_btn_url: "https://go.veritone.com/veritone-and-partners-activate-24-hours-of-action-packed-live-racing/p/1",
       bottom_link_text: "",
       bottom_link_url: "",
     },
