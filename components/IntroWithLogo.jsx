@@ -1,10 +1,9 @@
 import React from 'react'
 import Image from "next/image";
-import Button from "./button/Button";
 
 const Intro_with_logo = ({ title, blurb, bg, logo }) => {
 	return (
-		<section className={`intro-with-logo padding-top-large padding-medium-bottom ipad:pb-0 ${bg}`}>
+		<section loading="lazy" className={`intro-with-logo padding-top-large padding-medium-bottom ipad:pb-0 ${bg}`}>
 			<div className={`container`}>
 				<div className={`flex flex-wrap items-center self-center justify-center`}>
 					<h2 className={`text-center max-w-[1040px]`}>{title}</h2>
