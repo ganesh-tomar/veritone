@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
 import Image from "next/image";
 import style from '../styles/IntroWithAccordion.module.css'
 import Intro from "./Intro";
@@ -83,43 +83,41 @@ export default function IntroWithAccordion({ data, reverse, pb, pt }) {
 
 
     return (
-        <>
-            <section
-                className={`intro-with-accordion ${pb} ${pt}`}
-                id={data.id}
-            >
-                <div className={`container`}>
-                    <Intro data={data.intro} />
-                    <div className={`accordion_wrapper relative w-full flex flex-wrap pt-[50px] lg:mt-[50px] laptopmid:pt-[30px] laptop:pt-[30px] tablet:pt-[30px] md:pt-[0]  ${reverse == "true" ? "flex-row-reverse" : ""}  ${data.borderBottom == true ? style.borderBottom : ""}`}>
-                        <div className={`col_two w-1/2 lg:w-full`}>
-                            <div className={`w-full relative min-h-[543px] laptop-landscape:min-h-[500px] lg:min-h-[300px] lg:max-w-[400px] lg:mb-[40px] ${reverse == "true" ? " lg-up:ml-auto" : ""}`}>
-                                <div className={`image-wrap ${style.image_wrap} flex justify-end absolute w-full max-w-[487px] h-[393px] left-0 top-[20px] laptopsmall:max-w-[380px] laptopsmall:h-[300px] tabletlarge:max-w-[340px] tabletlarge:h-[240px] lg:max-w-[270px] lg:h-[220px] lg:relative lg:top-auto lg:left-auto ${reverse == "true" ? "left-auto right-0 lg:justify-start lg:max-w-full" : ""}`}>
-                                    <Image className={`w-full h-full object-cover  ${reverse == "true" ? "lg:max-w-[270px]" : ""}`} quality={100} src={data.backwardImage} alt={"item.alt"} width={1000} height={1000} />
-                                </div>
-                                <div className={`image-wrap ${style.image_wrap} flex justify-end absolute w-full max-w-[487px] h-[393px] left-[127px] top-[150px] z-[2] laptopsmall:max-w-[380px] laptopsmall:h-[300px] tabletlarge:max-w-[340px] tabletlarge:h-[240px] lg:h-[220px] lg:top-auto lg:mt-[-150px] lg:relative ${reverse == "true" ? "left-auto right-[127px] lg:right-auto" : "lg:max-w-full lg:left-auto"}`}>
-                                    <Image className={`w-full h-full object-cover lg:max-w-[270px]`} src={data.forewardImage} quality={100} alt={"item.alt2"} width={1000} height={1000} />
-                                </div>
+        <section
+            className={`intro-with-accordion ${pb} ${pt}`}
+            id={data.id}
+        >
+            <div className={`container`}>
+                <Intro data={data.intro} />
+                <div className={`accordion_wrapper relative w-full flex flex-wrap pt-[50px] lg:mt-[50px] laptopmid:pt-[30px] laptop:pt-[30px] tablet:pt-[30px] md:pt-[0]  ${reverse == "true" ? "flex-row-reverse" : ""}  ${data.borderBottom == true ? style.borderBottom : ""}`}>
+                    <div className={`col_two w-1/2 lg:w-full`}>
+                        <div className={`w-full relative min-h-[543px] laptop-landscape:min-h-[500px] lg:min-h-[300px] lg:max-w-[400px] lg:mb-[40px] ${reverse == "true" ? " ml-auto" : ""}`}>
+                            <div className={`image-wrap ${style.image_wrap} flex justify-end absolute w-full max-w-[487px] h-[393px] left-0 top-[20px] laptopsmall:max-w-[380px] laptopsmall:h-[300px] tabletlarge:max-w-[340px] tabletlarge:h-[240px] lg:max-w-[270px] lg:h-[220px] lg:relative lg:top-auto lg:left-auto ${reverse == "true" ? "left-auto right-0 lg:max-w-full lg:flex" : ""}`}>
+                                <Image className={`w-full h-full object-cover  ${reverse == "true" ? "lg:max-w-[270px]" : ""}`} quality={100} src={data.backwardImage} alt={"item.alt"} width={120} height={120} />
+                            </div>
+                            <div className={`image-wrap ${style.image_wrap} flex justify-end absolute w-full max-w-[487px] h-[393px] left-[127px] top-[150px] z-[2] laptopsmall:max-w-[380px] laptopsmall:h-[300px] tabletlarge:max-w-[340px] tabletlarge:h-[240px] lg:h-[220px] lg:top-auto lg:mt-[-150px] lg:relative ${reverse == "true" ? "left-auto right-[127px] lg:right-auto lg:justify-start" : "lg:max-w-full lg:left-auto lg:flex"}`}>
+                                <Image className={`w-full h-full object-cover lg:max-w-[270px]`} src={data.forewardImage} quality={100} alt={"item.alt2"} width={120} height={120} />
                             </div>
                         </div>
-                        <div className={`col_two w-[calc(50%-96px)] laptop-landscape:w-[calc(50%-20px)] tabletlarge:w-[calc(50%-50px)] lg:w-full ${reverse == "true" ? "mr-[96px] laptop-landscape:mr-[20px]  tabletlarge:mr-[50px] lg:mr-0" : "ml-[96px] laptop-landscape:ml-[20px] tabletlarge:ml-[50px] lg:ml-0"}`}>
-                            <div className="accordion_wrap relative w-full lg-up:max-w-[600px]">
-                                <div className={`accordion relative w-full`}>
-                                    {data.accordionData.map((accordionItem) => (
-                                        <AccordionItem
-                                            key={accordionItem.id}
-                                            id={accordionItem.id}
-                                            heading={accordionItem.heading}
-                                            paragraph={accordionItem.paragraph}
-                                            toggleAccordion={toggleAccordion}
-                                            reverse={reverse}
-                                        />
-                                    ))}
-                                </div>
+                    </div>
+                    <div className={`col_two w-[calc(50%-96px)] laptop-landscape:w-[calc(50%-20px)] tabletlarge:w-[calc(50%-50px)] lg:w-full ${reverse == "true" ? "mr-[96px] laptop-landscape:mr-[20px]  tabletlarge:mr-[50px] lg:mr-0" : "ml-[96px] laptop-landscape:ml-[20px] tabletlarge:ml-[50px] lg:ml-0"}`}>
+                        <div className="accordion_wrap relative w-full lg-up:max-w-[600px]">
+                            <div className={`accordion relative w-full`}>
+                                {data.accordionData.map((accordionItem) => (
+                                    <AccordionItem
+                                        key={accordionItem.id}
+                                        id={accordionItem.id}
+                                        heading={accordionItem.heading}
+                                        paragraph={accordionItem.paragraph}
+                                        toggleAccordion={toggleAccordion}
+                                        reverse={reverse}
+                                    />
+                                ))}
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
-        </>
+            </div>
+        </section>
     );
 }
