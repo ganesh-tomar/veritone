@@ -3,7 +3,7 @@ import Button from './button/Button';
 
 const TwoColumnText = ({ col }) => {
 	return (
-		<section className="two-column-text padding-120 padding-medium-bottom">
+		<section loading="lazy" className="two-column-text padding-120 padding-medium-bottom">
 			<div className="container">
 				<div className="row-wrap flex flex-wrap justify-between">
 					{col.map((item, i) => {
@@ -28,7 +28,6 @@ const TwoColumnText = ({ col }) => {
 
 									dangerouslySetInnerHTML={{ __html: item.colTitle }}
 								/>
-								{/* <h2>{item.colTitle}</h2> */}
 								<p className="pt-[28px]  pb-[9px] text-cosmos">
 									{item.colBlurb}
 								</p>
