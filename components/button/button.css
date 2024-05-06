@@ -1,241 +1,221 @@
-/* Default Button */
 .default {
-	cursor: pointer;
-	color: #212121;
-	background-color: #e3f730;
-	display: inline-block;
-	border-radius: 100px;
-	padding: 15px 28px 18px;
-	font-size: 24px;
-	font-style: normal;
-	font-weight: 400;
-	line-height: 1.1;
-	text-align: center;
-	transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
-	border: 2.5px solid #e3f730;
-	position: relative;
+  cursor: pointer;
+  color: #212121;
+  background-color: #e3f730;
+  display: inline-block;
+  border-radius: 100px;
+  padding: 15px 28px 18px;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.1;
+  text-align: center;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  border: 2.5px solid #e3f730;
+  position: relative;
 }
 
 .default:hover {
-	color: #ffff;
-	background-color: transparent;
+  color: #ffff;
+  background-color: transparent;
 }
 
 .btn-black {
-	color: #fff;
-	cursor: pointer;
-	background-color: #212121;
-	display: inline-block;
-	border-radius: 100px;
-	padding: 15px 28px 18px;
-	font-size: 24px;
-	font-style: normal;
-	font-weight: 400;
-	line-height: 1.1;
-	text-align: center;
-	transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
-	border: 2.5px solid #212121;
-	position: relative;
+  color: #fff;
+  cursor: pointer;
+  background-color: #212121;
+  display: inline-block;
+  border-radius: 100px;
+  padding: 15px 28px 18px;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.1;
+  text-align: center;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  border: 2.5px solid #212121;
+  position: relative;
 }
 
 .btn-black:hover {
-	color: #000;
-	background-color: transparent;
+  color: #000;
+  background-color: transparent;
 }
 
 .btn-white {
-	color: #212121;
-	cursor: pointer;
-	background-color: #fff;
-	display: inline-block;
-	border-radius: 100px;
-	padding: 15px 28px 18px;
-	font-size: 24px;
-	font-style: normal;
-	font-weight: 400;
-	line-height: 1.1;
-	text-align: center;
-	transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
-	border: 2.5px solid #fff;
-	position: relative;
+  color: #212121;
+  cursor: pointer;
+  background-color: #fff;
+  display: inline-block;
+  border-radius: 100px;
+  padding: 15px 28px 18px;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.1;
+  text-align: center;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  border: 2.5px solid #fff;
+  position: relative;
 }
 
 .btn-white:hover {
-	color: #fff;
-	background-color: transparent;
-}  
-/* .primary.white{
-  color: #000;
-  background-color: #fff;
-  border: 0.25rem solid #fff;
-} */
-/* .primary.white:hover {
   color: #fff;
-} */
-/* .primary.smallWhiteBtn {
-	color: #000;
-	background-color: #fff;
-	border: 0.25rem solid #fff;
-	padding: 8px 20px;
-    font-size: 16px;
-} */
-/* .primary.smallBlackBtn {
-	font-size: 20px;
-} */
-
+  background-color: transparent;
+}
 
 .transparent {
-	color: #fff;
-	cursor: pointer;
-	background-color: transparent;
-	border-radius: 100px;
-	display: inline-block;
-	padding: 15px 28px 18px;
-	font-size: 24px;
-	font-style: normal;
-	font-weight: 400;
-	line-height: 1.1;
-	text-align: center;
-	transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
-	border: 2.5px solid #fff;
-	position: relative;
+  color: #fff;
+  cursor: pointer;
+  background-color: transparent;
+  border-radius: 100px;
+  display: inline-block;
+  padding: 15px 28px 18px;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.1;
+  text-align: center;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  border: 2.5px solid #fff;
+  position: relative;
 }
 
 .black-border-btn {
-	position: relative;
-	color: #212121;
-	cursor: pointer;
-	border-radius: 100px;
-	display: inline-block;
-	padding: 15px 28px 18px;
-	font-size: 24px;
-	font-style: normal;
-	font-weight: 400;
-	line-height: 1.1;
-	text-align: center;
-	transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
-	background-color: #fff;
-	border: 2.5px solid #212121;
+  position: relative;
+  color: #212121;
+  cursor: pointer;
+  border-radius: 100px;
+  display: inline-block;
+  padding: 15px 28px 18px;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.1;
+  text-align: center;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  background-color: #fff;
+  border: 2.5px solid #212121;
 }
 .black-border-btn:hover {
-	color: #fff;
-	background-color: #212121;
+  color: #fff;
+  background-color: #212121;
 }
 
 .transparent:hover {
-	color: #212121;
-	background-color: #fff;
+  color: #212121;
+  background-color: #fff;
 }
 
 .text-link-black {
-	cursor: pointer;
-	color: #212121;
-	display: inline-block;
-	font-size: 22px;
-	font-style: normal;
-	font-weight: 700;
-	line-height: 1.65em;
-	padding-right: 24px;
-	position: relative;
+  cursor: pointer;
+  color: #212121;
+  display: inline-block;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.65em;
+  padding-right: 24px;
+  position: relative;
 }
 
 .text-link-black:after {
-	content: '';
-	display: inline-block;
-	position: relative;
-	width: 16px;
-	height: 10px;
-	right: -6px;
-	bottom: -3px;
-	transform: translateY(-30%);
-	background: url('../../public//images/icons/right-arrow-cosmos.svg') no-repeat center;
-	background-size: contain;
-	transition: right 0.3s ease-in-out;
+  content: "";
+  display: inline-block;
+  position: relative;
+  width: 16px;
+  height: 10px;
+  right: -6px;
+  bottom: -3px;
+  transform: translateY(-30%);
+  background: url("../../public//images/icons/right-arrow-cosmos.svg") no-repeat
+    center;
+  background-size: contain;
+  transition: right 0.3s ease-in-out;
 }
 
 .text-link-black:hover:after {
-	right: -10px;
+  right: -10px;
 }
 
 .text-link-white {
-	cursor: pointer;
-	color: #fff;
-	display: inline-block;
-	font-size: 22px;
-	font-style: normal;
-	font-weight: 700;
-	line-height: 1.65em;
-	padding-right: 24px;
-	position: relative;
+  cursor: pointer;
+  color: #fff;
+  display: inline-block;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.65em;
+  padding-right: 24px;
+  position: relative;
 }
 
 .text-link-white::after {
-	content: '';
-	display: inline-block;
-	position: relative;
-	width: 16px;
-	height: 10px;
-	right: -6px;
-	bottom: -3px;
-	transform: translateY(-30%);
-	background: url('../../public//images/icons/right-arrow-white.svg') no-repeat center;
-	background-size: contain;
-	transition: right 0.3s ease-in-out;
+  content: "";
+  display: inline-block;
+  position: relative;
+  width: 16px;
+  height: 10px;
+  right: -6px;
+  bottom: -3px;
+  transform: translateY(-30%);
+  background: url("../../public//images/icons/right-arrow-white.svg") no-repeat
+    center;
+  background-size: contain;
+  transition: right 0.3s ease-in-out;
 }
 
 .text-link-white:hover:after {
-	right: -12px;
+  right: -12px;
 }
 
-@media (max-width:767px) {
-  .button{
+@media (max-width: 767px) {
+  .button {
     font-size: 20px;
     padding: 10px 20px 14px;
   }
-	.text-link-black,
-	.text-link-white {
-		font-size: 19px;
-		padding: 0 24px 0 0;
-	}
+  .text-link-black,
+  .text-link-white {
+    font-size: 19px;
+    padding: 0 24px 0 0;
+  }
 }
-@media (min-width:768px) and (max-width:1280px){
-  .button{
+@media (min-width: 768px) and (max-width: 1280px) {
+  .button {
     font-size: 24px;
   }
 }
 
-@media (max-width:595px){
-	.default , 
-	.btn-black, 
-	.btn-white, 
-	.transparent,
-	.black-border-btn
-	 {
-		display: block;
-	}
+@media (max-width: 595px) {
+  .default,
+  .btn-black,
+  .btn-white,
+  .transparent,
+  .black-border-btn {
+    display: block;
   }
+}
 
-
-.overlaycardsWrap{
-	top: 100px;
+.overlaycardsWrap {
+  transform: translateY(-50%);
 }
 @media screen and (min-width: 767px) and (max-width: 991px) and (orientation: landscape) {
-    .overlaycardsWrap{
-        transform: unset;
-    }
+  .overlaycardsWrap {
+    transform: unset;
+  }
 }
 @media (max-width: 767px) {
-    .overlaycardsWrap{
-        transform: unset;
-    }
+  .overlaycardsWrap {
+    transform: unset;
+  }
 }
-.overlay{
-    background: rgba(0, 0, 0, 0.6);
-	height: 100%;
-	width: 100%;
-    right: 0;
-    overflow: auto;
-    position: fixed;
-    top: 0;
-    z-index: 999;
+.overlay {
+  background: rgba(0, 0, 0, 0.6);
+  height: 100%;
+  width: 100%;
+  right: 0;
+  overflow: auto;
+  position: fixed;
+  top: 0;
+  z-index: 999;
 }

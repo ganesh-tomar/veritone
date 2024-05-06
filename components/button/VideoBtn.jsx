@@ -8,7 +8,7 @@ const VideoButton = ({ buttonText, url, buttonClass, videoUrl }) => {
 
   let regExp, match, videoId;
   const [open, setOpen] = useState(0)
-  const [iframeSrc, setiframe] = useState('#');
+  const [iframeSrc, setIframeSrc] = useState('#')
 
   useEffect(() => {
     if (videoUrl) {
@@ -16,21 +16,20 @@ const VideoButton = ({ buttonText, url, buttonClass, videoUrl }) => {
         const regex = /\/(\d+)(?:\?|$)/
         const vimeoId = (videoUrl).match(regex);
         if (vimeoId == null) {
-          setiframe(`https://player.vimeo.com/video/${videoUrl}`)
+          setIframeSrc(`https://player.vimeo.com/video/${videoUrl}`)
         } else {
-          setiframe(`https://player.vimeo.com/video/${vimeoId[1]}`)
+          setIframeSrc(`https://player.vimeo.com/video/${vimeoId[1]}`)
         }
       } else {
         regExp = /^((?:https?:)?\/\/)?((?:www|m)\.)?((?:youtube\.com|youtu.be))(\/(?:[\w\-]+\?v=|embed\/|v\/)?)([\w\-]+)(\S+)?$/;
         match = videoUrl.match(regExp);
         videoId = (match && match[5].length === 11) ? match[5] : 'error';
-        videoId !== 'error' ? setiframe(`https://www.youtube.com/embed/${videoId}`) : '';
+        videoId !== 'error' ? setIframeSrc(`https://www.youtube.com/embed/${videoId}`) : '';
 
       }
       // }
     }
   }, [])
-
 
 
 
