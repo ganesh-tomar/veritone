@@ -443,9 +443,14 @@ footer ul li a{
 .twitter-slider .slick-slider .slick-track {
     height: 521px;
 }
-@media (max-width: 991px) {
+@media (max-width: 991px) and  (min-width: 596px) {
     .twitter-slider .slick-slider .slick-track {
-        height: 440px;
+        height: 490px;
+    }
+}
+@media (max-width: 595px) {
+    .twitter-slider .slick-slider .slick-track {
+        height: 430px;
     }
 }
 @media screen and (min-width: 595px) and (max-width: 991px) and (orientation : landscape) {

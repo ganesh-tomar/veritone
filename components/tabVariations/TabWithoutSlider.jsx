@@ -19,7 +19,7 @@ const Tabs = ({ tab, tab_content, bg, tabBg, pt }) => {
           <ul className={`relative w-full flex flex-wrap justify-center items-center md:justify-start z-[4] py-[28px] xl:py-[20px] before:content-[''] before:w-[calc(100%+162px)] before:absolute before:h-full before:top-0 before:left-[-81px] before:bg-softEmber`}>
             {tab?.map((item, index) => {
               return (
-                <li onClick={() => handler(index)} key={index} className={`cursor-pointer inline-block w-[16%] laptopmid:w-[19%] laptopsmall:w-[224px] ipad:w-[224px] phablet:w-1/2 sm:w-full`}>
+                <li onClick={() => handler(index)} key={index} className={`cursor-pointer inline-block w-[20%] laptopmid:w-[19%] laptopsmall:w-[224px] ipad:w-[224px] phablet:w-1/2 sm:w-full`}>
                   <div className={`${styles.tablist} ${i === index ? ` ${styles.active} ` : ''} relative w-fit mx-auto flex items-center justify-center sm:justify-start sm:mx-[20px] xl:my-[10px]`}>
                     <div className={``}>
                       <Image className={`w-full h-full max-h-[32px] max-w-[32px] object-contain mr-[20px]`} quality={100} src={item.tab_icon} alt={item.tab_icon_name} width={120} height={120} />
