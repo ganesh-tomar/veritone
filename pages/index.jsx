@@ -32,10 +32,8 @@ const Home = () => {
 		open == 0 ? setOpen(1) : setOpen(0)
 		setUrl(url)
 	}
-	let test = setFormOverlay.bind(this)
 
 	return (
-
 		<>
 			<NextSeo
 				title="Veritone | AI that makes you even better"

@@ -1,4 +1,5 @@
 'use client'
+import Link from "next/link";
 import { useState, useEffect } from "react";
 import Style from "../button/button.module.css"
 
@@ -30,11 +31,15 @@ const FormOverlay = ({ toggle, buttonText, url, buttonClass, formUrl, setFormOve
           src={formUrl}
           width="100%"
           height="900"
-          frameBorder="0">
+          frameborder="0">
         </iframe>
       </div>
     </div>
   </div>
+  function clickHandler(event) {
+    event.preventDefault();
+    event.stopPropagation();
+  }
   function removeOverlay() {
     setFormOverlay('#')
   }
