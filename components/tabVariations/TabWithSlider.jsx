@@ -6,13 +6,13 @@ import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-var t = 0
+let t = 0
 const Tabs = ({ tab, tab_content, bg }) => {
 
   // Code For tab
   const [i, setI] = useState(0)
   const sliderBlade = useRef(null);
-  const [autoplayVal, setAutoplay] = useState(true);
+  const [autoplayVal, setAutoplayVal] = useState(true);
   const [sliderSettings, setSliderSettings] = useState({
     dots: false,
     infinite: true,
@@ -29,7 +29,7 @@ const Tabs = ({ tab, tab_content, bg }) => {
 
   const handler = (index, text) => {
 
-    setAutoplay(false)
+    setAutoplayVal(false)
     sliderBlade.current.slickGoTo(index);
 
     setI(index)
@@ -45,17 +45,9 @@ const Tabs = ({ tab, tab_content, bg }) => {
 
   const [winWidth, setWinWidth] = useState(0)
 
-  // useEffect(() => {
-  //   const interval = setInterval(() => {
-  //     setI((prevSlide) => (prevSlide + 1) % tab.length); // Advance to the next slide
-  //   }, 2000); // Adjust the interval as needed
-  //   return () => clearInterval(interval);
-  // }, []);
-  //console.log(tab_content)
-
 
   return (
-    <section className={`tabs ${winWidth > 767 ? 'scrollTab' : ''} padding-medium ${styles.tabs} overflow-hidden overflow-x-clip`}>
+    <section loading="lazy" className={`tabs ${winWidth > 767 ? 'scrollTab' : ''} padding-medium ${styles.tabs} overflow-hidden overflow-x-clip`}>
       <div className={`container ${styles.container} `} >
         <div className={`wrapp ${styles.wrapp}`}>
           <ul className={`relative w-full flex flex-wrap items-center justify-evenly bg-white z-[1] pt-[15px]`}>
@@ -65,12 +57,12 @@ const Tabs = ({ tab, tab_content, bg }) => {
               );
             })}
           </ul>
-          <div className={`tab-outer relative ${styles.tab_outer} pt-[29px]`}>
+          <div className={`tab-outer relative ${styles.tab_outer} pt-[29px]`} aria-hidden="true">
             <Slider ref={sliderBlade}   {...sliderSettings} autoplay={autoplayVal} swipeToSlide={autoplayVal} draggable={autoplayVal} beforeChange={autoplayVal == true ? handleChange : ""} >
               {tab_content.map((item, index) => {
                 let color = item.bg
                 return (
-                  <div key={index} className='relative w-full sm:bottom-[-1px]' onClick={() => setAutoplay(false)}>
+                  <div key={index} className='relative w-full sm:bottom-[-1px]' onClick={() => setAutoplayVal(false)}>
                     <div className={`tab-content justify-between transition-opacity duration-1000 overflow-hidden  flex flex-wrap`}>
                       <div className={`col-seven ${styles.col_seven} mr-[20px]`}>
                         <h2 className={`pr-[30px] md:pr-[0]`}>{item.tab_title}</h2>
@@ -81,17 +73,17 @@ const Tabs = ({ tab, tab_content, bg }) => {
                       </div>
                       <div className={`col-hree ${styles.col_three} w-[486px] tabletlarge:max-h-[386px] tabletlarge:max-w-[386px] tablet:max-w-[386px] tablet:max-h-[386px] md:w-full md:max-w-[400px] tablet:w-[300px] pt-[43px] relative laptopmid:pt-[30px] laptop:pt-[30px] tablet:pt-[30px] md:pt-[0] md:m-[auto]`}>
                         <div className={`image-wrap ${styles.image_wrap} absolute w-[360px] top-[114px] md:top-[50px] sm:left-[20px] flex justify-start h-[240px] md:h-[175px] tabletlarge:top-[88px] tablet:top-[88px] tabletlarge:left-[43px] tablet:left-[10px]`}>
-                          <Image className={` w-full h-full object-cover max-w-[360px] max-h-[248px] md:max-w-[253px] md:max-h-[175px] tabletlarge:max-w-[287px] tabletlarge:max-h-[192px] tablet:max-w-[240px] tablet:max-h-[170px]`} src={item.imgpath} quality={100} alt={item.alt} width={360} height={120} />
+                          <Image loading='lazy' className={` w-full h-full object-cover max-w-[360px] max-h-[248px] md:max-w-[253px] md:max-h-[175px] tabletlarge:max-w-[287px] tabletlarge:max-h-[192px] tablet:max-w-[240px] tablet:max-h-[170px]`} src={item.imgpath} alt={item.alt} quality={100} width={360} height={120} />
                         </div>
                         <div className={`image-wrap ${styles.image_wrap} flex justify-end w-full h-full sm:pr-[20px]`}>
-                          <Image className={` w-full h-full object-cover max-w-[360px] max-h-[248px] md:max-w-[253px] md:max-h-[175px] tabletlarge:max-w-[287px] tabletlarge:max-h-[199px] tablet:max-w-[240px] tablet:max-h-[170px]`} src={item.imgpath2} quality={100} alt={item.alt2} width={360} height={120} />
+                          <Image loading='lazy' className={` w-full h-full object-cover max-w-[360px] max-h-[248px] md:max-w-[253px] md:max-h-[175px] tabletlarge:max-w-[287px] tabletlarge:max-h-[199px] tablet:max-w-[240px] tablet:max-h-[170px]`} src={item.imgpath2} alt={item.alt2} quality={100} width={360} height={120} />
                         </div>
                       </div>
                       <div className={`content-outer ${styles.content_outer} pt-[45px] lg:pt-[60px] w-full flex flex-wrap`}>
                         <div className={`img-outer ${styles.imgOuter} relative top-[0] bottm-[0] tabletlarge:w-[297px] tablet:w-[297px] tabletlarge:h-[194px] tablet:h-[194px] m-[auto] tabletlarge:ml-0 tablet:ml-0 tabletlarge:mr-auto tablet:mr-auto w-[487px] h-[256px] sm:h-[auto] laptop-portrait:w-[350px] sm:w-[100%]`}>
-                          <Image className={`w-[100%] h-full object-cover `} src={item.imgpath3} quality={100} alt={item.alt3} width={360} height={120} />
+                          <Image loading='lazy' className={`w-[100%] h-full object-cover `} src={item.imgpath3} alt={item.alt3} quality={100} width={360} height={120} />
                           {item.logo != "#" ?
-                            <Image className={`logo absolute left-[0] top-[0] right-[0] bottom-[0] h-[120px] w-[120px] object-contain tabletlarge:w-[163px] tablet:w-[163px] m-auto z-10`} src={item.logo} alt={item.logo_alt} quality={100} width={360} height={46} />
+                            <Image loading='lazy' className={`logo absolute left-[0] top-[0] right-[0] bottom-[0] h-[120px] w-[120px] object-contain tabletlarge:w-[163px] tablet:w-[163px] m-auto z-10`} src={item.logo} alt={item.logo_alt} quality={100} width={360} height={46} />
                             : ""}
                         </div>
                         <div className={`content ${styles.content}`}>
@@ -105,7 +97,6 @@ const Tabs = ({ tab, tab_content, bg }) => {
                               </ul>
                               <div className={`btn-wrap ${styles.btn_wrap} pt-[27px] tabletlarge:pt-[40px]`}>
                                 <Button buttonClass={`${item.btnClass} mr-[23px] sm:mr-[0]`} buttonText={`${item.bottom_btn_text}`} url={`${item.bottom_btn_url}`} />
-                                {/* <Button buttonClass={`text-link-white sm:mt-[20px]`} buttonText={`${item.bottom_link_text}`} url={`${item.bottom_link_url}`} /> */}
                               </div>
                             </div>
                           </div>
@@ -116,7 +107,6 @@ const Tabs = ({ tab, tab_content, bg }) => {
                 )
               })}
             </Slider>
-
           </div>
         </div>
 
