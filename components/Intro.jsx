@@ -6,11 +6,12 @@ const Intro = (props) => {
     <div className="Intro">
       <div className="lg-up:text-center">
         <h2 className='text-cosmos'>{bladeData.title}</h2>
-        <p className='text-cosmos pt-[30px] max-w-[875px] lg-up:mx-auto'>{bladeData.blurb}</p>
+        {bladeData.blurb && <div className="btnWrap pt-[30px]">
+          <p className='text-cosmos pt-[30px] max-w-[875px] lg-up:mx-auto'>{bladeData.blurb}</p>
+        </div>}
         {bladeData.btnText && <div className="btnWrap pt-[30px]">
           <Button buttonText={bladeData.btnText} url={bladeData.btnLink} buttonClass={bladeData.btnClass} />
         </div>}
-
       </div>
     </div>
   )

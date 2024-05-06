@@ -4,7 +4,6 @@ import style from '../styles/accordion.module.css'
 import Button from "./button/Button";
 import Intro from "./Intro";
 const AccordionItem = ({ id, heading, paragraph, icon, tag1, tag2, btnText, btnLink, toggleAccordion }) => {
-    // console.log(tag1);
     return (
         <div
             className={`${style.accordionItem} wrap w-full cursor-pointer pl-[48px] lg:pl-0`}
@@ -26,9 +25,11 @@ const AccordionItem = ({ id, heading, paragraph, icon, tag1, tag2, btnText, btnL
                         className={`${style.accordionContent} relative w-full overflow-hidden`}
                     >
                         <div className={`${style.description}`}>
-                            <p className="pt-[30px]">
-                                {paragraph}
-                            </p>
+                            {paragraph && (
+                                <p className="pt-[30px]">
+                                    {paragraph}
+                                </p>
+                            )}
                             {btnText && (
                                 <div className="btn-wrap pt-[30px]">
                                     <Button buttonClass={`text-link-black sm:mt-[20px]`} buttonText={btnText} url={btnLink} />
