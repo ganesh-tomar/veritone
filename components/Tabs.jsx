@@ -1,4 +1,4 @@
-import React,{useState, useEffect, useRef} from 'react'
+import React from 'react'
 import TabWithSlider from './tabVariations/TabWithSlider'
 import TabWithoutSlider from './tabVariations/TabWithoutSlider'
 
@@ -9,7 +9,7 @@ const Tabs = (props) => {
 
   return (
     <>
-      {bladeData?.slider ? (<TabWithSlider {...bladeData} />) : (<TabWithoutSlider {...bladeData} />) }
+      {bladeData?.slider ? (<TabWithSlider {...bladeData} />) : (<TabWithoutSlider {...bladeData} />)}
     </>
   )
 }
