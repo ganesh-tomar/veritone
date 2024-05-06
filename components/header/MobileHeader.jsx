@@ -9,14 +9,13 @@ import MobileSubNav from './MobileSubNav'
 export default function MobileHeader() {
 
     const menuData = headerData
-    const [headerHeight, setHeaderHeight] = useState(0);
+    let headerHeight
     const [activeMobileMenu, setActiveMobileMenu] = useState("h");
     const [activeMobileSubMenu, setActiveMobileSubMenu] = useState();
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [leftValue, setLeftValue] = useState(0);
     const [isSerachOpen, setIsSerachOpen] = useState(0);
     const [headerColor, setHeaderColor] = useState(0);
-    const [winWidth, setWinWidth] = useState(0);
     const [back, setBack] = useState();
     const [tabHeight, setTabHeight] = useState(0);
 
@@ -38,17 +37,15 @@ export default function MobileHeader() {
     })
 
     const showMenuRes = (e, val) => {
-        if (winWidth <= 1024) {
-            e.preventDefault();
-            e.stopPropagation()
-            setActiveMobileMenu(val);
-            setActiveMobileSubMenu();
-            setLeftValue(0)
-            setBack("")
-        }
+        e.preventDefault();
+        e.stopPropagation()
+        setActiveMobileMenu(val);
+        setActiveMobileSubMenu();
+        setLeftValue(0)
+        setBack("")
     }
     const showSubManuRes = (e, val, validURL) => {
-        if (winWidth <= 1024 && validURL == "#") {
+        if (validURL == "#") {
             e.preventDefault()
             e.stopPropagation()
             setActiveMobileSubMenu(val);
@@ -60,14 +57,11 @@ export default function MobileHeader() {
     }
 
     const backBtn = (val) => {
-        if (winWidth <= 1024) {
-            if (val == 'x') {
-                setBack(val)
-            } else {
-                setLeftValue(0)
-                setTabHeight(0)
-            }
-
+        if (val == 'x') {
+            setBack(val)
+        } else {
+            setLeftValue(0)
+            setTabHeight(0)
         }
     }
     const toggleMenu = () => {

@@ -1,4 +1,4 @@
-import { React, useEffect, useState, useRef } from 'react'
+import { React } from 'react'
 import Style from '../../styles/header/Header.module.css';
 import Link from 'next/link';
 import Button from '../button/Button';
@@ -7,12 +7,12 @@ export default function TabHeader({ data, dataIndex }) {
 
     return (
         data.map((item, index) => {
-            var consService = item?.multiLink;
-            var consServiceTwo = item?.multiLinkTwo;
+            const consService = item?.multiLink;
+            const consServiceTwo = item?.multiLinkTwo;
             const isLightningBg = item?.bgColor === 'bg-lightning';
             const backBtnArrow = isLightningBg ? Style.backBlackBtn : Style.backBtntwo;
-            var arra1 = item?.multiLink?.slice(0, 4)
-            var arra2 = item?.multiLink?.slice(4, 8)
+            const arra1 = item?.multiLink?.slice(0, 4)
+            const arra2 = item?.multiLink?.slice(4, 8)
             const textColorClass = isLightningBg ? 'text-cosmos' : 'text-white';
             const arrowClass = isLightningBg ? Style.blackRightArrow : Style.rightArrow;
             const BackgroundColor = `${textColorClass} ${arrowClass}`;
