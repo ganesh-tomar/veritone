@@ -9,7 +9,6 @@ import "slick-carousel/slick/slick-theme.css";
 
 
 export default function TwitterSlider({ data, onlyInternalPosts }) {
-    // let SlidesData;
     const [slidesData, setSlidesData] = useState(data.cards)
     // const [totalSlides, setTotalSlides] = useState(data.cards.length)
     const [checked, setChecked] = useState(true)
@@ -21,7 +20,6 @@ export default function TwitterSlider({ data, onlyInternalPosts }) {
             isWinWidth(window.innerWidth);
         })
     }, []);
-    // let filteredItems;
     const sliderRef = useRef(null);
     const settings = {
         dots: false,
@@ -56,27 +54,24 @@ export default function TwitterSlider({ data, onlyInternalPosts }) {
             breakpoint: 1200,
             settings: {
                 slidesToShow: 3.29,
-                centerPadding: '50px 0 0',
-            },
-        },
-        {
-            breakpoint: 1024,
-            settings: {
-                slidesToShow: 3,
+                autoplay: false,
                 centerPadding: '50px 0 0',
             },
         },
         {
             breakpoint: 991,
             settings: {
-                slidesToShow: 2.03,
-                centerPadding: '50px 0 0',
+                slidesToShow: 2.70,
+                // slidesToShow: 3.16,
+                centerPadding: '80px 0 0',
             },
         },
         {
             breakpoint: 767,
             settings: {
                 slidesToShow: 1.7,
+                // centerPadding: '50px 0 0',
+                // adaptiveHeight: true
             },
         },
         {
@@ -84,6 +79,8 @@ export default function TwitterSlider({ data, onlyInternalPosts }) {
             settings: {
                 slidesToShow: 1.05,
                 centerPadding: '80px 0 0',
+                // centerPadding: '50px 0 0',
+                // adaptiveHeight: true
             },
         },
         {
@@ -91,6 +88,7 @@ export default function TwitterSlider({ data, onlyInternalPosts }) {
             settings: {
                 slidesToShow: 1.05,
                 centerPadding: '50px 0 0',
+                // adaptiveHeight: true
             },
         },
         {
@@ -98,6 +96,7 @@ export default function TwitterSlider({ data, onlyInternalPosts }) {
             settings: {
                 slidesToShow: 1,
                 centerPadding: '50px 0 0',
+                // adaptiveHeight: true
             },
         },
         {
@@ -105,6 +104,7 @@ export default function TwitterSlider({ data, onlyInternalPosts }) {
             settings: {
                 slidesToShow: 1,
                 centerPadding: '20px 0 0',
+                // adaptiveHeight: true
             },
         },
     ];
@@ -132,7 +132,7 @@ export default function TwitterSlider({ data, onlyInternalPosts }) {
         setAutoPlaySpeed(3000)
     }
     return (
-        <section ref={sliderRef} className="twitter-slider overflow-hidden padding-medium-top">
+        <section loading="lazy" ref={sliderRef} className="twitter-slider overflow-hidden padding-medium-top">
             <div className={`px-[20px] mx-auto`}>
                 <div className="intro flex items-end justify-between mb-[42px] sm:mb-[20px] ipad:flex-wrap">
                     <div className="titleWrap w-[42%] tabletlarge:w-[35%] lg:w-full xs:mr-[65px]">
@@ -159,15 +159,15 @@ export default function TwitterSlider({ data, onlyInternalPosts }) {
                     <Slider  {...settings} autoplaySpeed={autoplaySpeed}>
                         {slidesData?.map((slide, index) => (
                             <div key={index}>
-                                <div className={`relative sliderCard max-w-[360px] tabletlarge:max-w-[237px] tabletlarge:max-h-[223px] tablet:max-h-[223px] mx-[15px] xxs:max-w-[calc(100%-40px)] `}>
+                                <div className={`relative sliderCard max-w-[360px] tabletlarge:max-w-[237px] tabletlarge:max-h-[223px]  tablet:max-w-[237px] tablet:max-h-[223px] mx-[15px] xxs:max-w-[calc(100%-40px)] `}>
                                     <Link className='emptyLink' href={slide.url} target='_blank' onTouchStart={touchHandler} onTouchEnd={touchRemover}>.</Link>
-                                    <div className="imageWrap max-w-[360px] max-h-[340px] tabletlarge:max-w-[237px] tabletlarge:max-h-[223px] tablet:max-h-[223px] sm:max-h-[240px] w-full h-full overflow-hidden">
+                                    <div className="imageWrap max-w-[360px] max-h-[340px] tabletlarge:max-w-[237px] tabletlarge:max-h-[223px]  tablet:max-w-[237px] tablet:max-h-[223px] sm:max-h-[240px] w-full h-full overflow-hidden">
                                         <Image
                                             src={slide.imageSrc}
                                             width={500}
                                             height={500}
-                                            alt={slide.imageName}
                                             quality={100}
+                                            alt={slide.imageName}
                                             className={`w-full h-full`}
                                         />
                                     </div>
@@ -177,9 +177,9 @@ export default function TwitterSlider({ data, onlyInternalPosts }) {
                                                 <Image
                                                     src={slide.clientImage}
                                                     width={300}
+                                                    quality={100}
                                                     height={300}
                                                     alt={slide.client}
-                                                    quality={100}
                                                     className={`w-full h-full object-cover`}
                                                 />
                                             </div>
@@ -208,7 +208,7 @@ export default function TwitterSlider({ data, onlyInternalPosts }) {
                     </Slider>
 
                 </div>
-                <div className="btnWrap mt-[38px] sm:mt-[30px] sm-up:hidden w-full max-w-[343px] mx-auto sm:max-w-[calc(100%-40px)] sm:mx-[20px]">
+                <div className="btnWrap mt-[38px] sm:mt-[30px] sm-up:hidden w-full max-w-[343px] mx-auto sm:px-[20px]">
                     <Button buttonText={data.intro.btnText} url={data.intro.btnUrl} buttonClass={data.intro.btnClass} />
                 </div>
             </div>
