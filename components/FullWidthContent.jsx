@@ -4,14 +4,14 @@ import style from '../styles/Fullwidthcontent.module.css';
 
 const FullWidthContent = ({ col }) => {
 	return (
-		<section className="full-width-content overflow-hidden bg-lightning padding-medium mx-auto xxl-up:min-h-[750px] laptop-landscape:min-h-[auto] md:pt-0">
+		<section loading="lazy" className="full-width-content overflow-hidden bg-lightning padding-medium mx-auto xxl-up:min-h-[750px] laptop-landscape:min-h-[auto] md:pt-0">
 			<div className={`bg-img ${style.bgimg} absolute top-0 left-0 w-[33.3%] tabletlarge:w-[25%] tablet:w-[25%] h-full phablet:h-[300px] md:relative md:max-w-full md:w-full sm:h-[296px]`}>
 				<Image
 					src={col.backimgpath}
 					alt={col.alt}
 					width={1000}
+					quality={100}
 					height={1000}
-					quality={75}
 					className="w-full h-full object-cover"
 				/>
 			</div>
