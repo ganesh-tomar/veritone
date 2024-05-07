@@ -76,15 +76,21 @@ const Home = () => {
 					// title="AI Solutions for Media, Entertainment & Broadcast | Veritone"
 					// description="Transform your media & entertainment business with Veritone's AI solutions. Drive growth and innovation. Click now."
 					openGraph={{
-						title: `${metaData?.title}`,
-						description: `${metaData?.description}`,
+						url: 'https://www.veritone.com',
+						title: 'Veritone | AI that makes you even better',
+						description: 'Transform your workflows and superpower your teams with innovative, custom AI solutions, AI services, and a powerful enterprise AI platform.',
 						images: [
 							{
-								url: `${metaData?.ogImagePath}`,
-								width: 1200, height: 600, alt: "blog",
-							}
-						]
-					}} />
+								url: 'https://nextjs.veritone.com/images/veritone_OG_image_hire.jpg',
+								width: 800,
+								height: 600,
+								alt: 'Veritone',
+								type: 'image/jpeg',
+							},
+						],
+						siteName: 'Veritone',
+					}}
+				/>
 
 				<BannerSecondLevel {...hireBanner} setFormOverlay={setFormOverlay} />
 				<StickyNav data={hireStickyNavData} themeColor={hireThemeColor} />
