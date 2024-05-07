@@ -227,10 +227,10 @@ export const hireBanner = {
       },
       {
         imageSrc: '/images/hire/forbes-feature.jpg',
-        imageName: 'forbes',
+        imageName: 'forbes-feature',
         desc: "Truth In The Signal: Veritone Shepherds New Epoch Of Enterprise Empowerment",
         client: 'Forbes',
-        clientImage: '/images/twitterSlider/forbes_tech_logo.jpeg',
+        clientImage: '/images/hire/forbes.jpg',
         userName: '@forbes.com',
         url: 'https://www.forbes.com/sites/zengernews/2024/04/16/truth-in-the-signal-veritone-shepherds-epoch-enterprise-empowerment/',
         categories: ['Forbes'],
