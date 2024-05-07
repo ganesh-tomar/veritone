@@ -18,7 +18,7 @@ import { useState } from 'react';
 import { banner, stickyNavData, tabs, accordionData, colTwoCards, resourceCards, twitterSliderData, introWithAccordionData1, introWithAccordionData2, introWithAccordionData3, introWithAccordionData4, footerCta, themeColor } from '../../public/mediaEntertainmentData/entertainment'
 
 import { publicBanner, publicStickyNavData, publicTabs, publicAccordionData, publicColTwoCards, publicResourceCards, publicTwitterSliderData, publicIntroWithAccordionData1, publicIntroWithAccordionData2, publicIntroWithAccordionData3, publicIntroWithAccordionData4, publicFooterCta, publicthemeColor } from '../../public/solutions/public-sector'
-import { hireBanner, hireStickyNavData, hireTabs, hireColTwoCards, hireResourceCards, hireTwitterSliderData, hireIntroWithAccordionData1, hireIntroWithAccordionData2, hireIntroWithAccordionData3, hireIntroWithAccordionData4, hireFooterCta, hireThemeColor } from '../../public/solutions/hire'
+import { hireBanner, hireStickyNavData, hireTabs, hireColTwoCards, hireResourceCards, hireTwitterSliderData, hireIntroWithAccordionData1, hireIntroWithAccordionData2, hireIntroWithAccordionData3, hireIntroWithAccordionData4, hireFooterCta, hireThemeColor, metaData } from '../../public/solutions/hire'
 
 
 const Home = () => {
@@ -72,7 +72,20 @@ const Home = () => {
 	} else if (router.asPath === '/solutions/hire') {
 		return (
 			<>
-				<NextSeo title="AI Solutions for Media, Entertainment & Broadcast | Veritone" description="Transform your media & entertainment business with Veritone's AI solutions. Drive growth and innovation. Click now." />
+				<NextSeo
+					// title="AI Solutions for Media, Entertainment & Broadcast | Veritone"
+					// description="Transform your media & entertainment business with Veritone's AI solutions. Drive growth and innovation. Click now."
+					openGraph={{
+						title: `${metaData?.title}`,
+						description: `${metaData?.description}`,
+						images: [
+							{
+								url: `${metaData?.ogImagePath}`,
+								width: 1200, height: 600, alt: "blog",
+							}
+						]
+					}} />
+
 				<BannerSecondLevel {...hireBanner} setFormOverlay={setFormOverlay} />
 				<StickyNav data={hireStickyNavData} themeColor={hireThemeColor} />
 				<IntroWithAccordion data={hireIntroWithAccordionData1} pt="padding-top-120" pb='no-padding-bottom' />
