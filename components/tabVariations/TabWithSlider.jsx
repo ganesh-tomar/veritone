@@ -53,7 +53,9 @@ const Tabs = ({ tab, tab_content, bg }) => {
           <ul className={`relative w-full flex flex-wrap items-center justify-evenly bg-white z-[1] pt-[15px]`}>
             {tab.map((item, index) => {
               return (
-                <li key={index} className={`list ${styles.list} flex justify-center py-[15px] sm:pb-[0] px-[10px] sm:px-[20px] md:w-1/2`}><h4 onClick={() => handler(index)} className={`${i === index ? ` ${styles.active} ` : ''} block text-30 relative cursor-pointer text-center pb-[12px]`}>{item.tab_heading}</h4></li>
+                <li key={index} className={`list ${styles.list} flex justify-center py-[15px] sm:pb-[0] px-[10px] sm:px-[20px] md:w-1/2`}>
+                  <h4 onClick={() => handler(index)} className={`${i === index ? ` ${styles.active} ` : ''} block text-30 relative cursor-pointer text-center pb-[12px]`}>{item.tab_heading}</h4>
+                </li>
               );
             })}
           </ul>

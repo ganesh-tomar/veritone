@@ -11,7 +11,7 @@ export const hireBanner = {
       "Veritone Hire empowers talent acquisition teams to advertise all of their jobs through a single vendor that seamlessly integrates with over 120 applicant tracking systems and over 2000 publishers using the combined strengths of Broadbean and PandoLogic and Veritone AI.",
     buttonText: "Request a demo",
     buttonClass: "default",
-    buttonUrl: "https://unlock.veritone.com/hire-contact-us",
+    buttonUrl: "https://unlock.veritone.com/hire-contact-us?_gl=1*1nfebfj*_gcl_au*MjA4Njk2ODYzLjE3MTMyOTUwNjY.",
     topPattern: '/images/hire/hero_hire_human+.png',
     topimageName: 'Human',
     bgimage: "/images/hire/hire-hero-background.png",
