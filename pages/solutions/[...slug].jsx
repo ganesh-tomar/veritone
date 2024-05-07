@@ -73,12 +73,12 @@ const Home = () => {
 		return (
 			<>
 				<NextSeo
-					// title="AI Solutions for Media, Entertainment & Broadcast | Veritone"
-					// description="Transform your media & entertainment business with Veritone's AI solutions. Drive growth and innovation. Click now."
+					title={metaData.title}
+					description={metaData.description}
 					openGraph={{
 						url: 'https://www.veritone.com',
-						title: 'Veritone | AI that makes you even better',
-						description: 'Transform your workflows and superpower your teams with innovative, custom AI solutions, AI services, and a powerful enterprise AI platform.',
+						// title: {},
+						// description: 'Transform your workflows and superpower your teams with innovative, custom AI solutions, AI services, and a powerful enterprise AI platform.',
 						images: [
 							{
 								url: 'https://veritone-seven.vercel.app/images/veritone_OG_image_hire.jpg',
