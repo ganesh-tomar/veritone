@@ -339,9 +339,9 @@ export const twitterSliderData = {
       categories: ["Veritone"],
     },
     {
-      imageSrc: "/images/twitterSlider/grabyo.jpg",
+      imageSrc: "/images/twitterSlider/grabyo.png",
       imageName: "Grabyo",
-      desc: "✨ It's NAB 2024 wrap up time ✨ Hear from our team and a few of our close partners on the key takeaways and trends from Vegas this year.    ",
+      desc: "✨ It's NAB 2024 wrap up time ✨ Hear from our team and a few of our close partners on the key takeaways and trends from Vegas this year.",
       client: "Grabyo",
       clientImage: "/images/twitterSlider/grabyo-logo.jpg",
       userName: "@Grabyo",
