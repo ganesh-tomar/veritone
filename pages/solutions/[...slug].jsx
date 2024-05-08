@@ -35,34 +35,34 @@ const Home = () => {
 	if (router.asPath === '/solutions/media-entertainment') {
 		return (
 			<>
-				<Head>
-					<meta name="twitter:image" content="https://veritone-seven.vercel.app/images/veritone_OG_image.jpg" />
-				</Head>
 				<NextSeo
 					title={mediaEntertainmentMetaData.title}
 					description={mediaEntertainmentMetaData.description}
 					canonical='https://www.veritone.com'
-					openGraph={{
-						url: 'https://www.veritone.com',
-						title: mediaEntertainmentMetaData.title,
-						description: mediaEntertainmentMetaData.description,
-						images: [
-							{
-								url: 'https://veritone-seven.vercel.app/images/veritone_OG_image.jpg',
-								width: 800,
-								height: 600,
-								alt: 'Veritone',
-								type: 'image/jpeg',
-							},
-						],
-						siteName: 'Veritone',
-					}}
+					// openGraph={{
+					// 	url: 'https://www.veritone.com',
+					// 	title: mediaEntertainmentMetaData.title,
+					// 	description: mediaEntertainmentMetaData.description,
+					// 	images: [
+					// 		{
+					// 			url: 'https://veritone-seven.vercel.app/images/veritone_OG_image.jpg',
+					// 			width: 800,
+					// 			height: 600,
+					// 			alt: 'Veritone',
+					// 			type: 'image/jpeg',
+					// 		},
+					// 	],
+					// 	siteName: 'Veritone',
+					// }}
 					twitter={{
 						handle: '@handle',
 						site: '@site',
 						cardType: 'summary_large_image',
 					}}
 				/>
+				<Head>
+					<meta name="twitter:image" content="https://veritone-seven.vercel.app/images/veritone_OG_image.jpg" />
+				</Head>
 				<BannerSecondLevel {...banner} setFormOverlay={setFormOverlay} />
 				<StickyNav data={stickyNavData} themeColor={themeColor} />
 				<IntroWithAccordion data={introWithAccordionData1} pt="padding-top-120" pb='no-padding-bottom' />
