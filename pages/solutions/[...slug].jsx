@@ -37,8 +37,11 @@ const Home = () => {
 				<NextSeo
 					title={mediaEntertainmentMetaData.title}
 					description={mediaEntertainmentMetaData.description}
+					canonical='https://www.veritone.com'
 					openGraph={{
 						url: 'https://www.veritone.com',
+						title: mediaEntertainmentMetaData.title,
+						description: mediaEntertainmentMetaData.description,
 						images: [
 							{
 								url: 'https://veritone-seven.vercel.app/images/veritone_OG_image.jpg',
@@ -49,6 +52,11 @@ const Home = () => {
 							},
 						],
 						siteName: 'Veritone',
+					}}
+					twitter={{
+						handle: '@handle',
+						site: '@site',
+						cardType: 'summary_large_image',
 					}}
 				/>
 				<BannerSecondLevel {...banner} setFormOverlay={setFormOverlay} />
