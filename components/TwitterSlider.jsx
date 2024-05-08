@@ -115,7 +115,13 @@ export default function TwitterSlider({ data, onlyInternalPosts }) {
     const changeHandler = (e) => {
         setChecked(false)
         if (e.target.checked) {
-            let filteredItems = data.cards.filter(item => item.categories.includes("veritone"));
+            let filteredItems = data.cards.filter(item => {
+                if (Array.isArray(item.categories)) {
+                    return item.categories.some(category => category.toLowerCase().includes("veritone"));
+                } else {
+                    return item.categories.toLowerCase().includes("veritone");
+                }
+            });
             setSlidesData(filteredItems)
         } else {
             setSlidesData(data.cards)

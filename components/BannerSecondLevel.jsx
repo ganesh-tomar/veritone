@@ -5,15 +5,11 @@ import ContactUs from './button/ContactUs';
 import style from '../styles/bannerSecond.module.css'
 
 export default function BannerSecondLevel({ title, blurb, buttonText, buttonClass, bgimage, bgimageName, buttonUrl, imagePath, imageName, bg, pageBg, topPattern, topimageName, setFormOverlay, formUrl }) {
-    console.log(formUrl);
-
     useEffect(() => {
         setTimeout(() => {
             var body = document.querySelector("body");
-            console.log(body);
             if (body) {
                 if (pageBg) {
-                    console.log(pageBg);
                     body.classList.add(pageBg);
                 }
             }
