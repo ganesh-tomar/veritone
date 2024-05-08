@@ -326,7 +326,7 @@ export const twitterSliderData = {
       clientImage: "/images/twitterSlider/veritone_inc__logo.jpg",
       userName: "@veritone-inc",
       url: "https://www.linkedin.com/feed/update/urn:li:activity:7186462822707400704",
-      categories: ["Veritone"],
+      categories: ["veritone"],
     },
     {
       imageSrc: "/images/twitterSlider/nab_reflection.jpg",
@@ -336,12 +336,12 @@ export const twitterSliderData = {
       clientImage: "/images/twitterSlider/veritone_inc__logo.jpg",
       userName: "@veritone-inc",
       url: "https://www.linkedin.com/feed/update/urn:li:activity:7188298993188143104",
-      categories: ["Veritone"],
+      categories: ["veritone"],
     },
     {
       imageSrc: "/images/twitterSlider/grabyo.png",
       imageName: "Grabyo",
-      desc: "✨ It's NAB 2024 wrap up time ✨ Hear from our team and a few of our close partners on the key takeaways and trends from Vegas this year.",
+      desc: "✨ It's NAB 2024 wrap up time ✨ Hear from our team and a few of our close partners on the key takeaways and trends from Vegas this year.    ",
       client: "Grabyo",
       clientImage: "/images/twitterSlider/grabyo-logo.jpg",
       userName: "@Grabyo",
