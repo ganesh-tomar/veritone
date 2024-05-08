@@ -16,7 +16,33 @@ const Home = () => {
 
 	return (
 		<>
-			<NextSeo title="AI Solutions for Media, Entertainment & Broadcast | Veritone" description="Transform your media & entertainment business with Veritone's AI solutions. Drive growth and innovation. Click now." />
+			{/* <NextSeo title="AI Solutions for Media, Entertainment & Broadcast | Veritone" description="Transform your media & entertainment business with Veritone's AI solutions. Drive growth and innovation. Click now." />
+			 */}
+			<NextSeo
+				title="Veritone | AI that makes you even better"
+				description="Transform your workflows and superpower your teams with innovative, custom AI solutions, AI services, and a powerful enterprise AI platform."
+				canonical='https://www.veritone.com'
+				openGraph={{
+					url: 'https://www.veritone.com',
+					title: 'Veritone | AI that makes you even better',
+					description: 'Transform your workflows and superpower your teams with innovative, custom AI solutions, AI services, and a powerful enterprise AI platform.',
+					images: [
+						{
+							url: 'https://nextjs.veritone.com/images/veritone_OG_image.jpg',
+							width: 800,
+							height: 600,
+							alt: 'Veritone',
+							type: 'image/jpg',
+						},
+					],
+					siteName: 'Veritone',
+				}}
+				twitter={{
+					handle: '@handle',
+					site: '@site',
+					cardType: 'summary_large_image',
+				}}
+			/>
 			<BannerSecondLevel {...banner} />
 			<StickyNav data={stickyNavData} />
 			<IntroWithAccordion data={introWithAccordionData1} pt="padding-top-120" pb='no-padding-bottom' />
