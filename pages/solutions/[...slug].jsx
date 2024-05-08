@@ -16,7 +16,7 @@ import Head from 'next/head';
 //importing sections data
 
 
-import { banner, stickyNavData, tabs, accordionData, colTwoCards, resourceCards, twitterSliderData, introWithAccordionData1, introWithAccordionData2, introWithAccordionData3, introWithAccordionData4, footerCta, themeColor, mediaEntertainmentMetaData } from '../../public/mediaEntertainmentData/entertainment'
+import { banner, stickyNavData, tabs, accordionData, colTwoCards, resourceCards, twitterSliderData, introWithAccordionData1, introWithAccordionData2, introWithAccordionData3, introWithAccordionData4, footerCta, themeColor } from '../../public/mediaEntertainmentData/entertainment'
 
 import { publicBanner, publicStickyNavData, publicTabs, publicAccordionData, publicColTwoCards, publicResourceCards, publicTwitterSliderData, publicIntroWithAccordionData1, publicIntroWithAccordionData2, publicIntroWithAccordionData3, publicIntroWithAccordionData4, publicFooterCta, publicthemeColor } from '../../public/solutions/public-sector'
 import { hireBanner, hireStickyNavData, hireTabs, hireColTwoCards, hireResourceCards, hireTwitterSliderData, hireIntroWithAccordionData1, hireIntroWithAccordionData2, hireIntroWithAccordionData3, hireIntroWithAccordionData4, hireFooterCta, hireThemeColor, metaData } from '../../public/solutions/hire'
@@ -31,6 +31,13 @@ const Home = () => {
 		setUrl(url)
 	}
 
+	const mediaEntertainmentMetaData = {
+		title: "AI Solutions for Media, Entertainment & Broadcast | Veritone",
+		description:
+			"Transform your media & entertainment business with Veritone's AI solutions. Drive growth and innovation. Click now.",
+		ogImagePath: "https://veritone-seven.vercel.app/images/veritone_OG_image.jpg",
+	};
+
 	const router = useRouter();
 	if (router.asPath === '/solutions/media-entertainment') {
 		return (
@@ -39,30 +46,27 @@ const Home = () => {
 					title={mediaEntertainmentMetaData.title}
 					description={mediaEntertainmentMetaData.description}
 					canonical='https://www.veritone.com'
-					// openGraph={{
-					// 	url: 'https://www.veritone.com',
-					// 	title: mediaEntertainmentMetaData.title,
-					// 	description: mediaEntertainmentMetaData.description,
-					// 	images: [
-					// 		{
-					// 			url: 'https://veritone-seven.vercel.app/images/veritone_OG_image.jpg',
-					// 			width: 800,
-					// 			height: 600,
-					// 			alt: 'Veritone',
-					// 			type: 'image/jpeg',
-					// 		},
-					// 	],
-					// 	siteName: 'Veritone',
-					// }}
+					openGraph={{
+						url: 'https://www.veritone.com',
+						title: mediaEntertainmentMetaData.title,
+						description: mediaEntertainmentMetaData.description,
+						images: [
+							{
+								url: mediaEntertainmentMetaData.ogImagePath,
+								width: 800,
+								height: 600,
+								alt: 'Veritone',
+								type: 'image/jpeg',
+							},
+						],
+						siteName: 'Veritone',
+					}}
 					twitter={{
 						handle: '@handle',
 						site: '@site',
 						cardType: 'summary_large_image',
 					}}
 				/>
-				<Head>
-					<meta name="twitter:image" content="https://veritone-seven.vercel.app/images/veritone_OG_image.jpg" />
-				</Head>
 				<BannerSecondLevel {...banner} setFormOverlay={setFormOverlay} />
 				<StickyNav data={stickyNavData} themeColor={themeColor} />
 				<IntroWithAccordion data={introWithAccordionData1} pt="padding-top-120" pb='no-padding-bottom' />
