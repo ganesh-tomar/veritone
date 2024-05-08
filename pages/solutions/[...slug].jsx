@@ -41,7 +41,7 @@ const Home = () => {
 						url: 'https://www.veritone.com',
 						images: [
 							{
-								url: mediaEntertainmentMetaData.ogImagePath,
+								url: 'https://veritone-seven.vercel.app/images/veritone_OG_image.jpg',
 								width: 800,
 								height: 600,
 								alt: 'Veritone',

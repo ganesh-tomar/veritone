@@ -8,7 +8,7 @@ class MyDocument extends Document {
           <meta name="twitter:card" content="summary_large_image" />
           <meta name="twitter:title" content="Veritone | AI that makes you even better" />
 		      <meta name="twitter:description" content="Transform your workflows and superpower your teams with innovative, custom AI solutions, AI services, and a powerful enterprise AI platform." />
-          <meta name="twitter:image" content="https://veritone-seven.vercel.app/images/veritone_OG_image_hire.jpg" />
+          {/* <meta name="twitter:image" content="https://veritone-seven.vercel.app/images/veritone_OG_image_hire.jpg" /> */}
           <meta name="twitter:site" content="https://twitter.com/veritoneinc" />
 
           <script
