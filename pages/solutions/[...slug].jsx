@@ -15,7 +15,7 @@ import { useState } from 'react';
 //importing sections data
 
 
-import { banner, stickyNavData, tabs, accordionData, colTwoCards, resourceCards, twitterSliderData, introWithAccordionData1, introWithAccordionData2, introWithAccordionData3, introWithAccordionData4, footerCta, themeColor } from '../../public/mediaEntertainmentData/entertainment'
+import { banner, stickyNavData, tabs, accordionData, colTwoCards, resourceCards, twitterSliderData, introWithAccordionData1, introWithAccordionData2, introWithAccordionData3, introWithAccordionData4, footerCta, themeColor, mediaEntertainmentMetaData } from '../../public/mediaEntertainmentData/entertainment'
 
 import { publicBanner, publicStickyNavData, publicTabs, publicAccordionData, publicColTwoCards, publicResourceCards, publicTwitterSliderData, publicIntroWithAccordionData1, publicIntroWithAccordionData2, publicIntroWithAccordionData3, publicIntroWithAccordionData4, publicFooterCta, publicthemeColor } from '../../public/solutions/public-sector'
 import { hireBanner, hireStickyNavData, hireTabs, hireColTwoCards, hireResourceCards, hireTwitterSliderData, hireIntroWithAccordionData1, hireIntroWithAccordionData2, hireIntroWithAccordionData3, hireIntroWithAccordionData4, hireFooterCta, hireThemeColor, metaData } from '../../public/solutions/hire'
@@ -34,7 +34,23 @@ const Home = () => {
 	if (router.asPath === '/solutions/media-entertainment') {
 		return (
 			<>
-				<NextSeo title="AI Solutions for Media, Entertainment & Broadcast | Veritone" description="Transform your media & entertainment business with Veritone's AI solutions. Drive growth and innovation. Click now." />
+				<NextSeo
+					title={mediaEntertainmentMetaData.title}
+					description={mediaEntertainmentMetaData.description}
+					openGraph={{
+						url: 'https://www.veritone.com',
+						images: [
+							{
+								url: mediaEntertainmentMetaData.ogImagePath,
+								width: 800,
+								height: 600,
+								alt: 'Veritone',
+								type: 'image/jpeg',
+							},
+						],
+						siteName: 'Veritone',
+					}}
+				/>
 				<BannerSecondLevel {...banner} setFormOverlay={setFormOverlay} />
 				<StickyNav data={stickyNavData} themeColor={themeColor} />
 				<IntroWithAccordion data={introWithAccordionData1} pt="padding-top-120" pb='no-padding-bottom' />
@@ -77,11 +93,9 @@ const Home = () => {
 					description={metaData.description}
 					openGraph={{
 						url: 'https://www.veritone.com',
-						// title: {},
-						// description: 'Transform your workflows and superpower your teams with innovative, custom AI solutions, AI services, and a powerful enterprise AI platform.',
 						images: [
 							{
-								url: 'https://veritone-seven.vercel.app/images/veritone_OG_image_hire.jpg',
+								url: metaData.ogImagePath,
 								width: 800,
 								height: 600,
 								alt: 'Veritone',

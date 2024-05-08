@@ -1,6 +1,14 @@
 export const themeColor = {
   themeColor: "ember",
 };
+
+export const mediaEntertainmentMetaData = {
+  title: "AI Solutions for Media, Entertainment & Broadcast | Veritone",
+  description:
+    "Transform your media & entertainment business with Veritone's AI solutions. Drive growth and innovation. Click now.",
+  ogImagePath: "https://veritone-seven.vercel.app/images/veritone_OG_image.jpg",
+};
+
 export const banner = {
   pageBg: "ember",
   title: "Content is king. We help you rule.",
