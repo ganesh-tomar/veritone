@@ -11,6 +11,7 @@ import FormOverlay from '../../components/global/FormOverlay';
 import { NextSeo } from 'next-seo';
 import { useRouter } from 'next/router';
 import { useState } from 'react';
+import Head from 'next/head';
 
 //importing sections data
 
@@ -34,6 +35,9 @@ const Home = () => {
 	if (router.asPath === '/solutions/media-entertainment') {
 		return (
 			<>
+				<Head>
+					<meta name="twitter:image" content="https://veritone-seven.vercel.app/images/veritone_OG_image.jpg" />
+				</Head>
 				<NextSeo
 					title={mediaEntertainmentMetaData.title}
 					description={mediaEntertainmentMetaData.description}
