@@ -42,31 +42,6 @@ const Home = () => {
 	if (router.asPath === '/solutions/media-entertainment') {
 		return (
 			<>
-				{/* <NextSeo
-					title={mediaEntertainmentMetaData.title}
-					description={mediaEntertainmentMetaData.description}
-					canonical='https://www.veritone.com'
-					openGraph={{
-						url: 'https://www.veritone.com',
-						title: mediaEntertainmentMetaData.title,
-						description: mediaEntertainmentMetaData.description,
-						images: [
-							{
-								url: mediaEntertainmentMetaData.ogImagePath,
-								width: 800,
-								height: 600,
-								alt: 'Veritone',
-								type: 'image/jpeg',
-							},
-						],
-						siteName: 'Veritone',
-					}}
-					twitter={{
-						handle: '@handle',
-						site: '@site',
-						cardType: 'summary_large_image',
-					}}
-				/> */}
 				<NextSeo
 					title="Veritone | AI that makes you even better"
 					description="Transform your workflows and superpower your teams with innovative, custom AI solutions, AI services, and a powerful enterprise AI platform."
@@ -77,7 +52,7 @@ const Home = () => {
 						description: 'Transform your workflows and superpower your teams with innovative, custom AI solutions, AI services, and a powerful enterprise AI platform.',
 						images: [
 							{
-								url: 'https://nextjs.veritone.com/images/veritone_OG_image.jpg',
+								url: 'https://veritone-seven.vercel.app/images/veritone_OG_image.jpg',
 								width: 800,
 								height: 600,
 								alt: 'Veritone',

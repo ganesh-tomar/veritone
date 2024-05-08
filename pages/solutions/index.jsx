@@ -28,7 +28,7 @@ const Home = () => {
 					description: 'Transform your workflows and superpower your teams with innovative, custom AI solutions, AI services, and a powerful enterprise AI platform.',
 					images: [
 						{
-							url: 'https://nextjs.veritone.com/images/veritone_OG_image.jpg',
+							url: 'https://veritone-seven.vercel.app/images/veritone_OG_image.jpg',
 							width: 800,
 							height: 600,
 							alt: 'Veritone',

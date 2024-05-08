@@ -37,11 +37,11 @@ const Home = () => {
 		<>
 			<NextSeo
 				title="Veritone | AI that makes you even better"
-				description="ck Transform your workflows and superpower your teams with innovative, custom AI solutions, AI services, and a powerful enterprise AI platform."
+				description="Transform your workflows and superpower your teams with innovative, custom AI solutions, AI services, and a powerful enterprise AI platform."
 				canonical='https://www.veritone.com'
 				openGraph={{
 					url: 'https://www.veritone.com',
-					title: 'cs Veritone | AI that makes you even better',
+					title: 'Veritone | AI that makes you even better',
 					description: 'Transform your workflows and superpower your teams with innovative, custom AI solutions, AI services, and a powerful enterprise AI platform.',
 					images: [
 						{
@@ -49,7 +49,7 @@ const Home = () => {
 							width: 800,
 							height: 600,
 							alt: 'Veritone',
-							type: 'image/jpeg',
+							type: 'image/jpg',
 						},
 					],
 					siteName: 'Veritone',
