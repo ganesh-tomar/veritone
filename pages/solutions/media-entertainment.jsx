@@ -38,7 +38,7 @@ const Home = () => {
                     description: "Transform your media & entertainment business with Veritone's AI solutions. Drive growth and innovation. Click now.",
                     images: [
                         {
-                            url: 'https://nextjs.veritone.com/images/veritone_OG_image.jpg',
+                            url: '/images/veritone_me_OG_image_ME.jpg',
                             width: 800,
                             height: 600,
                             alt: 'Veritone',
