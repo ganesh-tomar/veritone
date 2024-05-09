@@ -167,7 +167,7 @@ export default function TwitterSlider({ data, onlyInternalPosts }) {
                             <div key={index}>
                                 <div className={`relative sliderCard max-w-[360px] tabletlarge:max-w-[237px] tabletlarge:max-h-[223px]  tablet:max-w-[237px] tablet:max-h-[223px] mx-[15px] xxs:max-w-[calc(100%-40px)] `}>
                                     <Link className='emptyLink' href={slide.url} target='_blank' onTouchStart={touchHandler} onTouchEnd={touchRemover}>.</Link>
-                                    <div className="imageWrap max-w-[360px] max-h-[340px] tabletlarge:max-w-[237px] tabletlarge:max-h-[223px]  tablet:max-w-[237px] tablet:max-h-[223px] sm:max-h-[240px] w-full h-full overflow-hidden">
+                                    <div className="imageWrap max-w-[360px] max-h-[340px] h-[292px] laptopmid:h-[265px] laptopsmall:h-[240px] tabletlarge:max-w-[237px] tabletlarge:max-h-[223px]  tablet:max-w-[237px] tablet:max-h-[223px] sm:max-h-[240px] w-full overflow-hidden">
                                         <Image
                                             src={slide.imageSrc}
                                             width={500}
