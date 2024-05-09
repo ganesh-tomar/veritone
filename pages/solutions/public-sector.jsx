@@ -34,11 +34,11 @@ const Home = () => {
                 canonical='https://www.veritone.com'
                 openGraph={{
                     url: 'https://www.veritone.com',
-                    title: 'AI Solutions for Media, Entertainment & Broadcast | Veritone',
-                    description: "Transform your media & entertainment business with Veritone's AI solutions. Drive growth and innovation. Click now.",
+                    title: 'AI for the greater good | Veritone Public Sector',
+                    description: "Transform workflows, unlock new efficiencies, and streamline time-consuming processes with powerful AI solutions that help government, legal, and education organizations better serve their communities.",
                     images: [
                         {
-                            url: 'https://nextjs.veritone.com/images/veritone_OG_image.jpg',
+                            url: '/images/public-sector/veritone_ps_OG_image.jpeg',
                             width: 800,
                             height: 600,
                             alt: 'Veritone',
