@@ -6,17 +6,9 @@ const StickyNav = (props) => {
   let bladeData = props.data;
   const [activeSection, setActiveSection] = useState('');
   const [winWidth, isWinWidth] = useState(0);
-  // const [sectionLeft, setsectionLeft] = useState(6)
-  const [screenHeight, setScreenHeight] = useState(0);
-  const [activeIndex, setActiveIndex] = useState();
-  // const [crossedSection, setcrossedSection] = useState([])
   useEffect(() => {
     const handleResize = () => {
       isWinWidth(window.innerWidth);
-      setScreenHeight(window.innerHeight);
-      // const section = document.querySelector('.intro-with-accordion');
-      // console.log(section.offsetX);
-      // handleScroll()
     };
     window.addEventListener("resize", handleResize);
     handleResize();
@@ -25,7 +17,6 @@ const StickyNav = (props) => {
     };
   });
 
-  // const [distanceFromTop, setDistanceFromTop] = useState(0);
   const elementRef = useRef(null);
   useEffect(() => {
     setTimeout(() => {
@@ -37,7 +28,6 @@ const StickyNav = (props) => {
   }, []);
   const handleStickyClick = (e, id, borderActive) => {
     e.preventDefault();
-    // setActiveIndex(borderActive);
 
     const header = document.querySelector('header > div');
     const headerHeight = header ? header.offsetHeight : 0;
@@ -57,9 +47,6 @@ const StickyNav = (props) => {
       behavior: 'smooth'
     });
   }
-  // const stickyFunction = () => {
-
-  // }
   const handleScroll = () => {
     const sections = document.querySelectorAll('section');
     const navList = document.querySelectorAll('.sticky-nav .navItem');
@@ -94,8 +81,6 @@ const StickyNav = (props) => {
     }
 
     setActiveSection(activeSectionId);
-    // setActiveIndex(activeSectionId);
-    // setcrossedSection(crossedSections)
   };
   return (
     <>
@@ -106,7 +91,7 @@ const StickyNav = (props) => {
               bladeData.map((data, index) => {
                 return <div key={index}
 
-                  className={`${activeIndex === index ? 'active' : ''} ${style.navItem} navItem md:border-[2px] md:border-cosmos
+                  className={`${style.navItem} navItem md:border-[2px] md:border-cosmos
                   w-[calc(25%-20px)] mx-[5px] max-w-[233px] lg:pr-0 md:w-[calc(50%-10px)] md:p-0 md:mb-[10px] md:flex md:items-center md:justify-center md:max-w-full md:text-center rounded-lg`}>
                   <Link className={`md:p-[26px]`} href={`#${data.link}`} onClick={(e) => handleStickyClick(e, data.link, index)}>
                     <h4 className='relative inline-block text-cosmos md:text-[18px]'>
@@ -135,7 +120,6 @@ const StickyNav = (props) => {
         <ul className={`${style.fixedList} fixedList ipad:hidden`}>
           {
             bladeData.map((data, index) => {
-              // ${Array.isArray(crossedSection) && crossedSection.includes(data?.link) ? style.expand : ''} softRiptide
               return <li key={index} className={`${activeSection === data?.link ? 'activatedTab' : ''} ${style.navItem} transition-all duration-300 w-[8px] h-[60px] mb-[20px] rounded-[5px]`}>
                 <Link href={`#${data.link}`} onClick={(e) => handleStickyClick(e, data.link, index)}
                   className={`h-full w-full inline-block`}>
