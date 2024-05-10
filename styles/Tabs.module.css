@@ -356,21 +356,21 @@
 }
 
 .tabs.tabWithoutSlider .tabValBox::after {
-	content: '';
-	position: absolute;
-	width: 20px;
-	height: 30px;
-	right: 45px;
-	top: 20px;
-	background-image: url(/images/icons/arrow-up.svg);
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: 100%;
-	transform: rotate(180deg);
-	transition: transform 0.3s ease;
-	z-index: 5;
-	pointer-events: none;
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 30px;
+  right: 45px;
+  top: 20px;
+  background-image: url(/images/icons/arrow-up.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  transform: rotate(180deg);
+  transition: transform 0.3s ease;
+  z-index: 5;
+  pointer-events: none;
 }
 .tabs.tabWithoutSlider .tabValBox.expand::after {
-	transform: rotate(0);
+  transform: rotate(0);
 }
