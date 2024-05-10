@@ -35,10 +35,6 @@ const FormOverlay = ({ toggle, buttonText, url, buttonClass, formUrl, setFormOve
       </div>
     </div>
   </div>
-  function clickHandler(event) {
-    event.preventDefault();
-    event.stopPropagation();
-  }
   function removeOverlay() {
     setFormOverlay('#')
   }
