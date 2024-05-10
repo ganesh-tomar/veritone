@@ -19,7 +19,7 @@
   transform-origin: top left;
 }
 .navItem:hover .arrow {
-	padding-top: 35px;
+  padding-top: 35px;
 }
 .navLink {
   width: 0;
