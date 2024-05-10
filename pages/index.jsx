@@ -1,23 +1,17 @@
-
-import Layout from '../components/layout';
 import dynamic from 'next/dynamic'
-import { Suspense } from 'react'
-import React, { lazy } from 'react';
+import { Suspense, useState } from 'react'
+
 const HeroBanner = dynamic(() => import('../components/HeroBanner'), {
 	suspense: true,
 })
-// import HeroBanner from '../components/HeroBanner';
-const IntroWithLogo = lazy(() => import('../components/IntroWithLogo'));
-const TwoColumnText = lazy(() => import('../components/TwoColumnText'));
-const Tabs = lazy(() => import('../components/Tabs'));
-const Footercta = lazy(() => import('../components/Footercta'));
+const IntroWithLogo = dynamic(() => import('../components/IntroWithLogo'));
+const TwoColumnText = dynamic(() => import('../components/TwoColumnText'));
+const Tabs = dynamic(() => import('../components/Tabs'));
+const TwitterSlider = dynamic(() => import('../components/TwitterSlider'));
+const FullWidthContent = dynamic(() => import('../components/FullWidthContent'));
+const FormOverlay = dynamic(() => import('../components/global/FormOverlay'));
+const Footercta = dynamic(() => import('../components/Footercta'));
 
-const FullWidthContent = lazy(() => import('../components/FullWidthContent'));
-const FormOverlay = lazy(() => import('../components/global/FormOverlay'));
-
-
-import TwitterSlider from '../components/TwitterSlider';
-import { useState } from 'react';
 import { NextSeo } from 'next-seo';
 
 //importing sections data
@@ -34,6 +28,7 @@ const Home = () => {
 	}
 
 	return (
+
 		<>
 			<NextSeo
 				title="Veritone | AI that makes you even better"
@@ -49,7 +44,7 @@ const Home = () => {
 							width: 800,
 							height: 600,
 							alt: 'Veritone',
-							type: 'image/jpg',
+							type: 'image/jpeg',
 						},
 					],
 					siteName: 'Veritone',
