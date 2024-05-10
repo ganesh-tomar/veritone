@@ -1,5 +1,3 @@
-// import { Footer, Header, PreviewRibbon } from '@pantheon-systems/nextjs-kit';
-// import styles from './layout.module.css';
 import dynamic from 'next/dynamic'
 import { Suspense, useState, useEffect } from 'react'
 const Header = dynamic(() => import('./header/Header'), {
