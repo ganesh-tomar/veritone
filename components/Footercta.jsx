@@ -1,5 +1,4 @@
-import React, { useEffect } from "react";
-import Link from "next/link";
+import React from "react";
 import Button from "./button/Button";
 import ContactUs from "./button/ContactUs";
 
