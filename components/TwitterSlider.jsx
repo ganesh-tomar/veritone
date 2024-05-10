@@ -10,7 +10,6 @@ import "slick-carousel/slick/slick-theme.css";
 
 export default function TwitterSlider({ data, onlyInternalPosts }) {
     const [slidesData, setSlidesData] = useState(data.cards)
-    // const [totalSlides, setTotalSlides] = useState(data.cards.length)
     const [checked, setChecked] = useState(true)
     const [winWidth, isWinWidth] = useState(0);
     const [autoplaySpeed, setAutoPlaySpeed] = useState(3000);
@@ -30,7 +29,6 @@ export default function TwitterSlider({ data, onlyInternalPosts }) {
         slidesToShow: 3.65,
         slidesToScroll: 1,
         centerMode: true,
-        // focusOnSelect: false,
         touchThreshold: 100,
         draggable: true,
         swipeToSlide: true,
@@ -46,9 +44,7 @@ export default function TwitterSlider({ data, onlyInternalPosts }) {
             setSlidesData(filteredItems)
         }
     }, [])
-    // useEffect(() => {
-    //     setTotalSlides(slidesData?.length)
-    // }, [slidesData])
+
     const responsiveSettings = [
         {
             breakpoint: 1200,
@@ -62,7 +58,6 @@ export default function TwitterSlider({ data, onlyInternalPosts }) {
             breakpoint: 991,
             settings: {
                 slidesToShow: 2.70,
-                // slidesToShow: 3.16,
                 centerPadding: '80px 0 0',
             },
         },
@@ -70,8 +65,6 @@ export default function TwitterSlider({ data, onlyInternalPosts }) {
             breakpoint: 767,
             settings: {
                 slidesToShow: 1.7,
-                // centerPadding: '50px 0 0',
-                // adaptiveHeight: true
             },
         },
         {
@@ -79,8 +72,6 @@ export default function TwitterSlider({ data, onlyInternalPosts }) {
             settings: {
                 slidesToShow: 1.05,
                 centerPadding: '80px 0 0',
-                // centerPadding: '50px 0 0',
-                // adaptiveHeight: true
             },
         },
         {
@@ -88,7 +79,6 @@ export default function TwitterSlider({ data, onlyInternalPosts }) {
             settings: {
                 slidesToShow: 1.05,
                 centerPadding: '50px 0 0',
-                // adaptiveHeight: true
             },
         },
         {
@@ -96,7 +86,6 @@ export default function TwitterSlider({ data, onlyInternalPosts }) {
             settings: {
                 slidesToShow: 1,
                 centerPadding: '50px 0 0',
-                // adaptiveHeight: true
             },
         },
         {
@@ -104,7 +93,6 @@ export default function TwitterSlider({ data, onlyInternalPosts }) {
             settings: {
                 slidesToShow: 1,
                 centerPadding: '20px 0 0',
-                // adaptiveHeight: true
             },
         },
     ];
@@ -218,8 +206,6 @@ export default function TwitterSlider({ data, onlyInternalPosts }) {
                     <Button buttonText={data.intro.btnText} url={data.intro.btnUrl} buttonClass={data.intro.btnClass} />
                 </div>
             </div>
-
-
         </section>
     );
 }
