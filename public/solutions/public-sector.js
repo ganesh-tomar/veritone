@@ -258,7 +258,7 @@ export const publicTwitterSliderData = {
       imageName: "rebrand",
       desc: "Veritone is proud to introduce our new brand identity. Our mission is to advance and democratize the capabilities of AI and empower people to do even better than their best. Join us in our new era to discover how enterprise AI is helping advance humanity. We're Veritone: AI that makes you even better.",
       client: "Veritone",
-      clientImage: "/images/hire/veritone_hire__logo.jpg",
+      clientImage: "/images/twitterSlider/veritone_inc__logo.jpg",
       userName: "@veritone-inc",
       url: "https://www.linkedin.com/feed/update/urn:li:activity:7185653096679702528",
       categories: ["veritone"],
@@ -284,7 +284,7 @@ export const publicTwitterSliderData = {
       categories: ["Forbes"],
     },
     {
-      imageSrc: "/images/public-sector/unite.jpeg",
+      imageSrc: "/images/public-sector/unite.jpg",
       imageName: "unite",
       desc: "Balancing privacy and public safety is key to AI integration 👏 Read more from Jon Gacek and Unite.AI about using AI tracking methods beyond facial recognition",
       client: "Veritone",
@@ -294,7 +294,7 @@ export const publicTwitterSliderData = {
       categories: ["veritone"],
     },
     {
-      imageSrc: "/images/public-sector/opexus.jpg",
+      imageSrc: "/images/public-sector/opexus_.jpg",
       imageName: "opexus",
       desc: "Exciting news 📣 Veritone and OPEXUS have partnered to provide AI solutions to the National Canadian Bank, integrating Veritone's Redact solution into OPEXUS's AI Assist Module for efficient redaction of sensitive information in audio and video data to enhance data privacy workflows and regulatory compliance. More on the partnership here: https://lnkd.in/gexqPzH4",
       client: "Veritone",
@@ -304,7 +304,7 @@ export const publicTwitterSliderData = {
       categories: ["veritone"],
     },
     {
-      imageSrc: "/images/hire/rebrand.jpg",
+      imageSrc: "/images/public-sector/rebrand_ps.jpeg",
       imageName: "rebrand",
       desc: "Introducing Veritone Public Sector - our latest breakthrough in AI solutions! With Veritone, we streamline processes, automate tasks, and enhance efficiency for law enforcement, government, and public safety teams. Join us in this mission to turn data into action and make communities safer and better for all!",
       client: "Veritone Public Sector",
