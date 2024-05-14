@@ -618,7 +618,7 @@ export const resourceCards = {
   pageBg: "ember",
   cards: [
     {
-      imagePath: "/images/speaker_setups.png",
+      imagePath: "/images/bonneville.png",
       url: "https://go.veritone.com/bonneville-seattle-earns-key-account-annual-business/",
       imageName: "speaker_setups",
       heading: "Bonneville Seattle earns key business with Attribute.",
