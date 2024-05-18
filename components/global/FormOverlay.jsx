@@ -8,7 +8,7 @@ const FormOverlay = ({ toggle, buttonText, url, buttonClass, formUrl, setFormOve
     setOpen(toggle)
   }, [toggle])
   const overlay = <div className={` ${Style.overlay} overlay transition-all duration-300 xl-up:w-[calc(100%-276px)] desktop:w-[calc(100%-244px)] wide-nav-screen:max-w-[2500px] wide-nav-screen:mx-auto  fixed w-screen h-screen z-[9999] `} >
-    <div className={` tablet-landscape:top-0 md:top-0 lg:pb-[30px] pt-[30px]`}>
+    <div className={`tablet-landscape:top-0 md:top-0 lg:pb-[30px] pt-[30px]`}>
       <div className={`cross w-[40px] h-[40px] cursor-pointer absolute right-[1%] top-[30px] desktop-laptop:right-[30px] desktop-laptop:top-[45px] lg:right-[30px] lg:top-[40px] z-[9999]`} onClick={() => removeOverlay()}>
         <svg
           width="40"
